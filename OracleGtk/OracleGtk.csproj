@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Zyrenth.OracleGtk</RootNamespace>
+    <AssemblyName>OracleGtk</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Mono.Posix" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Dimitri.gif" />
+    <EmbeddedResource Include="Resources\Din.gif">
+      <DeployService-UseProjectRelativePath>True</DeployService-UseProjectRelativePath>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Farore.gif" />
+    <EmbeddedResource Include="Resources\Moosh.gif" />
+    <EmbeddedResource Include="Resources\Nayru.gif">
+      <DeployService-UseProjectRelativePath>True</DeployService-UseProjectRelativePath>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Ricky.gif" />
+    <EmbeddedResource Include="Resources\Seed_Ages.gif" />
+    <EmbeddedResource Include="Resources\Seed_Seasons.gif" />
+    <EmbeddedResource Include="Resources\Zelda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="SaveEditor.cs" />
+    <Compile Include="gtk-gui\Zyrenth.OracleGtk.SaveEditor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="Resources\00.png" />
+    <None Include="Resources\01.png" />
+    <None Include="Resources\02.png" />
+    <None Include="Resources\03.png" />
+    <None Include="Resources\04.png" />
+    <None Include="Resources\05.png" />
+    <None Include="Resources\06.png" />
+    <None Include="Resources\07.png" />
+    <None Include="Resources\08.png" />
+    <None Include="Resources\09.png" />
+    <None Include="Resources\10.png" />
+    <None Include="Resources\11.png" />
+    <None Include="Resources\12.png" />
+    <None Include="Resources\13.png" />
+    <None Include="Resources\14.png" />
+    <None Include="Resources\15.png" />
+    <None Include="Resources\16.png" />
+    <None Include="Resources\17.png" />
+    <None Include="Resources\18.png" />
+    <None Include="Resources\19.png" />
+    <None Include="Resources\20.png" />
+    <None Include="Resources\21.png" />
+    <None Include="Resources\22.png" />
+    <None Include="Resources\23.png" />
+    <None Include="Resources\24.png" />
+    <None Include="Resources\25.png" />
+    <None Include="Resources\26.png" />
+    <None Include="Resources\27.png" />
+    <None Include="Resources\28.png" />
+    <None Include="Resources\29.png" />
+    <None Include="Resources\30.png" />
+    <None Include="Resources\31.png" />
+    <None Include="Resources\32.png" />
+    <None Include="Resources\33.png" />
+    <None Include="Resources\34.png" />
+    <None Include="Resources\35.png" />
+    <None Include="Resources\36.png" />
+    <None Include="Resources\37.png" />
+    <None Include="Resources\38.png" />
+    <None Include="Resources\39.png" />
+    <None Include="Resources\40.png" />
+    <None Include="Resources\41.png" />
+    <None Include="Resources\42.png" />
+    <None Include="Resources\43.png" />
+    <None Include="Resources\44.png" />
+    <None Include="Resources\45.png" />
+    <None Include="Resources\46.png" />
+    <None Include="Resources\47.png" />
+    <None Include="Resources\48.png" />
+    <None Include="Resources\49.png" />
+    <None Include="Resources\50.png" />
+    <None Include="Resources\51.png" />
+    <None Include="Resources\52.png" />
+    <None Include="Resources\53.png" />
+    <None Include="Resources\54.png" />
+    <None Include="Resources\55.png" />
+    <None Include="Resources\56.png" />
+    <None Include="Resources\57.png" />
+    <None Include="Resources\58.png" />
+    <None Include="Resources\59.png" />
+    <None Include="Resources\60.png" />
+    <None Include="Resources\61.png" />
+    <None Include="Resources\62.png" />
+    <None Include="Resources\63.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OracleHack\OracleHack.csproj">
+      <Project>{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}</Project>
+      <Name>OracleHack</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
