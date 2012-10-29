@@ -133,6 +133,7 @@
     <EmbeddedResource Include="Resources\61.png" />
     <EmbeddedResource Include="Resources\62.png" />
     <EmbeddedResource Include="Resources\63.png" />
+    <EmbeddedResource Include="Resources\Farore.ico" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />

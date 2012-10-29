@@ -38,16 +38,16 @@ namespace Zyrenth.OracleGtk
 		{
 			AnimalType animal = AnimalType.None;
 			Enum.TryParse<AnimalType>(cmbAnimal.ActiveText, out animal);
-			switch(animal)
+			switch (animal)
 			{
 				case AnimalType.Ricky:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Resources.Ricky.gif");
+					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Ricky.gif");
 					break;
 				case AnimalType.Dimitri:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Resources.Dimitri.gif");
+					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Dimitri.gif");
 					break;
 				case AnimalType.Moosh:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Resources.Moosh.gif");
+					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Moosh.gif");
 					break;
 				default:
 					imgAnimal.Pixbuf = null;

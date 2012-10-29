@@ -68,7 +68,10 @@ namespace Zyrenth.OracleGtk
 			w1.Expand = false;
 			w1.Fill = false;
 			// Container child hbox2.Gtk.Box+BoxChild
-			this.filechooserbutton1 = new global::Gtk.FileChooserButton (global::Mono.Unix.Catalog.GetString ("Select a File"), ((global::Gtk.FileChooserAction)(0)));
+			this.filechooserbutton1 = new global::Gtk.FileChooserButton (
+				global::Mono.Unix.Catalog.GetString("Select a File"),
+				((global::Gtk.FileChooserAction)(0))
+			);
 			this.filechooserbutton1.WidthRequest = 200;
 			this.filechooserbutton1.Name = "filechooserbutton1";
 			this.filechooserbutton1.LocalOnly = false;
