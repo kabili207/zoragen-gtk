@@ -1,25 +1,35 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleHack", "OracleHack\OracleHack.csproj", "{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleGtk", "OracleGtk\OracleGtk.csproj", "{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Debug|x86.ActiveCfg = Debug|x86
-		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Debug|x86.Build.0 = Debug|x86
-		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Release|x86.ActiveCfg = Release|x86
-		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Release|x86.Build.0 = Release|x86
+		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Debug|x86.Build.0 = Debug|Any CPU
+		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Release|x86.ActiveCfg = Release|Any CPU
 		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Release|x86.Build.0 = Release|Any CPU
+		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Debug|x86.ActiveCfg = Debug|x86
+		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Debug|x86.Build.0 = Debug|x86
+		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Release|x86.ActiveCfg = Release|x86
+		{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = OracleGtk\OracleGtk.csproj
@@ -53,8 +63,5 @@ Global
 		$2.inheritsSet = Mono
 		$2.inheritsScope = text/x-csharp
 		$2.scope = text/x-csharp
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
