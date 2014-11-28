@@ -41,13 +41,13 @@ namespace Zyrenth.OracleGtk
 			switch (animal)
 			{
 				case VbaAnimalType.Ricky:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Ricky.gif");
+					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Ricky.gif");
 					break;
 				case VbaAnimalType.Dimitri:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Dimitri.gif");
+					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Dimitri.gif");
 					break;
 				case VbaAnimalType.Moosh:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Moosh.gif");
+					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Moosh.gif");
 					break;
 				default:
 					imgAnimal.Pixbuf = null;

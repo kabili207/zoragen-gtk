@@ -46,7 +46,7 @@ namespace Zyrenth.OracleGtk
 			// Widget Zyrenth.OracleGtk.SaveEditor
 			this.Name = "Zyrenth.OracleGtk.SaveEditor";
 			this.Title = global::Mono.Unix.Catalog.GetString ("SaveEditor");
-			this.Icon = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Resources.Farore.gif");
+			this.Icon = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Images.Characters.Farore.gif");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			this.BorderWidth = ((uint)(10));
 			this.Resizable = false;
@@ -68,10 +68,7 @@ namespace Zyrenth.OracleGtk
 			w1.Expand = false;
 			w1.Fill = false;
 			// Container child hbox2.Gtk.Box+BoxChild
-			this.filechooserbutton1 = new global::Gtk.FileChooserButton (
-				global::Mono.Unix.Catalog.GetString("Select a File"),
-				((global::Gtk.FileChooserAction)(0))
-			);
+			this.filechooserbutton1 = new global::Gtk.FileChooserButton (global::Mono.Unix.Catalog.GetString ("Select a File"), ((global::Gtk.FileChooserAction)(0)));
 			this.filechooserbutton1.WidthRequest = 200;
 			this.filechooserbutton1.Name = "filechooserbutton1";
 			this.filechooserbutton1.LocalOnly = false;
@@ -104,7 +101,7 @@ namespace Zyrenth.OracleGtk
 			// Container child table1.Gtk.Table+TableChild
 			this.image1 = new global::Gtk.Image ();
 			this.image1.Name = "image1";
-			this.image1.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Resources.Nayru.gif");
+			this.image1.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Images.Characters.Nayru.gif");
 			this.table1.Add (this.image1);
 			global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table1 [this.image1]));
 			w4.XOptions = ((global::Gtk.AttachOptions)(4));
@@ -112,7 +109,7 @@ namespace Zyrenth.OracleGtk
 			// Container child table1.Gtk.Table+TableChild
 			this.image2 = new global::Gtk.Image ();
 			this.image2.Name = "image2";
-			this.image2.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Resources.Din.gif");
+			this.image2.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleGtk.Images.Characters.Din.gif");
 			this.table1.Add (this.image2);
 			global::Gtk.Table.TableChild w5 = ((global::Gtk.Table.TableChild)(this.table1 [this.image2]));
 			w5.TopAttach = ((uint)(1));

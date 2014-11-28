@@ -11,23 +11,23 @@
     <AssemblyName>OracleGtk</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <DebugSymbols>true</DebugSymbols>
+    <DebugSymbols>True</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>False</Optimize>
     <OutputPath>bin\Debug</OutputPath>
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <ConsolePause>False</ConsolePause>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>True</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <ConsolePause>false</ConsolePause>
+    <ConsolePause>False</ConsolePause>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup>
@@ -59,20 +59,224 @@
     <EmbeddedResource Include="gtk-gui\gui.stetic">
       <LogicalName>gui.stetic</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Images\Characters\*">
-      <Link>Images\Characters\%(FileName)%(Extension)</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\Images\Rings\*">
-      <Link>Images\Rings\%(FileName)%(Extension)</Link>
-    </EmbeddedResource>
-    <EmbeddedResource Include="..\Images\Symbols\*">
-      <Link>Images\Symbols\%(FileName)%(Extension)</Link>
-    </EmbeddedResource>
     <EmbeddedResource Include="..\Images\Seed_Ages.gif">
       <Link>Images\Seed_Ages.gif</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="..\Images\Seed_Seasons.gif">
       <Link>Images\Seed_Seasons.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Characters\Dimitri.gif">
+      <Link>Images\Characters\Dimitri.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Characters\Din.gif">
+      <Link>Images\Characters\Din.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Characters\Farore.gif">
+      <Link>Images\Characters\Farore.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Characters\Moosh.gif">
+      <Link>Images\Characters\Moosh.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Characters\Nayru.gif">
+      <Link>Images\Characters\Nayru.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Characters\Ricky.gif">
+      <Link>Images\Characters\Ricky.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Characters\Zelda.gif">
+      <Link>Images\Characters\Zelda.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\00.png">
+      <Link>Images\Symbols\00.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\01.png">
+      <Link>Images\Symbols\01.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\02.png">
+      <Link>Images\Symbols\02.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\03.png">
+      <Link>Images\Symbols\03.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\04.png">
+      <Link>Images\Symbols\04.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\05.png">
+      <Link>Images\Symbols\05.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\06.png">
+      <Link>Images\Symbols\06.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\07.png">
+      <Link>Images\Symbols\07.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\08.png">
+      <Link>Images\Symbols\08.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\09.png">
+      <Link>Images\Symbols\09.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\10.png">
+      <Link>Images\Symbols\10.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\11.png">
+      <Link>Images\Symbols\11.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\12.png">
+      <Link>Images\Symbols\12.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\13.png">
+      <Link>Images\Symbols\13.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\14.png">
+      <Link>Images\Symbols\14.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\15.png">
+      <Link>Images\Symbols\15.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\16.png">
+      <Link>Images\Symbols\16.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\17.png">
+      <Link>Images\Symbols\17.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\18.png">
+      <Link>Images\Symbols\18.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\19.png">
+      <Link>Images\Symbols\19.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\20.png">
+      <Link>Images\Symbols\20.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\21.png">
+      <Link>Images\Symbols\21.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\22.png">
+      <Link>Images\Symbols\22.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\23.png">
+      <Link>Images\Symbols\23.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\24.png">
+      <Link>Images\Symbols\24.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\25.png">
+      <Link>Images\Symbols\25.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\26.png">
+      <Link>Images\Symbols\26.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\27.png">
+      <Link>Images\Symbols\27.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\28.png">
+      <Link>Images\Symbols\28.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\29.png">
+      <Link>Images\Symbols\29.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\30.png">
+      <Link>Images\Symbols\30.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\31.png">
+      <Link>Images\Symbols\31.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\32.png">
+      <Link>Images\Symbols\32.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\33.png">
+      <Link>Images\Symbols\33.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\34.png">
+      <Link>Images\Symbols\34.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\35.png">
+      <Link>Images\Symbols\35.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\36.png">
+      <Link>Images\Symbols\36.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\37.png">
+      <Link>Images\Symbols\37.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\38.png">
+      <Link>Images\Symbols\38.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\39.png">
+      <Link>Images\Symbols\39.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\40.png">
+      <Link>Images\Symbols\40.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\41.png">
+      <Link>Images\Symbols\41.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\42.png">
+      <Link>Images\Symbols\42.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\43.png">
+      <Link>Images\Symbols\43.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\44.png">
+      <Link>Images\Symbols\44.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\45.png">
+      <Link>Images\Symbols\45.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\46.png">
+      <Link>Images\Symbols\46.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\47.png">
+      <Link>Images\Symbols\47.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\48.png">
+      <Link>Images\Symbols\48.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\49.png">
+      <Link>Images\Symbols\49.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\50.png">
+      <Link>Images\Symbols\50.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\51.png">
+      <Link>Images\Symbols\51.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\52.png">
+      <Link>Images\Symbols\52.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\53.png">
+      <Link>Images\Symbols\53.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\54.png">
+      <Link>Images\Symbols\54.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\55.png">
+      <Link>Images\Symbols\55.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\56.png">
+      <Link>Images\Symbols\56.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\57.png">
+      <Link>Images\Symbols\57.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\58.png">
+      <Link>Images\Symbols\58.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\59.png">
+      <Link>Images\Symbols\59.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\60.png">
+      <Link>Images\Symbols\60.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\61.png">
+      <Link>Images\Symbols\61.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\62.png">
+      <Link>Images\Symbols\62.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols\63.png">
+      <Link>Images\Symbols\63.png</Link>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -93,5 +297,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Farore.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Rings\" />
   </ItemGroup>
 </Project>

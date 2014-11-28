@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <stetic-interface>
   <configuration>
-    <images-root-path>../../OracleGtk</images-root-path>
+    <images-root-path>..</images-root-path>
     <target-gtk-version>2.12</target-gtk-version>
   </configuration>
   <import>
@@ -11,7 +11,7 @@
   <widget class="Gtk.Window" id="Zyrenth.OracleGtk.SaveEditor" design-size="280 262">
     <property name="MemberName" />
     <property name="Title" translatable="yes">SaveEditor</property>
-    <property name="Icon">resource:Zyrenth.OracleGtk.Resources.Farore.gif</property>
+    <property name="Icon">resource:Zyrenth.OracleGtk.Images.Characters.Farore.gif</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="BorderWidth">10</property>
     <property name="Resizable">False</property>
@@ -80,7 +80,7 @@
                         <child>
                           <widget class="Gtk.Image" id="image1">
                             <property name="MemberName" />
-                            <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.Nayru.gif</property>
+                            <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Characters.Nayru.gif</property>
                           </widget>
                           <packing>
                             <property name="AutoSize">True</property>
@@ -97,7 +97,7 @@
                         <child>
                           <widget class="Gtk.Image" id="image2">
                             <property name="MemberName" />
-                            <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.Din.gif</property>
+                            <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Characters.Din.gif</property>
                           </widget>
                           <packing>
                             <property name="TopAttach">1</property>
@@ -118,6 +118,7 @@
                             <property name="MemberName" />
                             <property name="CanFocus">True</property>
                             <property name="Label" translatable="yes">Ages</property>
+                            <property name="Active">True</property>
                             <property name="DrawIndicator">True</property>
                             <property name="HasLabel">True</property>
                             <property name="UseUnderline">True</property>
@@ -202,6 +203,7 @@
                             <property name="MemberName" />
                             <property name="CanFocus">True</property>
                             <property name="Label" translatable="yes">Linked Quest</property>
+                            <property name="Active">True</property>
                             <property name="DrawIndicator">True</property>
                             <property name="HasLabel">True</property>
                             <property name="UseUnderline">True</property>
@@ -591,7 +593,7 @@ Moosh</property>
   <widget class="Gtk.Window" id="Zyrenth.OracleGtk.DecoderForm" design-size="644 300">
     <property name="MemberName" />
     <property name="Title" translatable="yes">DecoderForm</property>
-    <property name="Icon">resource:Zyrenth.OracleGtk.Resources.Farore.gif</property>
+    <property name="Icon">resource:Zyrenth.OracleGtk.Images.Characters.Farore.gif</property>
     <property name="WindowPosition">CenterOnParent</property>
     <child>
       <widget class="Gtk.HBox" id="hbox1">
@@ -1105,7 +1107,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image3">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.00.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.00.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1129,7 +1131,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image13">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.09.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.09.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1155,7 +1157,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image14">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.10.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.10.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1181,7 +1183,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image15">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.11.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.11.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1207,7 +1209,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image16">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.12.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.12.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1233,7 +1235,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image17">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.13.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.13.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1259,7 +1261,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image4">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.14.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.14.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1287,7 +1289,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image18">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.15.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.15.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1315,7 +1317,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image19">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.16.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.16.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1343,7 +1345,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image20">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.17.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.17.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1371,7 +1373,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image21">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.18.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.18.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1399,7 +1401,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image5">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.01.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.01.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1425,7 +1427,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image22">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.20.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.20.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1453,7 +1455,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image23">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.19.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.19.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1481,7 +1483,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image24">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.21.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.21.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1509,7 +1511,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image25">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.22.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.22.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1537,7 +1539,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image26">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.23.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.23.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1565,7 +1567,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image27">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.24.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.24.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1593,7 +1595,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image28">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.25.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.25.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1621,7 +1623,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image29">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.26.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.26.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1647,7 +1649,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image30">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.27.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.27.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1675,7 +1677,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image31">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.28.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.28.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1703,7 +1705,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image6">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.02.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.02.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1729,7 +1731,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image32">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.29.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.29.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1757,7 +1759,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image33">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.30.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.30.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1785,7 +1787,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image34">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.31.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.31.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1813,7 +1815,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image35">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.32.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.32.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1841,7 +1843,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image37">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.33.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.33.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1869,7 +1871,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image38">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.34.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.34.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1897,7 +1899,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image39">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.35.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.35.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1925,7 +1927,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image40">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.36.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.36.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1953,7 +1955,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image41">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.37.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.37.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -1981,7 +1983,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image7">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.03.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.03.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2007,7 +2009,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image42">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.38.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.38.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2033,7 +2035,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image43">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.39.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.39.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2061,7 +2063,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image44">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.40.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.40.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2089,7 +2091,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image45">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.41.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.41.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2117,7 +2119,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image46">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.42.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.42.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2145,7 +2147,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image47">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.43.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.43.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2173,7 +2175,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image48">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.44.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.44.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2201,7 +2203,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image49">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.45.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.45.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2229,7 +2231,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image50">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.46.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.46.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2257,7 +2259,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image51">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.47.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.47.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2285,7 +2287,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image8">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.04.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.04.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2311,7 +2313,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image52">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.48.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.48.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2339,7 +2341,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image53">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.49.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.49.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2367,7 +2369,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image54">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.50.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.50.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2395,7 +2397,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image55">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.51.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.51.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2421,7 +2423,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image56">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.52.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.52.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2449,7 +2451,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image57">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.53.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.53.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2477,7 +2479,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image58">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.54.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.54.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2505,7 +2507,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image59">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.55.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.55.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2533,7 +2535,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image60">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.56.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.56.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2561,7 +2563,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image61">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.57.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.57.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2589,7 +2591,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image9">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.05.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.05.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2615,7 +2617,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image62">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.58.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.58.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2643,7 +2645,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image63">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.59.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.59.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2671,7 +2673,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image64">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.60.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.60.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2699,7 +2701,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image65">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.61.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.61.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2727,7 +2729,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image66">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.62.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.62.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2755,7 +2757,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image67">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.63.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.63.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2783,7 +2785,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image10">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.06.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.06.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2809,7 +2811,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image11">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.07.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.07.png</property>
                       </widget>
                     </child>
                   </widget>
@@ -2835,7 +2837,7 @@ Moosh</property>
                     <child>
                       <widget class="Gtk.Image" id="image12">
                         <property name="MemberName" />
-                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Resources.08.png</property>
+                        <property name="Pixbuf">resource:Zyrenth.OracleGtk.Images.Symbols.08.png</property>
                       </widget>
                     </child>
                   </widget>
