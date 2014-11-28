@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -30,6 +30,9 @@
     <ConsolePause>false</ConsolePause>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Farore.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="Mono.Posix" />
@@ -56,84 +59,21 @@
     <EmbeddedResource Include="gtk-gui\gui.stetic">
       <LogicalName>gui.stetic</LogicalName>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Dimitri.gif" />
-    <EmbeddedResource Include="Resources\Din.gif">
-      <DeployService-UseProjectRelativePath>true</DeployService-UseProjectRelativePath>
+    <EmbeddedResource Include="..\Images\Characters\*">
+      <Link>Images\Characters\%(FileName)%(Extension)</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Farore.gif" />
-    <EmbeddedResource Include="Resources\Moosh.gif" />
-    <EmbeddedResource Include="Resources\Nayru.gif">
-      <DeployService-UseProjectRelativePath>true</DeployService-UseProjectRelativePath>
+    <EmbeddedResource Include="..\Images\Rings\*">
+      <Link>Images\Rings\%(FileName)%(Extension)</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Ricky.gif" />
-    <EmbeddedResource Include="Resources\Seed_Ages.gif" />
-    <EmbeddedResource Include="Resources\Seed_Seasons.gif" />
-    <EmbeddedResource Include="Resources\Zelda.gif" />
-    <EmbeddedResource Include="Resources\00.png" />
-    <EmbeddedResource Include="Resources\01.png" />
-    <EmbeddedResource Include="Resources\02.png" />
-    <EmbeddedResource Include="Resources\03.png" />
-    <EmbeddedResource Include="Resources\04.png" />
-    <EmbeddedResource Include="Resources\05.png" />
-    <EmbeddedResource Include="Resources\06.png" />
-    <EmbeddedResource Include="Resources\07.png" />
-    <EmbeddedResource Include="Resources\08.png" />
-    <EmbeddedResource Include="Resources\09.png" />
-    <EmbeddedResource Include="Resources\10.png" />
-    <EmbeddedResource Include="Resources\11.png" />
-    <EmbeddedResource Include="Resources\12.png" />
-    <EmbeddedResource Include="Resources\13.png" />
-    <EmbeddedResource Include="Resources\14.png" />
-    <EmbeddedResource Include="Resources\15.png" />
-    <EmbeddedResource Include="Resources\16.png" />
-    <EmbeddedResource Include="Resources\17.png" />
-    <EmbeddedResource Include="Resources\18.png" />
-    <EmbeddedResource Include="Resources\19.png" />
-    <EmbeddedResource Include="Resources\20.png" />
-    <EmbeddedResource Include="Resources\21.png" />
-    <EmbeddedResource Include="Resources\22.png" />
-    <EmbeddedResource Include="Resources\23.png" />
-    <EmbeddedResource Include="Resources\24.png" />
-    <EmbeddedResource Include="Resources\25.png" />
-    <EmbeddedResource Include="Resources\26.png" />
-    <EmbeddedResource Include="Resources\27.png" />
-    <EmbeddedResource Include="Resources\28.png" />
-    <EmbeddedResource Include="Resources\29.png" />
-    <EmbeddedResource Include="Resources\30.png" />
-    <EmbeddedResource Include="Resources\31.png" />
-    <EmbeddedResource Include="Resources\32.png" />
-    <EmbeddedResource Include="Resources\33.png" />
-    <EmbeddedResource Include="Resources\34.png" />
-    <EmbeddedResource Include="Resources\35.png" />
-    <EmbeddedResource Include="Resources\36.png" />
-    <EmbeddedResource Include="Resources\37.png" />
-    <EmbeddedResource Include="Resources\38.png" />
-    <EmbeddedResource Include="Resources\39.png" />
-    <EmbeddedResource Include="Resources\40.png" />
-    <EmbeddedResource Include="Resources\41.png" />
-    <EmbeddedResource Include="Resources\42.png" />
-    <EmbeddedResource Include="Resources\43.png" />
-    <EmbeddedResource Include="Resources\44.png" />
-    <EmbeddedResource Include="Resources\45.png" />
-    <EmbeddedResource Include="Resources\46.png" />
-    <EmbeddedResource Include="Resources\47.png" />
-    <EmbeddedResource Include="Resources\48.png" />
-    <EmbeddedResource Include="Resources\49.png" />
-    <EmbeddedResource Include="Resources\50.png" />
-    <EmbeddedResource Include="Resources\51.png" />
-    <EmbeddedResource Include="Resources\52.png" />
-    <EmbeddedResource Include="Resources\53.png" />
-    <EmbeddedResource Include="Resources\54.png" />
-    <EmbeddedResource Include="Resources\55.png" />
-    <EmbeddedResource Include="Resources\56.png" />
-    <EmbeddedResource Include="Resources\57.png" />
-    <EmbeddedResource Include="Resources\58.png" />
-    <EmbeddedResource Include="Resources\59.png" />
-    <EmbeddedResource Include="Resources\60.png" />
-    <EmbeddedResource Include="Resources\61.png" />
-    <EmbeddedResource Include="Resources\62.png" />
-    <EmbeddedResource Include="Resources\63.png" />
-    <EmbeddedResource Include="Resources\Farore.ico" />
+    <EmbeddedResource Include="..\Images\Symbols\*">
+      <Link>Images\Symbols\%(FileName)%(Extension)</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Seed_Ages.gif">
+      <Link>Images\Seed_Ages.gif</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Seed_Seasons.gif">
+      <Link>Images\Seed_Seasons.gif</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
@@ -150,5 +90,8 @@
       <Project>{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}</Project>
       <Name>OracleHack</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Farore.ico" />
   </ItemGroup>
 </Project>

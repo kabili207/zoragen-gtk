@@ -36,17 +36,17 @@ namespace Zyrenth.OracleGtk
 
 		protected void OnCmbAnimalChanged(object sender, System.EventArgs e)
 		{
-			AnimalType animal = AnimalType.None;
-			Enum.TryParse<AnimalType>(cmbAnimal.ActiveText, out animal);
+			VbaAnimalType animal = VbaAnimalType.None;
+			Enum.TryParse<VbaAnimalType>(cmbAnimal.ActiveText, out animal);
 			switch (animal)
 			{
-				case AnimalType.Ricky:
+				case VbaAnimalType.Ricky:
 					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Ricky.gif");
 					break;
-				case AnimalType.Dimitri:
+				case VbaAnimalType.Dimitri:
 					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Dimitri.gif");
 					break;
-				case AnimalType.Moosh:
+				case VbaAnimalType.Moosh:
 					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Resources.Moosh.gif");
 					break;
 				default:
