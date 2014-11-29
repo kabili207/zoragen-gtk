@@ -36,22 +36,28 @@ namespace Zyrenth.OracleGtk
 
 		protected void OnCmbAnimalChanged(object sender, System.EventArgs e)
 		{
-			VbaAnimalType animal = VbaAnimalType.None;
-			Enum.TryParse<VbaAnimalType>(cmbAnimal.ActiveText, out animal);
-			switch (animal)
+			Animal animal;
+			if(!Enum.TryParse<Animal>(cmbAnimal.ActiveText, out animal))
 			{
-				case VbaAnimalType.Ricky:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Ricky.gif");
-					break;
-				case VbaAnimalType.Dimitri:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Dimitri.gif");
-					break;
-				case VbaAnimalType.Moosh:
-					imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Moosh.gif");
-					break;
-				default:
-					imgAnimal.Pixbuf = null;
-					break;
+				imgAnimal.Pixbuf = null;
+			}
+			else
+			{
+				switch (animal)
+				{
+					case Animal.Ricky:
+						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Ricky.gif");
+						break;
+					case Animal.Dimitri:
+						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Dimitri.gif");
+						break;
+					case Animal.Moosh:
+						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleGtk.Images.Characters.Moosh.gif");
+						break;
+					default:
+						imgAnimal.Pixbuf = null;
+						break;
+				}
 			}
 		}
 	}
