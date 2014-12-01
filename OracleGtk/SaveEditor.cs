@@ -1,8 +1,7 @@
 using System;
 using Gtk;
-using Zyrenth.OracleHack;
 
-namespace Zyrenth.OracleGtk
+namespace Zyrenth.OracleHack.GtkUI
 {
 	public partial class SaveEditor : Gtk.Window
 	{
@@ -26,18 +25,18 @@ namespace Zyrenth.OracleGtk
 
 		protected void OnBtnRingsClicked(object sender, System.EventArgs e)
 		{
-			throw new System.NotImplementedException();
+
 		}
 
 		protected void OnBtnEncodeClicked(object sender, System.EventArgs e)
 		{
-			throw new System.NotImplementedException();
+
 		}
 
 		protected void OnCmbAnimalChanged(object sender, System.EventArgs e)
 		{
 			Animal animal;
-			if(!Enum.TryParse<Animal>(cmbAnimal.ActiveText, out animal))
+			if (!Enum.TryParse<Animal>(cmbAnimal.ActiveText, out animal))
 			{
 				imgAnimal.Pixbuf = null;
 			}
@@ -60,6 +59,48 @@ namespace Zyrenth.OracleGtk
 				}
 			}
 		}
+
+		protected void OnNew(object sender, EventArgs e)
+		{
+
+		}
+
+		protected void OnOpen(object sender, EventArgs e)
+		{
+
+		}
+
+		protected void OnSave(object sender, EventArgs e)
+		{
+
+		}
+
+		protected void OnSaveAs(object sender, EventArgs e)
+		{
+
+		}
+
+		protected void OnQuit(object sender, EventArgs e)
+		{
+
+		}
+
+		protected void OnLoadGameSecret(object sender, EventArgs e)
+		{
+
+		}
+
+		protected void OnLoadRingSecret(object sender, EventArgs e)
+		{
+
+		}
+
+		protected void OnGenerateSecrets(object sender, EventArgs e)
+		{
+
+		}
+
+
 	}
 }
 

@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Zyrenth.OracleGtk</RootNamespace>
+    <RootNamespace>Zyrenth.OracleHack.GtkUI</RootNamespace>
     <AssemblyName>OracleGtk</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -284,9 +284,12 @@
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="SaveEditor.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleGtk.SaveEditor.cs" />
     <Compile Include="DecoderForm.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleGtk.DecoderForm.cs" />
+    <Compile Include="SecretWidget.cs" />
+    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.SaveEditor.cs" />
+    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.SecretWidget.cs" />
+    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.DecoderForm.cs" />
+    <Compile Include="MessageBox.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -300,5 +303,199 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Rings\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Images\Rings\ArmorRingL1.gif">
+      <Link>Images\Rings\ArmorRingL1.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\ArmorRingL2.gif">
+      <Link>Images\Rings\ArmorRingL2.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\ArmorRingL3.gif">
+      <Link>Images\Rings\ArmorRingL3.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\BlastRing.gif">
+      <Link>Images\Rings\BlastRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\BlueHolyRing.gif">
+      <Link>Images\Rings\BlueHolyRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\BlueJoyRing.gif">
+      <Link>Images\Rings\BlueJoyRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\BlueLuckRing.gif">
+      <Link>Images\Rings\BlueLuckRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\BlueRing.gif">
+      <Link>Images\Rings\BlueRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\BombersRing.gif">
+      <Link>Images\Rings\BombersRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\BombproofRing.gif">
+      <Link>Images\Rings\BombproofRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\ChargeRing.gif">
+      <Link>Images\Rings\ChargeRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\CursedRing.gif">
+      <Link>Images\Rings\CursedRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\DiscoveryRing.gif">
+      <Link>Images\Rings\DiscoveryRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\DoubleEdgeRing.gif">
+      <Link>Images\Rings\DoubleEdgeRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\EnergyRing.gif">
+      <Link>Images\Rings\EnergyRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\ExpertsRing.gif">
+      <Link>Images\Rings\ExpertsRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\FirstGenRing.gif">
+      <Link>Images\Rings\FirstGenRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\FistRing.gif">
+      <Link>Images\Rings\FistRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\FriendshipRing.gif">
+      <Link>Images\Rings\FriendshipRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GBANatureRing.gif">
+      <Link>Images\Rings\GBANatureRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GBATimeRing.gif">
+      <Link>Images\Rings\GBATimeRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GashaRing.gif">
+      <Link>Images\Rings\GashaRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GoldJoyRing.gif">
+      <Link>Images\Rings\GoldJoyRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GoldLuckRing.gif">
+      <Link>Images\Rings\GoldLuckRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GreenHolyRing.gif">
+      <Link>Images\Rings\GreenHolyRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GreenJoyRing.gif">
+      <Link>Images\Rings\GreenJoyRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GreenLuckRing.gif">
+      <Link>Images\Rings\GreenLuckRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\GreenRing.gif">
+      <Link>Images\Rings\GreenRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\HeartRingL1.gif">
+      <Link>Images\Rings\HeartRingL1.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\HeartRingL2.gif">
+      <Link>Images\Rings\HeartRingL2.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\HundredthRing.gif">
+      <Link>Images\Rings\HundredthRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\LightRingL1.gif">
+      <Link>Images\Rings\LightRingL1.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\LightRingL2.gif">
+      <Link>Images\Rings\LightRingL2.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\LikeLikeRing.gif">
+      <Link>Images\Rings\LikeLikeRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\MaplesRing.gif">
+      <Link>Images\Rings\MaplesRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\MoblinRing.gif">
+      <Link>Images\Rings\MoblinRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\OctoRing.gif">
+      <Link>Images\Rings\OctoRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\PeaceRing.gif">
+      <Link>Images\Rings\PeaceRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\PegasusRing.gif">
+      <Link>Images\Rings\PegasusRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\PowerRingL1.gif">
+      <Link>Images\Rings\PowerRingL1.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\PowerRingL2.gif">
+      <Link>Images\Rings\PowerRingL2.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\PowerRingL3.gif">
+      <Link>Images\Rings\PowerRingL3.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\ProtectionRing.gif">
+      <Link>Images\Rings\ProtectionRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\QuicksandRing.gif">
+      <Link>Images\Rings\QuicksandRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\RangRingL1.gif">
+      <Link>Images\Rings\RangRingL1.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\RangRingL2.gif">
+      <Link>Images\Rings\RangRingL2.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\RedHolyRing.gif">
+      <Link>Images\Rings\RedHolyRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\RedJoyRing.gif">
+      <Link>Images\Rings\RedJoyRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\RedLuckRing.gif">
+      <Link>Images\Rings\RedLuckRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\RedRing.gif">
+      <Link>Images\Rings\RedRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\RocsRing.gif">
+      <Link>Images\Rings\RocsRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\RupeeRing.gif">
+      <Link>Images\Rings\RupeeRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\SignRing.gif">
+      <Link>Images\Rings\SignRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\SlayersRing.gif">
+      <Link>Images\Rings\SlayersRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\SnowshoeRing.gif">
+      <Link>Images\Rings\SnowshoeRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\SpinRing.gif">
+      <Link>Images\Rings\SpinRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\SteadfastRing.gif">
+      <Link>Images\Rings\SteadfastRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\SubrosianRing.gif">
+      <Link>Images\Rings\SubrosianRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\SwimmersRing.gif">
+      <Link>Images\Rings\SwimmersRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\TossRing.gif">
+      <Link>Images\Rings\TossRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\VictoryRing.gif">
+      <Link>Images\Rings\VictoryRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\WhimsicalRing.gif">
+      <Link>Images\Rings\WhimsicalRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\WhispRing.gif">
+      <Link>Images\Rings\WhispRing.gif</Link>
+    </None>
+    <None Include="..\Images\Rings\ZoraRing.gif">
+      <Link>Images\Rings\ZoraRing.gif</Link>
+    </None>
   </ItemGroup>
 </Project>

@@ -8,8 +8,8 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("")]
-[assembly: AssemblyCopyright("anagle")]
+[assembly: AssemblyProduct("OracleGtk")]
+[assembly: AssemblyCopyright("Copyright © Andrew \"Kabili\" Nagle 2013")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

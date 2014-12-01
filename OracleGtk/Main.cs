@@ -1,7 +1,7 @@
 using System;
 using Gtk;
 
-namespace Zyrenth.OracleGtk
+namespace Zyrenth.OracleHack.GtkUI
 {
 	class MainClass
 	{
