@@ -294,6 +294,8 @@
     <Compile Include="SmallSecretWidget.cs" />
     <Compile Include="LargeSecretWidget.cs" />
     <Compile Include="BinContainer.cs" />
+    <Compile Include="FilePreviewWidget.cs" />
+    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.FilePreviewWidget.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

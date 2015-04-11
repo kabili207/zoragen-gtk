@@ -63,7 +63,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
 
-			if(dialog.Run() == (int)Gtk.ResponseType.Ok)
+			if (dialog.Run() == (int)Gtk.ResponseType.Ok)
 				_info = dialog.GameInfo;
 			dialog.Destroy();
 		}
@@ -257,6 +257,10 @@ namespace Zyrenth.OracleHack.GtkUI
 			filter.AddPattern("*.zora");
 			fc.AddFilter(filter);
 
+			fc.PreviewWidget = new FilePreviewWidget();
+			fc.PreviewWidgetActive = false;
+			fc.UpdatePreview += OnUpdatePreview;
+
 			if (fc.Run() == (int)ResponseType.Accept)
 			{
 				using (System.IO.FileStream file = System.IO.File.OpenRead(fc.Filename))
@@ -282,6 +286,33 @@ namespace Zyrenth.OracleHack.GtkUI
 			var dialog = new ViewSecretsDialog(_info);
 			dialog.Run();
 			dialog.Destroy();
+		}
+
+		private void OnUpdatePreview(object sender, EventArgs e)
+		{
+			var chooser = sender as Gtk.FileChooserDialog;
+			if (chooser != null)
+			{
+				if (chooser.PreviewWidget is FilePreviewWidget)
+				{
+					try
+					{
+						using (System.IO.FileStream file = System.IO.File.OpenRead(chooser.PreviewFilename))
+						{
+							((FilePreviewWidget)chooser.PreviewWidget).GameInfo = GameInfo.Load(file);
+							chooser.PreviewWidgetActive = true;
+						}
+					}
+					catch
+					{
+						chooser.PreviewWidgetActive = false;
+					}
+				}
+				else
+				{
+					chooser.PreviewWidgetActive = false;
+				}
+			}
 		}
 	}
 }
