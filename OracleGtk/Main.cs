@@ -8,7 +8,7 @@ namespace Zyrenth.OracleHack.GtkUI
 		public static void Main(string[] args)
 		{
 			Application.Init();
-			SaveEditor win = new SaveEditor();
+			MainWindow win = new MainWindow();
 			win.Show();
 			Application.Run();
 		}

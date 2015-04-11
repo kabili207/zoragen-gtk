@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Zyrenth.OracleHack.GtkUI
 {
-	public partial class DecoderForm : Gtk.Window
+	public partial class DecoderForm : Gtk.Dialog
 	{
 		private byte[] data;
 		private int currentPic;
@@ -29,8 +29,7 @@ namespace Zyrenth.OracleHack.GtkUI
 		{
 		}
 		
-		public DecoderForm(SecretType mode) : 
-			base(Gtk.WindowType.Toplevel)
+		public DecoderForm(SecretType mode)
 		{
 			this.Build();
 			switch (mode)
@@ -87,12 +86,17 @@ namespace Zyrenth.OracleHack.GtkUI
 
 		protected void OnBtnDoneClicked(object sender, EventArgs e)
 		{
+
+		}
+
+		protected void OnButtonOkClicked(object sender, EventArgs e)
+		{
 			try
 			{
 				if (GameInfo == null)
 					GameInfo = new GameInfo();
 				var trimmedData = data.Take(currentPic.Clamp(0, _secretLength)).ToArray();
-				
+
 				switch (Mode)
 				{
 					case SecretType.Game:
@@ -105,7 +109,7 @@ namespace Zyrenth.OracleHack.GtkUI
 						GameInfo.ReadMemorySecret(trimmedData);
 						break;
 				}
-				
+
 				//this.Close();
 			}
 			catch (InvalidSecretException ex)

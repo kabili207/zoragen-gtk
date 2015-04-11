@@ -3,8 +3,6 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Zyrenth.OracleHack.GtkUI</RootNamespace>
@@ -40,7 +38,7 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <Package>gdk-sharp-2.0</Package>
+      <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <Package>glib-sharp-2.0</Package>
@@ -49,11 +47,12 @@
       <Package>glade-sharp-2.0</Package>
     </Reference>
     <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <Package>pango-sharp-2.0</Package>
+      <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
-      <Package>atk-sharp-2.0</Package>
+      <Package>gtk-sharp-2.0</Package>
     </Reference>
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -278,18 +277,23 @@
     <EmbeddedResource Include="..\Images\Symbols\63.png">
       <Link>Images\Symbols\63.png</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="Farore.ico" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="SaveEditor.cs" />
     <Compile Include="DecoderForm.cs" />
-    <Compile Include="SecretWidget.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.SaveEditor.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.SecretWidget.cs" />
     <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.DecoderForm.cs" />
     <Compile Include="MessageBox.cs" />
+    <Compile Include="ViewSecretsDialog.cs" />
+    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.ViewSecretsDialog.cs" />
+    <Compile Include="MainWindow.cs" />
+    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.MainWindow.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="SmallSecretWidget.cs" />
+    <Compile Include="LargeSecretWidget.cs" />
+    <Compile Include="BinContainer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -297,9 +301,6 @@
       <Project>{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}</Project>
       <Name>OracleHack</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Farore.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Rings\" />
