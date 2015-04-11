@@ -4,8 +4,9 @@ using System.Runtime.CompilerServices;
 // Information about this assembly is defined by the following attributes. 
 // Change them to the values specific to your project.
 
-[assembly: AssemblyTitle("Oracleo of Secrets")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Oracle of Secrets")]
+[assembly: AssemblyDescription("A secret decoder and generator for the Legend of Zelda " +
+	"Oracle of Ages and Oracle of Seasons video games")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Oracle of Secrets")]

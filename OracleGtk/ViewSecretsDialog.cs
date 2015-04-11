@@ -67,9 +67,9 @@ namespace Zyrenth.OracleHack.GtkUI
 			}
 		}
 
-		protected void OnButtonOkClicked(object sender, EventArgs e)
+		protected void OnButtonOkPressed(object sender, EventArgs e)
 		{
-			this.Destroy();
+			this.Respond(Gtk.ResponseType.Ok);
 		}
 	}
 }

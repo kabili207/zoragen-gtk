@@ -46,7 +46,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			}
 			data = new byte[_secretLength];
 			Mode = mode;
-			//chkAppendRings.Visibility = Mode == SecretType.Ring ? Visibility.Visible : Visibility.Collapsed;
+			chkAppendRings.Visible = Mode == SecretType.Ring;
 		}
 
 		protected void OnSymbolClicked(object sender, EventArgs e)
@@ -56,6 +56,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			{
 				string num = Regex.Replace(ctl.Name, @"\D", "");
 				byte id = byte.Parse(num);
+				id--;
 				
 				if (currentPic >= _secretLength)
 				{
@@ -68,6 +69,8 @@ namespace Zyrenth.OracleHack.GtkUI
 					currentPic++;
 					secretwidget1.SetSecret(data.Take(currentPic).ToArray());
 				}
+
+				txtSymbols.Text = GameInfo.ByteArrayToSecretString(data.Take(currentPic).ToArray());
 			}
 		}
 
@@ -75,6 +78,7 @@ namespace Zyrenth.OracleHack.GtkUI
 		{
 			secretwidget1.Reset();
 			currentPic = 0;
+			txtSymbols.Text = GameInfo.ByteArrayToSecretString(data.Take(currentPic).ToArray());
 		}
 
 		protected void OnBtnBackClicked(object sender, EventArgs e)
@@ -82,14 +86,10 @@ namespace Zyrenth.OracleHack.GtkUI
 			if (currentPic > 0)
 				currentPic--;
 			secretwidget1.SetSecret(data.Take(currentPic).ToArray());
+			txtSymbols.Text = GameInfo.ByteArrayToSecretString(data.Take(currentPic).ToArray());
 		}
 
-		protected void OnBtnDoneClicked(object sender, EventArgs e)
-		{
-
-		}
-
-		protected void OnButtonOkClicked(object sender, EventArgs e)
+		protected void OnButtonOkPressed(object sender, EventArgs e)
 		{
 			try
 			{
@@ -110,7 +110,7 @@ namespace Zyrenth.OracleHack.GtkUI
 						break;
 				}
 
-				//this.Close();
+				this.Respond(ResponseType.Ok);
 			}
 			catch (InvalidSecretException ex)
 			{
@@ -120,6 +120,39 @@ namespace Zyrenth.OracleHack.GtkUI
 			{
 				MessageBox.Show(ex.Message, "Error", ButtonsType.Ok, MessageType.Error);
 			}
+		}
+
+		protected void OnButtonCancelPressed(object sender, EventArgs e)
+		{
+			this.Respond(ResponseType.Cancel);
+		}
+
+		protected void OnTxtSymbolsChanged(object sender, EventArgs e)
+		{
+			if(notebook1.CurrentPage != 1)
+				return;
+
+			try
+			{
+				byte[] parsedSecret = GameInfo.SecretStringToByteArray(txtSymbols.Text);
+				byte[] trimmedData = parsedSecret.Take(parsedSecret.Length.Clamp(0, _secretLength)).ToArray();
+
+				secretwidget1.SetSecret(trimmedData);
+
+				for (int i = 0; i < trimmedData.Length; ++i)
+				{
+					data[i] = trimmedData[i];
+				}
+
+				currentPic = (trimmedData.Length).Clamp(0, _secretLength);
+
+			}
+			catch (InvalidSecretException) { }
+		}
+
+		protected void OnNotebook1SwitchPage(object o, SwitchPageArgs args)
+		{
+			txtSymbols.Text = GameInfo.ByteArrayToSecretString(data.Take(currentPic).ToArray());
 		}
 
 	}

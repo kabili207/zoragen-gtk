@@ -28,55 +28,28 @@ namespace Zyrenth.OracleHack.GtkUI
 			a.RetVal = true;
 		}
 
-		protected void OnBtnRingsClicked(object sender, System.EventArgs e)
-		{
-
-		}
-
-		protected void OnBtnEncodeClicked(object sender, System.EventArgs e)
-		{
-
-		}
-
 		protected void OnNew(object sender, EventArgs e)
 		{
-
+			_info = new GameInfo();
+			_currentFile = null;
 		}
 
 		protected void OnOpen(object sender, EventArgs e)
 		{
-			Gtk.FileChooserDialog fc =
-				new Gtk.FileChooserDialog("Choose the file to open",
-					this,
-					FileChooserAction.Open,
-					"Cancel", ResponseType.Cancel,
-					"Open", ResponseType.Accept);
-			var filter = new FileFilter();
-			filter.Name = "Zora Files";
-			filter.AddPattern("*.zora");
-			fc.AddFilter(filter);
-
-			if (fc.Run() == (int)ResponseType.Accept)
-			{
-				using (System.IO.FileStream file = System.IO.File.OpenRead(fc.Filename))
-				{
-					_info = GameInfo.Load(file);
-					_currentFile = fc.Filename;
-					SetControlValues();
-				}
-			}
-			//Don't forget to call Destroy() or the FileChooserDialog window won't get closed.
-			fc.Destroy();
+			OpenFile();
 		}
 
 		protected void OnSave(object sender, EventArgs e)
 		{
-
+			if (string.IsNullOrWhiteSpace(_currentFile))
+				SaveAsFile();
+			else
+				SaveFile();
 		}
 
 		protected void OnSaveAs(object sender, EventArgs e)
 		{
-
+			SaveAsFile();
 		}
 
 		protected void OnQuit(object sender, EventArgs e)
@@ -89,8 +62,10 @@ namespace Zyrenth.OracleHack.GtkUI
 			var dialog = new DecoderForm(DecoderForm.SecretType.Game);
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
-			dialog.Show();
-			_info = dialog.GameInfo;
+
+			if(dialog.Run() == (int)Gtk.ResponseType.Ok)
+				_info = dialog.GameInfo;
+			dialog.Destroy();
 		}
 
 		protected void OnLoadRingSecret(object sender, EventArgs e)
@@ -98,21 +73,14 @@ namespace Zyrenth.OracleHack.GtkUI
 			var dialog = new DecoderForm(DecoderForm.SecretType.Ring);
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
-			dialog.Show();
+			dialog.Run();
+			// TODO: Do something?
+			dialog.Destroy();
 		}
 
 		protected void OnGenerateSecrets(object sender, EventArgs e)
 		{
-			GetControlValues();
-			if (_info.GameID == 0)
-			{
-				Random rnd = new Random();
-				_info.GameID = (short)rnd.Next(1, short.MaxValue);
-				spinID.Value = _info.GameID;
-			}
-			var dialog = new ViewSecretsDialog(_info);
-			dialog.Run();
-			dialog.Destroy();
+			GenerateSecrets();
 		}
 
 		protected void OnAbout(object sender, EventArgs e)
@@ -124,8 +92,7 @@ namespace Zyrenth.OracleHack.GtkUI
 
 			dialog.ProgramName = details.Product;
 			dialog.Version = details.ProductVersion;
-			dialog.Comments = "The Legend of Zelda is a trademark of Nintendo of America, Inc.\n" +
-			"Images used in this program are copyright their respective owners.";
+			dialog.Comments = details.Description;
 			dialog.Authors = new string [] { "Andrew Nagle" };
 			dialog.Website = "https://github.com/kabili207/oracle-hack-gtk";
 			dialog.Copyright = details.Copyright;
@@ -248,6 +215,73 @@ namespace Zyrenth.OracleHack.GtkUI
 						break;
 				}
 			}
+		}
+
+		private void SaveFile()
+		{
+			_info.Write(_currentFile);
+		}
+
+		private void SaveAsFile()
+		{
+			Gtk.FileChooserDialog fc =
+				new Gtk.FileChooserDialog("Choose the file to save",
+					this,
+					FileChooserAction.Save,
+					"Cancel", ResponseType.Cancel,
+					"Save", ResponseType.Accept);
+			var filter = new FileFilter();
+			filter.Name = "Zora Files";
+			filter.AddPattern("*.zora");
+			fc.AddFilter(filter);
+
+			if (fc.Run() == (int)ResponseType.Accept)
+			{
+				_info.Write(fc.Filename);
+				_currentFile = fc.Filename;
+			}
+			//Don't forget to call Destroy() or the FileChooserDialog window won't get closed.
+			fc.Destroy();
+		}
+
+		private void OpenFile()
+		{
+			Gtk.FileChooserDialog fc =
+				new Gtk.FileChooserDialog("Choose the file to open",
+					this,
+					FileChooserAction.Open,
+					"Cancel", ResponseType.Cancel,
+					"Open", ResponseType.Accept);
+			var filter = new FileFilter();
+			filter.Name = "Zora Files";
+			filter.AddPattern("*.zora");
+			fc.AddFilter(filter);
+
+			if (fc.Run() == (int)ResponseType.Accept)
+			{
+				using (System.IO.FileStream file = System.IO.File.OpenRead(fc.Filename))
+				{
+					_info = GameInfo.Load(file);
+					_currentFile = fc.Filename;
+					SetControlValues();
+				}
+			}
+			//Don't forget to call Destroy() or the FileChooserDialog window won't get closed.
+			fc.Destroy();
+		}
+
+		private void GenerateSecrets()
+		{
+			GetControlValues();
+			if (_info.GameID == 0)
+			{
+				Random rnd = new Random();
+				_info.GameID = (short)rnd.Next(1, short.MaxValue);
+				spinID.Value = _info.GameID;
+			}
+			var dialog = new ViewSecretsDialog(_info);
+			dialog.Run();
+			dialog.Destroy();
 		}
 	}
 }

@@ -422,7 +422,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.DefaultWidth = 295;
 			this.DefaultHeight = 326;
 			this.Show ();
-			this.buttonOk.Clicked += new global::System.EventHandler (this.OnButtonOkClicked);
+			this.buttonOk.Pressed += new global::System.EventHandler (this.OnButtonOkPressed);
 		}
 	}
 }

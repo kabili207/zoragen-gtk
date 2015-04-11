@@ -14,263 +14,277 @@ namespace Zyrenth.OracleHack.GtkUI
 		
 		private global::Zyrenth.OracleHack.GtkUI.LargeSecretWidget secretwidget1;
 		
+		private global::Gtk.Notebook notebook1;
+		
 		private global::Gtk.Table table1;
 		
-		private global::Gtk.Button button1;
+		private global::Gtk.Button btnSymbol1;
 		
 		private global::Gtk.Image image3;
 		
-		private global::Gtk.Button button10;
+		private global::Gtk.Button btnSymbol10;
 		
 		private global::Gtk.Image image13;
 		
-		private global::Gtk.Button button11;
+		private global::Gtk.Button btnSymbol11;
 		
 		private global::Gtk.Image image14;
 		
-		private global::Gtk.Button button12;
+		private global::Gtk.Button btnSymbol12;
 		
 		private global::Gtk.Image image15;
 		
-		private global::Gtk.Button button13;
+		private global::Gtk.Button btnSymbol13;
 		
 		private global::Gtk.Image image16;
 		
-		private global::Gtk.Button button14;
+		private global::Gtk.Button btnSymbol14;
 		
 		private global::Gtk.Image image17;
 		
-		private global::Gtk.Button button15;
+		private global::Gtk.Button btnSymbol15;
 		
 		private global::Gtk.Image image4;
 		
-		private global::Gtk.Button button16;
+		private global::Gtk.Button btnSymbol16;
 		
 		private global::Gtk.Image image18;
 		
-		private global::Gtk.Button button17;
+		private global::Gtk.Button btnSymbol17;
 		
 		private global::Gtk.Image image19;
 		
-		private global::Gtk.Button button18;
+		private global::Gtk.Button btnSymbol18;
 		
 		private global::Gtk.Image image20;
 		
-		private global::Gtk.Button button19;
+		private global::Gtk.Button btnSymbol19;
 		
 		private global::Gtk.Image image21;
 		
-		private global::Gtk.Button button2;
+		private global::Gtk.Button btnSymbol2;
 		
 		private global::Gtk.Image image5;
 		
-		private global::Gtk.Button button20;
-		
-		private global::Gtk.Image image22;
-		
-		private global::Gtk.Button button21;
+		private global::Gtk.Button btnSymbol20;
 		
 		private global::Gtk.Image image23;
 		
-		private global::Gtk.Button button22;
+		private global::Gtk.Button btnSymbol21;
+		
+		private global::Gtk.Image image22;
+		
+		private global::Gtk.Button btnSymbol22;
 		
 		private global::Gtk.Image image24;
 		
-		private global::Gtk.Button button23;
+		private global::Gtk.Button btnSymbol23;
 		
 		private global::Gtk.Image image25;
 		
-		private global::Gtk.Button button24;
+		private global::Gtk.Button btnSymbol24;
 		
 		private global::Gtk.Image image26;
 		
-		private global::Gtk.Button button25;
+		private global::Gtk.Button btnSymbol25;
 		
 		private global::Gtk.Image image27;
 		
-		private global::Gtk.Button button26;
+		private global::Gtk.Button btnSymbol26;
 		
 		private global::Gtk.Image image28;
 		
-		private global::Gtk.Button button27;
+		private global::Gtk.Button btnSymbol27;
 		
 		private global::Gtk.Image image29;
 		
-		private global::Gtk.Button button28;
+		private global::Gtk.Button btnSymbol28;
 		
 		private global::Gtk.Image image30;
 		
-		private global::Gtk.Button button29;
+		private global::Gtk.Button btnSymbol29;
 		
 		private global::Gtk.Image image31;
 		
-		private global::Gtk.Button button3;
+		private global::Gtk.Button btnSymbol3;
 		
 		private global::Gtk.Image image6;
 		
-		private global::Gtk.Button button30;
+		private global::Gtk.Button btnSymbol30;
 		
 		private global::Gtk.Image image32;
 		
-		private global::Gtk.Button button31;
+		private global::Gtk.Button btnSymbol31;
 		
 		private global::Gtk.Image image33;
 		
-		private global::Gtk.Button button32;
+		private global::Gtk.Button btnSymbol32;
 		
 		private global::Gtk.Image image34;
 		
-		private global::Gtk.Button button33;
+		private global::Gtk.Button btnSymbol33;
 		
 		private global::Gtk.Image image35;
 		
-		private global::Gtk.Button button35;
+		private global::Gtk.Button btnSymbol34;
 		
 		private global::Gtk.Image image37;
 		
-		private global::Gtk.Button button36;
+		private global::Gtk.Button btnSymbol35;
 		
 		private global::Gtk.Image image38;
 		
-		private global::Gtk.Button button37;
+		private global::Gtk.Button btnSymbol36;
 		
 		private global::Gtk.Image image39;
 		
-		private global::Gtk.Button button38;
+		private global::Gtk.Button btnSymbol37;
 		
 		private global::Gtk.Image image40;
 		
-		private global::Gtk.Button button39;
+		private global::Gtk.Button btnSymbol38;
 		
 		private global::Gtk.Image image41;
 		
-		private global::Gtk.Button button4;
-		
-		private global::Gtk.Image image7;
-		
-		private global::Gtk.Button button40;
+		private global::Gtk.Button btnSymbol39;
 		
 		private global::Gtk.Image image42;
 		
-		private global::Gtk.Button button41;
+		private global::Gtk.Button btnSymbol4;
+		
+		private global::Gtk.Image image7;
+		
+		private global::Gtk.Button btnSymbol40;
 		
 		private global::Gtk.Image image43;
 		
-		private global::Gtk.Button button42;
+		private global::Gtk.Button btnSymbol41;
 		
 		private global::Gtk.Image image44;
 		
-		private global::Gtk.Button button43;
+		private global::Gtk.Button btnSymbol42;
 		
 		private global::Gtk.Image image45;
 		
-		private global::Gtk.Button button44;
+		private global::Gtk.Button btnSymbol43;
 		
 		private global::Gtk.Image image46;
 		
-		private global::Gtk.Button button45;
+		private global::Gtk.Button btnSymbol44;
 		
 		private global::Gtk.Image image47;
 		
-		private global::Gtk.Button button46;
+		private global::Gtk.Button btnSymbol45;
 		
 		private global::Gtk.Image image48;
 		
-		private global::Gtk.Button button47;
+		private global::Gtk.Button btnSymbol46;
 		
 		private global::Gtk.Image image49;
 		
-		private global::Gtk.Button button48;
+		private global::Gtk.Button btnSymbol47;
 		
 		private global::Gtk.Image image50;
 		
-		private global::Gtk.Button button49;
+		private global::Gtk.Button btnSymbol48;
 		
 		private global::Gtk.Image image51;
 		
-		private global::Gtk.Button button5;
-		
-		private global::Gtk.Image image8;
-		
-		private global::Gtk.Button button50;
+		private global::Gtk.Button btnSymbol49;
 		
 		private global::Gtk.Image image52;
 		
-		private global::Gtk.Button button51;
+		private global::Gtk.Button btnSymbol5;
+		
+		private global::Gtk.Image image8;
+		
+		private global::Gtk.Button btnSymbol50;
 		
 		private global::Gtk.Image image53;
 		
-		private global::Gtk.Button button52;
+		private global::Gtk.Button btnSymbol51;
 		
 		private global::Gtk.Image image54;
 		
-		private global::Gtk.Button button53;
+		private global::Gtk.Button btnSymbol52;
 		
 		private global::Gtk.Image image55;
 		
-		private global::Gtk.Button button54;
+		private global::Gtk.Button btnSymbol53;
 		
 		private global::Gtk.Image image56;
 		
-		private global::Gtk.Button button55;
+		private global::Gtk.Button btnSymbol54;
 		
 		private global::Gtk.Image image57;
 		
-		private global::Gtk.Button button56;
+		private global::Gtk.Button btnSymbol55;
 		
 		private global::Gtk.Image image58;
 		
-		private global::Gtk.Button button57;
+		private global::Gtk.Button btnSymbol56;
 		
 		private global::Gtk.Image image59;
 		
-		private global::Gtk.Button button58;
+		private global::Gtk.Button btnSymbol57;
 		
 		private global::Gtk.Image image60;
 		
-		private global::Gtk.Button button59;
+		private global::Gtk.Button btnSymbol58;
 		
 		private global::Gtk.Image image61;
 		
-		private global::Gtk.Button button6;
-		
-		private global::Gtk.Image image9;
-		
-		private global::Gtk.Button button60;
+		private global::Gtk.Button btnSymbol59;
 		
 		private global::Gtk.Image image62;
 		
-		private global::Gtk.Button button61;
+		private global::Gtk.Button btnSymbol6;
+		
+		private global::Gtk.Image image9;
+		
+		private global::Gtk.Button btnSymbol60;
 		
 		private global::Gtk.Image image63;
 		
-		private global::Gtk.Button button62;
+		private global::Gtk.Button btnSymbol61;
 		
 		private global::Gtk.Image image64;
 		
-		private global::Gtk.Button button63;
+		private global::Gtk.Button btnSymbol62;
 		
 		private global::Gtk.Image image65;
 		
-		private global::Gtk.Button button64;
+		private global::Gtk.Button btnSymbol63;
 		
 		private global::Gtk.Image image66;
 		
-		private global::Gtk.Button button65;
+		private global::Gtk.Button btnSymbol64;
 		
 		private global::Gtk.Image image67;
 		
-		private global::Gtk.Button button7;
+		private global::Gtk.Button btnSymbol7;
 		
 		private global::Gtk.Image image10;
 		
-		private global::Gtk.Button button8;
+		private global::Gtk.Button btnSymbol8;
 		
 		private global::Gtk.Image image11;
 		
-		private global::Gtk.Button button9;
+		private global::Gtk.Button btnSymbol9;
 		
 		private global::Gtk.Image image12;
+		
+		private global::Gtk.Label label5;
+		
+		private global::Gtk.VBox vbox3;
+		
+		private global::Gtk.Entry txtSymbols;
+		
+		private global::Gtk.Label label7;
+		
+		private global::Gtk.Label label8;
+		
+		private global::Gtk.Label label6;
 		
 		private global::Gtk.HBox hbox2;
 		
@@ -286,7 +300,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Widget Zyrenth.OracleHack.GtkUI.DecoderForm
 			this.Name = "Zyrenth.OracleHack.GtkUI.DecoderForm";
 			this.Title = global::Mono.Unix.Catalog.GetString ("DecoderForm");
-			this.Icon = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Characters.Farore.gif");
+			this.Icon = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Farore.ico");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Internal child Zyrenth.OracleHack.GtkUI.DecoderForm.VBox
 			global::Gtk.VBox w1 = this.VBox;
@@ -344,107 +358,112 @@ namespace Zyrenth.OracleHack.GtkUI
 			w5.Expand = false;
 			w5.Fill = false;
 			// Container child vbox1.Gtk.Box+BoxChild
+			this.notebook1 = new global::Gtk.Notebook ();
+			this.notebook1.CanFocus = true;
+			this.notebook1.Name = "notebook1";
+			this.notebook1.CurrentPage = 1;
+			// Container child notebook1.Gtk.Notebook+NotebookChild
 			this.table1 = new global::Gtk.Table (((uint)(5)), ((uint)(13)), false);
 			this.table1.Name = "table1";
 			// Container child table1.Gtk.Table+TableChild
-			this.button1 = new global::Gtk.Button ();
-			this.button1.CanFocus = true;
-			this.button1.Name = "button1";
-			// Container child button1.Gtk.Container+ContainerChild
+			this.btnSymbol1 = new global::Gtk.Button ();
+			this.btnSymbol1.CanFocus = true;
+			this.btnSymbol1.Name = "btnSymbol1";
+			// Container child btnSymbol1.Gtk.Container+ContainerChild
 			this.image3 = new global::Gtk.Image ();
 			this.image3.Name = "image3";
 			this.image3.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.00.png");
-			this.button1.Add (this.image3);
-			this.table1.Add (this.button1);
-			global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table1 [this.button1]));
+			this.btnSymbol1.Add (this.image3);
+			this.table1.Add (this.btnSymbol1);
+			global::Gtk.Table.TableChild w7 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol1]));
 			w7.XOptions = ((global::Gtk.AttachOptions)(4));
 			w7.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button10 = new global::Gtk.Button ();
-			this.button10.CanFocus = true;
-			this.button10.Name = "button10";
-			// Container child button10.Gtk.Container+ContainerChild
+			this.btnSymbol10 = new global::Gtk.Button ();
+			this.btnSymbol10.CanFocus = true;
+			this.btnSymbol10.Name = "btnSymbol10";
+			// Container child btnSymbol10.Gtk.Container+ContainerChild
 			this.image13 = new global::Gtk.Image ();
 			this.image13.Name = "image13";
 			this.image13.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.09.png");
-			this.button10.Add (this.image13);
-			this.table1.Add (this.button10);
-			global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table1 [this.button10]));
+			this.btnSymbol10.Add (this.image13);
+			this.table1.Add (this.btnSymbol10);
+			global::Gtk.Table.TableChild w9 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol10]));
 			w9.LeftAttach = ((uint)(9));
 			w9.RightAttach = ((uint)(10));
 			w9.XOptions = ((global::Gtk.AttachOptions)(4));
 			w9.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button11 = new global::Gtk.Button ();
-			this.button11.CanFocus = true;
-			this.button11.Name = "button11";
-			// Container child button11.Gtk.Container+ContainerChild
+			this.btnSymbol11 = new global::Gtk.Button ();
+			this.btnSymbol11.CanFocus = true;
+			this.btnSymbol11.Name = "btnSymbol11";
+			// Container child btnSymbol11.Gtk.Container+ContainerChild
 			this.image14 = new global::Gtk.Image ();
 			this.image14.Name = "image14";
 			this.image14.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.10.png");
-			this.button11.Add (this.image14);
-			this.table1.Add (this.button11);
-			global::Gtk.Table.TableChild w11 = ((global::Gtk.Table.TableChild)(this.table1 [this.button11]));
+			this.btnSymbol11.Add (this.image14);
+			this.table1.Add (this.btnSymbol11);
+			global::Gtk.Table.TableChild w11 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol11]));
 			w11.LeftAttach = ((uint)(10));
 			w11.RightAttach = ((uint)(11));
 			w11.XOptions = ((global::Gtk.AttachOptions)(4));
 			w11.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button12 = new global::Gtk.Button ();
-			this.button12.CanFocus = true;
-			this.button12.Name = "button12";
-			// Container child button12.Gtk.Container+ContainerChild
+			this.btnSymbol12 = new global::Gtk.Button ();
+			this.btnSymbol12.CanFocus = true;
+			this.btnSymbol12.Name = "btnSymbol12";
+			// Container child btnSymbol12.Gtk.Container+ContainerChild
 			this.image15 = new global::Gtk.Image ();
 			this.image15.Name = "image15";
 			this.image15.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.11.png");
-			this.button12.Add (this.image15);
-			this.table1.Add (this.button12);
-			global::Gtk.Table.TableChild w13 = ((global::Gtk.Table.TableChild)(this.table1 [this.button12]));
+			this.btnSymbol12.Add (this.image15);
+			this.table1.Add (this.btnSymbol12);
+			global::Gtk.Table.TableChild w13 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol12]));
 			w13.LeftAttach = ((uint)(11));
 			w13.RightAttach = ((uint)(12));
 			w13.XOptions = ((global::Gtk.AttachOptions)(4));
 			w13.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button13 = new global::Gtk.Button ();
-			this.button13.CanFocus = true;
-			this.button13.Name = "button13";
-			// Container child button13.Gtk.Container+ContainerChild
+			this.btnSymbol13 = new global::Gtk.Button ();
+			this.btnSymbol13.CanFocus = true;
+			this.btnSymbol13.Name = "btnSymbol13";
+			// Container child btnSymbol13.Gtk.Container+ContainerChild
 			this.image16 = new global::Gtk.Image ();
 			this.image16.Name = "image16";
 			this.image16.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.12.png");
-			this.button13.Add (this.image16);
-			this.table1.Add (this.button13);
-			global::Gtk.Table.TableChild w15 = ((global::Gtk.Table.TableChild)(this.table1 [this.button13]));
+			this.btnSymbol13.Add (this.image16);
+			this.table1.Add (this.btnSymbol13);
+			global::Gtk.Table.TableChild w15 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol13]));
 			w15.LeftAttach = ((uint)(12));
 			w15.RightAttach = ((uint)(13));
 			w15.XOptions = ((global::Gtk.AttachOptions)(4));
 			w15.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button14 = new global::Gtk.Button ();
-			this.button14.CanFocus = true;
-			this.button14.Name = "button14";
-			// Container child button14.Gtk.Container+ContainerChild
+			this.btnSymbol14 = new global::Gtk.Button ();
+			this.btnSymbol14.CanFocus = true;
+			this.btnSymbol14.Name = "btnSymbol14";
+			// Container child btnSymbol14.Gtk.Container+ContainerChild
 			this.image17 = new global::Gtk.Image ();
 			this.image17.Name = "image17";
 			this.image17.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.13.png");
-			this.button14.Add (this.image17);
-			this.table1.Add (this.button14);
-			global::Gtk.Table.TableChild w17 = ((global::Gtk.Table.TableChild)(this.table1 [this.button14]));
+			this.btnSymbol14.Add (this.image17);
+			this.table1.Add (this.btnSymbol14);
+			global::Gtk.Table.TableChild w17 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol14]));
 			w17.TopAttach = ((uint)(1));
 			w17.BottomAttach = ((uint)(2));
 			w17.XOptions = ((global::Gtk.AttachOptions)(4));
 			w17.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button15 = new global::Gtk.Button ();
-			this.button15.CanFocus = true;
-			this.button15.Name = "button15";
-			// Container child button15.Gtk.Container+ContainerChild
+			this.btnSymbol15 = new global::Gtk.Button ();
+			this.btnSymbol15.CanFocus = true;
+			this.btnSymbol15.Name = "btnSymbol15";
+			// Container child btnSymbol15.Gtk.Container+ContainerChild
 			this.image4 = new global::Gtk.Image ();
 			this.image4.Name = "image4";
 			this.image4.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.14.png");
-			this.button15.Add (this.image4);
-			this.table1.Add (this.button15);
-			global::Gtk.Table.TableChild w19 = ((global::Gtk.Table.TableChild)(this.table1 [this.button15]));
+			this.btnSymbol15.Add (this.image4);
+			this.table1.Add (this.btnSymbol15);
+			global::Gtk.Table.TableChild w19 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol15]));
 			w19.TopAttach = ((uint)(1));
 			w19.BottomAttach = ((uint)(2));
 			w19.LeftAttach = ((uint)(1));
@@ -452,16 +471,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w19.XOptions = ((global::Gtk.AttachOptions)(4));
 			w19.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button16 = new global::Gtk.Button ();
-			this.button16.CanFocus = true;
-			this.button16.Name = "button16";
-			// Container child button16.Gtk.Container+ContainerChild
+			this.btnSymbol16 = new global::Gtk.Button ();
+			this.btnSymbol16.CanFocus = true;
+			this.btnSymbol16.Name = "btnSymbol16";
+			// Container child btnSymbol16.Gtk.Container+ContainerChild
 			this.image18 = new global::Gtk.Image ();
 			this.image18.Name = "image18";
 			this.image18.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.15.png");
-			this.button16.Add (this.image18);
-			this.table1.Add (this.button16);
-			global::Gtk.Table.TableChild w21 = ((global::Gtk.Table.TableChild)(this.table1 [this.button16]));
+			this.btnSymbol16.Add (this.image18);
+			this.table1.Add (this.btnSymbol16);
+			global::Gtk.Table.TableChild w21 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol16]));
 			w21.TopAttach = ((uint)(1));
 			w21.BottomAttach = ((uint)(2));
 			w21.LeftAttach = ((uint)(2));
@@ -469,16 +488,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w21.XOptions = ((global::Gtk.AttachOptions)(4));
 			w21.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button17 = new global::Gtk.Button ();
-			this.button17.CanFocus = true;
-			this.button17.Name = "button17";
-			// Container child button17.Gtk.Container+ContainerChild
+			this.btnSymbol17 = new global::Gtk.Button ();
+			this.btnSymbol17.CanFocus = true;
+			this.btnSymbol17.Name = "btnSymbol17";
+			// Container child btnSymbol17.Gtk.Container+ContainerChild
 			this.image19 = new global::Gtk.Image ();
 			this.image19.Name = "image19";
 			this.image19.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.16.png");
-			this.button17.Add (this.image19);
-			this.table1.Add (this.button17);
-			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table1 [this.button17]));
+			this.btnSymbol17.Add (this.image19);
+			this.table1.Add (this.btnSymbol17);
+			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol17]));
 			w23.TopAttach = ((uint)(1));
 			w23.BottomAttach = ((uint)(2));
 			w23.LeftAttach = ((uint)(3));
@@ -486,16 +505,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w23.XOptions = ((global::Gtk.AttachOptions)(4));
 			w23.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button18 = new global::Gtk.Button ();
-			this.button18.CanFocus = true;
-			this.button18.Name = "button18";
-			// Container child button18.Gtk.Container+ContainerChild
+			this.btnSymbol18 = new global::Gtk.Button ();
+			this.btnSymbol18.CanFocus = true;
+			this.btnSymbol18.Name = "btnSymbol18";
+			// Container child btnSymbol18.Gtk.Container+ContainerChild
 			this.image20 = new global::Gtk.Image ();
 			this.image20.Name = "image20";
 			this.image20.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.17.png");
-			this.button18.Add (this.image20);
-			this.table1.Add (this.button18);
-			global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.table1 [this.button18]));
+			this.btnSymbol18.Add (this.image20);
+			this.table1.Add (this.btnSymbol18);
+			global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol18]));
 			w25.TopAttach = ((uint)(1));
 			w25.BottomAttach = ((uint)(2));
 			w25.LeftAttach = ((uint)(4));
@@ -503,16 +522,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w25.XOptions = ((global::Gtk.AttachOptions)(4));
 			w25.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button19 = new global::Gtk.Button ();
-			this.button19.CanFocus = true;
-			this.button19.Name = "button19";
-			// Container child button19.Gtk.Container+ContainerChild
+			this.btnSymbol19 = new global::Gtk.Button ();
+			this.btnSymbol19.CanFocus = true;
+			this.btnSymbol19.Name = "btnSymbol19";
+			// Container child btnSymbol19.Gtk.Container+ContainerChild
 			this.image21 = new global::Gtk.Image ();
 			this.image21.Name = "image21";
 			this.image21.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.18.png");
-			this.button19.Add (this.image21);
-			this.table1.Add (this.button19);
-			global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.table1 [this.button19]));
+			this.btnSymbol19.Add (this.image21);
+			this.table1.Add (this.btnSymbol19);
+			global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol19]));
 			w27.TopAttach = ((uint)(1));
 			w27.BottomAttach = ((uint)(2));
 			w27.LeftAttach = ((uint)(5));
@@ -520,65 +539,65 @@ namespace Zyrenth.OracleHack.GtkUI
 			w27.XOptions = ((global::Gtk.AttachOptions)(4));
 			w27.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button2 = new global::Gtk.Button ();
-			this.button2.CanFocus = true;
-			this.button2.Name = "button2";
-			// Container child button2.Gtk.Container+ContainerChild
+			this.btnSymbol2 = new global::Gtk.Button ();
+			this.btnSymbol2.CanFocus = true;
+			this.btnSymbol2.Name = "btnSymbol2";
+			// Container child btnSymbol2.Gtk.Container+ContainerChild
 			this.image5 = new global::Gtk.Image ();
 			this.image5.Name = "image5";
 			this.image5.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.01.png");
-			this.button2.Add (this.image5);
-			this.table1.Add (this.button2);
-			global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.table1 [this.button2]));
+			this.btnSymbol2.Add (this.image5);
+			this.table1.Add (this.btnSymbol2);
+			global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol2]));
 			w29.LeftAttach = ((uint)(1));
 			w29.RightAttach = ((uint)(2));
 			w29.XOptions = ((global::Gtk.AttachOptions)(4));
 			w29.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button20 = new global::Gtk.Button ();
-			this.button20.CanFocus = true;
-			this.button20.Name = "button20";
-			// Container child button20.Gtk.Container+ContainerChild
-			this.image22 = new global::Gtk.Image ();
-			this.image22.Name = "image22";
-			this.image22.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.20.png");
-			this.button20.Add (this.image22);
-			this.table1.Add (this.button20);
-			global::Gtk.Table.TableChild w31 = ((global::Gtk.Table.TableChild)(this.table1 [this.button20]));
-			w31.TopAttach = ((uint)(1));
-			w31.BottomAttach = ((uint)(2));
-			w31.LeftAttach = ((uint)(7));
-			w31.RightAttach = ((uint)(8));
-			w31.XOptions = ((global::Gtk.AttachOptions)(4));
-			w31.YOptions = ((global::Gtk.AttachOptions)(4));
-			// Container child table1.Gtk.Table+TableChild
-			this.button21 = new global::Gtk.Button ();
-			this.button21.CanFocus = true;
-			this.button21.Name = "button21";
-			// Container child button21.Gtk.Container+ContainerChild
+			this.btnSymbol20 = new global::Gtk.Button ();
+			this.btnSymbol20.CanFocus = true;
+			this.btnSymbol20.Name = "btnSymbol20";
+			// Container child btnSymbol20.Gtk.Container+ContainerChild
 			this.image23 = new global::Gtk.Image ();
 			this.image23.Name = "image23";
 			this.image23.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.19.png");
-			this.button21.Add (this.image23);
-			this.table1.Add (this.button21);
-			global::Gtk.Table.TableChild w33 = ((global::Gtk.Table.TableChild)(this.table1 [this.button21]));
+			this.btnSymbol20.Add (this.image23);
+			this.table1.Add (this.btnSymbol20);
+			global::Gtk.Table.TableChild w31 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol20]));
+			w31.TopAttach = ((uint)(1));
+			w31.BottomAttach = ((uint)(2));
+			w31.LeftAttach = ((uint)(6));
+			w31.RightAttach = ((uint)(7));
+			w31.XOptions = ((global::Gtk.AttachOptions)(4));
+			w31.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table1.Gtk.Table+TableChild
+			this.btnSymbol21 = new global::Gtk.Button ();
+			this.btnSymbol21.CanFocus = true;
+			this.btnSymbol21.Name = "btnSymbol21";
+			// Container child btnSymbol21.Gtk.Container+ContainerChild
+			this.image22 = new global::Gtk.Image ();
+			this.image22.Name = "image22";
+			this.image22.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.20.png");
+			this.btnSymbol21.Add (this.image22);
+			this.table1.Add (this.btnSymbol21);
+			global::Gtk.Table.TableChild w33 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol21]));
 			w33.TopAttach = ((uint)(1));
 			w33.BottomAttach = ((uint)(2));
-			w33.LeftAttach = ((uint)(6));
-			w33.RightAttach = ((uint)(7));
+			w33.LeftAttach = ((uint)(7));
+			w33.RightAttach = ((uint)(8));
 			w33.XOptions = ((global::Gtk.AttachOptions)(4));
 			w33.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button22 = new global::Gtk.Button ();
-			this.button22.CanFocus = true;
-			this.button22.Name = "button22";
-			// Container child button22.Gtk.Container+ContainerChild
+			this.btnSymbol22 = new global::Gtk.Button ();
+			this.btnSymbol22.CanFocus = true;
+			this.btnSymbol22.Name = "btnSymbol22";
+			// Container child btnSymbol22.Gtk.Container+ContainerChild
 			this.image24 = new global::Gtk.Image ();
 			this.image24.Name = "image24";
 			this.image24.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.21.png");
-			this.button22.Add (this.image24);
-			this.table1.Add (this.button22);
-			global::Gtk.Table.TableChild w35 = ((global::Gtk.Table.TableChild)(this.table1 [this.button22]));
+			this.btnSymbol22.Add (this.image24);
+			this.table1.Add (this.btnSymbol22);
+			global::Gtk.Table.TableChild w35 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol22]));
 			w35.TopAttach = ((uint)(1));
 			w35.BottomAttach = ((uint)(2));
 			w35.LeftAttach = ((uint)(8));
@@ -586,16 +605,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w35.XOptions = ((global::Gtk.AttachOptions)(4));
 			w35.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button23 = new global::Gtk.Button ();
-			this.button23.CanFocus = true;
-			this.button23.Name = "button23";
-			// Container child button23.Gtk.Container+ContainerChild
+			this.btnSymbol23 = new global::Gtk.Button ();
+			this.btnSymbol23.CanFocus = true;
+			this.btnSymbol23.Name = "btnSymbol23";
+			// Container child btnSymbol23.Gtk.Container+ContainerChild
 			this.image25 = new global::Gtk.Image ();
 			this.image25.Name = "image25";
 			this.image25.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.22.png");
-			this.button23.Add (this.image25);
-			this.table1.Add (this.button23);
-			global::Gtk.Table.TableChild w37 = ((global::Gtk.Table.TableChild)(this.table1 [this.button23]));
+			this.btnSymbol23.Add (this.image25);
+			this.table1.Add (this.btnSymbol23);
+			global::Gtk.Table.TableChild w37 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol23]));
 			w37.TopAttach = ((uint)(1));
 			w37.BottomAttach = ((uint)(2));
 			w37.LeftAttach = ((uint)(9));
@@ -603,16 +622,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w37.XOptions = ((global::Gtk.AttachOptions)(4));
 			w37.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button24 = new global::Gtk.Button ();
-			this.button24.CanFocus = true;
-			this.button24.Name = "button24";
-			// Container child button24.Gtk.Container+ContainerChild
+			this.btnSymbol24 = new global::Gtk.Button ();
+			this.btnSymbol24.CanFocus = true;
+			this.btnSymbol24.Name = "btnSymbol24";
+			// Container child btnSymbol24.Gtk.Container+ContainerChild
 			this.image26 = new global::Gtk.Image ();
 			this.image26.Name = "image26";
 			this.image26.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.23.png");
-			this.button24.Add (this.image26);
-			this.table1.Add (this.button24);
-			global::Gtk.Table.TableChild w39 = ((global::Gtk.Table.TableChild)(this.table1 [this.button24]));
+			this.btnSymbol24.Add (this.image26);
+			this.table1.Add (this.btnSymbol24);
+			global::Gtk.Table.TableChild w39 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol24]));
 			w39.TopAttach = ((uint)(1));
 			w39.BottomAttach = ((uint)(2));
 			w39.LeftAttach = ((uint)(10));
@@ -620,16 +639,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w39.XOptions = ((global::Gtk.AttachOptions)(4));
 			w39.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button25 = new global::Gtk.Button ();
-			this.button25.CanFocus = true;
-			this.button25.Name = "button25";
-			// Container child button25.Gtk.Container+ContainerChild
+			this.btnSymbol25 = new global::Gtk.Button ();
+			this.btnSymbol25.CanFocus = true;
+			this.btnSymbol25.Name = "btnSymbol25";
+			// Container child btnSymbol25.Gtk.Container+ContainerChild
 			this.image27 = new global::Gtk.Image ();
 			this.image27.Name = "image27";
 			this.image27.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.24.png");
-			this.button25.Add (this.image27);
-			this.table1.Add (this.button25);
-			global::Gtk.Table.TableChild w41 = ((global::Gtk.Table.TableChild)(this.table1 [this.button25]));
+			this.btnSymbol25.Add (this.image27);
+			this.table1.Add (this.btnSymbol25);
+			global::Gtk.Table.TableChild w41 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol25]));
 			w41.TopAttach = ((uint)(1));
 			w41.BottomAttach = ((uint)(2));
 			w41.LeftAttach = ((uint)(11));
@@ -637,16 +656,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w41.XOptions = ((global::Gtk.AttachOptions)(4));
 			w41.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button26 = new global::Gtk.Button ();
-			this.button26.CanFocus = true;
-			this.button26.Name = "button26";
-			// Container child button26.Gtk.Container+ContainerChild
+			this.btnSymbol26 = new global::Gtk.Button ();
+			this.btnSymbol26.CanFocus = true;
+			this.btnSymbol26.Name = "btnSymbol26";
+			// Container child btnSymbol26.Gtk.Container+ContainerChild
 			this.image28 = new global::Gtk.Image ();
 			this.image28.Name = "image28";
 			this.image28.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.25.png");
-			this.button26.Add (this.image28);
-			this.table1.Add (this.button26);
-			global::Gtk.Table.TableChild w43 = ((global::Gtk.Table.TableChild)(this.table1 [this.button26]));
+			this.btnSymbol26.Add (this.image28);
+			this.table1.Add (this.btnSymbol26);
+			global::Gtk.Table.TableChild w43 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol26]));
 			w43.TopAttach = ((uint)(1));
 			w43.BottomAttach = ((uint)(2));
 			w43.LeftAttach = ((uint)(12));
@@ -654,31 +673,31 @@ namespace Zyrenth.OracleHack.GtkUI
 			w43.XOptions = ((global::Gtk.AttachOptions)(4));
 			w43.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button27 = new global::Gtk.Button ();
-			this.button27.CanFocus = true;
-			this.button27.Name = "button27";
-			// Container child button27.Gtk.Container+ContainerChild
+			this.btnSymbol27 = new global::Gtk.Button ();
+			this.btnSymbol27.CanFocus = true;
+			this.btnSymbol27.Name = "btnSymbol27";
+			// Container child btnSymbol27.Gtk.Container+ContainerChild
 			this.image29 = new global::Gtk.Image ();
 			this.image29.Name = "image29";
 			this.image29.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.26.png");
-			this.button27.Add (this.image29);
-			this.table1.Add (this.button27);
-			global::Gtk.Table.TableChild w45 = ((global::Gtk.Table.TableChild)(this.table1 [this.button27]));
+			this.btnSymbol27.Add (this.image29);
+			this.table1.Add (this.btnSymbol27);
+			global::Gtk.Table.TableChild w45 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol27]));
 			w45.TopAttach = ((uint)(2));
 			w45.BottomAttach = ((uint)(3));
 			w45.XOptions = ((global::Gtk.AttachOptions)(4));
 			w45.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button28 = new global::Gtk.Button ();
-			this.button28.CanFocus = true;
-			this.button28.Name = "button28";
-			// Container child button28.Gtk.Container+ContainerChild
+			this.btnSymbol28 = new global::Gtk.Button ();
+			this.btnSymbol28.CanFocus = true;
+			this.btnSymbol28.Name = "btnSymbol28";
+			// Container child btnSymbol28.Gtk.Container+ContainerChild
 			this.image30 = new global::Gtk.Image ();
 			this.image30.Name = "image30";
 			this.image30.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.27.png");
-			this.button28.Add (this.image30);
-			this.table1.Add (this.button28);
-			global::Gtk.Table.TableChild w47 = ((global::Gtk.Table.TableChild)(this.table1 [this.button28]));
+			this.btnSymbol28.Add (this.image30);
+			this.table1.Add (this.btnSymbol28);
+			global::Gtk.Table.TableChild w47 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol28]));
 			w47.TopAttach = ((uint)(2));
 			w47.BottomAttach = ((uint)(3));
 			w47.LeftAttach = ((uint)(1));
@@ -686,16 +705,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w47.XOptions = ((global::Gtk.AttachOptions)(4));
 			w47.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button29 = new global::Gtk.Button ();
-			this.button29.CanFocus = true;
-			this.button29.Name = "button29";
-			// Container child button29.Gtk.Container+ContainerChild
+			this.btnSymbol29 = new global::Gtk.Button ();
+			this.btnSymbol29.CanFocus = true;
+			this.btnSymbol29.Name = "btnSymbol29";
+			// Container child btnSymbol29.Gtk.Container+ContainerChild
 			this.image31 = new global::Gtk.Image ();
 			this.image31.Name = "image31";
 			this.image31.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.28.png");
-			this.button29.Add (this.image31);
-			this.table1.Add (this.button29);
-			global::Gtk.Table.TableChild w49 = ((global::Gtk.Table.TableChild)(this.table1 [this.button29]));
+			this.btnSymbol29.Add (this.image31);
+			this.table1.Add (this.btnSymbol29);
+			global::Gtk.Table.TableChild w49 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol29]));
 			w49.TopAttach = ((uint)(2));
 			w49.BottomAttach = ((uint)(3));
 			w49.LeftAttach = ((uint)(2));
@@ -703,31 +722,31 @@ namespace Zyrenth.OracleHack.GtkUI
 			w49.XOptions = ((global::Gtk.AttachOptions)(4));
 			w49.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button3 = new global::Gtk.Button ();
-			this.button3.CanFocus = true;
-			this.button3.Name = "button3";
-			// Container child button3.Gtk.Container+ContainerChild
+			this.btnSymbol3 = new global::Gtk.Button ();
+			this.btnSymbol3.CanFocus = true;
+			this.btnSymbol3.Name = "btnSymbol3";
+			// Container child btnSymbol3.Gtk.Container+ContainerChild
 			this.image6 = new global::Gtk.Image ();
 			this.image6.Name = "image6";
 			this.image6.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.02.png");
-			this.button3.Add (this.image6);
-			this.table1.Add (this.button3);
-			global::Gtk.Table.TableChild w51 = ((global::Gtk.Table.TableChild)(this.table1 [this.button3]));
+			this.btnSymbol3.Add (this.image6);
+			this.table1.Add (this.btnSymbol3);
+			global::Gtk.Table.TableChild w51 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol3]));
 			w51.LeftAttach = ((uint)(2));
 			w51.RightAttach = ((uint)(3));
 			w51.XOptions = ((global::Gtk.AttachOptions)(4));
 			w51.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button30 = new global::Gtk.Button ();
-			this.button30.CanFocus = true;
-			this.button30.Name = "button30";
-			// Container child button30.Gtk.Container+ContainerChild
+			this.btnSymbol30 = new global::Gtk.Button ();
+			this.btnSymbol30.CanFocus = true;
+			this.btnSymbol30.Name = "btnSymbol30";
+			// Container child btnSymbol30.Gtk.Container+ContainerChild
 			this.image32 = new global::Gtk.Image ();
 			this.image32.Name = "image32";
 			this.image32.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.29.png");
-			this.button30.Add (this.image32);
-			this.table1.Add (this.button30);
-			global::Gtk.Table.TableChild w53 = ((global::Gtk.Table.TableChild)(this.table1 [this.button30]));
+			this.btnSymbol30.Add (this.image32);
+			this.table1.Add (this.btnSymbol30);
+			global::Gtk.Table.TableChild w53 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol30]));
 			w53.TopAttach = ((uint)(2));
 			w53.BottomAttach = ((uint)(3));
 			w53.LeftAttach = ((uint)(3));
@@ -735,16 +754,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w53.XOptions = ((global::Gtk.AttachOptions)(4));
 			w53.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button31 = new global::Gtk.Button ();
-			this.button31.CanFocus = true;
-			this.button31.Name = "button31";
-			// Container child button31.Gtk.Container+ContainerChild
+			this.btnSymbol31 = new global::Gtk.Button ();
+			this.btnSymbol31.CanFocus = true;
+			this.btnSymbol31.Name = "btnSymbol31";
+			// Container child btnSymbol31.Gtk.Container+ContainerChild
 			this.image33 = new global::Gtk.Image ();
 			this.image33.Name = "image33";
 			this.image33.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.30.png");
-			this.button31.Add (this.image33);
-			this.table1.Add (this.button31);
-			global::Gtk.Table.TableChild w55 = ((global::Gtk.Table.TableChild)(this.table1 [this.button31]));
+			this.btnSymbol31.Add (this.image33);
+			this.table1.Add (this.btnSymbol31);
+			global::Gtk.Table.TableChild w55 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol31]));
 			w55.TopAttach = ((uint)(2));
 			w55.BottomAttach = ((uint)(3));
 			w55.LeftAttach = ((uint)(4));
@@ -752,16 +771,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w55.XOptions = ((global::Gtk.AttachOptions)(4));
 			w55.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button32 = new global::Gtk.Button ();
-			this.button32.CanFocus = true;
-			this.button32.Name = "button32";
-			// Container child button32.Gtk.Container+ContainerChild
+			this.btnSymbol32 = new global::Gtk.Button ();
+			this.btnSymbol32.CanFocus = true;
+			this.btnSymbol32.Name = "btnSymbol32";
+			// Container child btnSymbol32.Gtk.Container+ContainerChild
 			this.image34 = new global::Gtk.Image ();
 			this.image34.Name = "image34";
 			this.image34.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.31.png");
-			this.button32.Add (this.image34);
-			this.table1.Add (this.button32);
-			global::Gtk.Table.TableChild w57 = ((global::Gtk.Table.TableChild)(this.table1 [this.button32]));
+			this.btnSymbol32.Add (this.image34);
+			this.table1.Add (this.btnSymbol32);
+			global::Gtk.Table.TableChild w57 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol32]));
 			w57.TopAttach = ((uint)(2));
 			w57.BottomAttach = ((uint)(3));
 			w57.LeftAttach = ((uint)(5));
@@ -769,16 +788,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w57.XOptions = ((global::Gtk.AttachOptions)(4));
 			w57.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button33 = new global::Gtk.Button ();
-			this.button33.CanFocus = true;
-			this.button33.Name = "button33";
-			// Container child button33.Gtk.Container+ContainerChild
+			this.btnSymbol33 = new global::Gtk.Button ();
+			this.btnSymbol33.CanFocus = true;
+			this.btnSymbol33.Name = "btnSymbol33";
+			// Container child btnSymbol33.Gtk.Container+ContainerChild
 			this.image35 = new global::Gtk.Image ();
 			this.image35.Name = "image35";
 			this.image35.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.32.png");
-			this.button33.Add (this.image35);
-			this.table1.Add (this.button33);
-			global::Gtk.Table.TableChild w59 = ((global::Gtk.Table.TableChild)(this.table1 [this.button33]));
+			this.btnSymbol33.Add (this.image35);
+			this.table1.Add (this.btnSymbol33);
+			global::Gtk.Table.TableChild w59 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol33]));
 			w59.TopAttach = ((uint)(2));
 			w59.BottomAttach = ((uint)(3));
 			w59.LeftAttach = ((uint)(7));
@@ -786,16 +805,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w59.XOptions = ((global::Gtk.AttachOptions)(4));
 			w59.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button35 = new global::Gtk.Button ();
-			this.button35.CanFocus = true;
-			this.button35.Name = "button35";
-			// Container child button35.Gtk.Container+ContainerChild
+			this.btnSymbol34 = new global::Gtk.Button ();
+			this.btnSymbol34.CanFocus = true;
+			this.btnSymbol34.Name = "btnSymbol34";
+			// Container child btnSymbol34.Gtk.Container+ContainerChild
 			this.image37 = new global::Gtk.Image ();
 			this.image37.Name = "image37";
 			this.image37.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.33.png");
-			this.button35.Add (this.image37);
-			this.table1.Add (this.button35);
-			global::Gtk.Table.TableChild w61 = ((global::Gtk.Table.TableChild)(this.table1 [this.button35]));
+			this.btnSymbol34.Add (this.image37);
+			this.table1.Add (this.btnSymbol34);
+			global::Gtk.Table.TableChild w61 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol34]));
 			w61.TopAttach = ((uint)(2));
 			w61.BottomAttach = ((uint)(3));
 			w61.LeftAttach = ((uint)(8));
@@ -803,16 +822,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w61.XOptions = ((global::Gtk.AttachOptions)(4));
 			w61.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button36 = new global::Gtk.Button ();
-			this.button36.CanFocus = true;
-			this.button36.Name = "button36";
-			// Container child button36.Gtk.Container+ContainerChild
+			this.btnSymbol35 = new global::Gtk.Button ();
+			this.btnSymbol35.CanFocus = true;
+			this.btnSymbol35.Name = "btnSymbol35";
+			// Container child btnSymbol35.Gtk.Container+ContainerChild
 			this.image38 = new global::Gtk.Image ();
 			this.image38.Name = "image38";
 			this.image38.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.34.png");
-			this.button36.Add (this.image38);
-			this.table1.Add (this.button36);
-			global::Gtk.Table.TableChild w63 = ((global::Gtk.Table.TableChild)(this.table1 [this.button36]));
+			this.btnSymbol35.Add (this.image38);
+			this.table1.Add (this.btnSymbol35);
+			global::Gtk.Table.TableChild w63 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol35]));
 			w63.TopAttach = ((uint)(2));
 			w63.BottomAttach = ((uint)(3));
 			w63.LeftAttach = ((uint)(9));
@@ -820,16 +839,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w63.XOptions = ((global::Gtk.AttachOptions)(4));
 			w63.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button37 = new global::Gtk.Button ();
-			this.button37.CanFocus = true;
-			this.button37.Name = "button37";
-			// Container child button37.Gtk.Container+ContainerChild
+			this.btnSymbol36 = new global::Gtk.Button ();
+			this.btnSymbol36.CanFocus = true;
+			this.btnSymbol36.Name = "btnSymbol36";
+			// Container child btnSymbol36.Gtk.Container+ContainerChild
 			this.image39 = new global::Gtk.Image ();
 			this.image39.Name = "image39";
 			this.image39.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.35.png");
-			this.button37.Add (this.image39);
-			this.table1.Add (this.button37);
-			global::Gtk.Table.TableChild w65 = ((global::Gtk.Table.TableChild)(this.table1 [this.button37]));
+			this.btnSymbol36.Add (this.image39);
+			this.table1.Add (this.btnSymbol36);
+			global::Gtk.Table.TableChild w65 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol36]));
 			w65.TopAttach = ((uint)(2));
 			w65.BottomAttach = ((uint)(3));
 			w65.LeftAttach = ((uint)(10));
@@ -837,16 +856,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w65.XOptions = ((global::Gtk.AttachOptions)(4));
 			w65.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button38 = new global::Gtk.Button ();
-			this.button38.CanFocus = true;
-			this.button38.Name = "button38";
-			// Container child button38.Gtk.Container+ContainerChild
+			this.btnSymbol37 = new global::Gtk.Button ();
+			this.btnSymbol37.CanFocus = true;
+			this.btnSymbol37.Name = "btnSymbol37";
+			// Container child btnSymbol37.Gtk.Container+ContainerChild
 			this.image40 = new global::Gtk.Image ();
 			this.image40.Name = "image40";
 			this.image40.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.36.png");
-			this.button38.Add (this.image40);
-			this.table1.Add (this.button38);
-			global::Gtk.Table.TableChild w67 = ((global::Gtk.Table.TableChild)(this.table1 [this.button38]));
+			this.btnSymbol37.Add (this.image40);
+			this.table1.Add (this.btnSymbol37);
+			global::Gtk.Table.TableChild w67 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol37]));
 			w67.TopAttach = ((uint)(2));
 			w67.BottomAttach = ((uint)(3));
 			w67.LeftAttach = ((uint)(11));
@@ -854,16 +873,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w67.XOptions = ((global::Gtk.AttachOptions)(4));
 			w67.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button39 = new global::Gtk.Button ();
-			this.button39.CanFocus = true;
-			this.button39.Name = "button39";
-			// Container child button39.Gtk.Container+ContainerChild
+			this.btnSymbol38 = new global::Gtk.Button ();
+			this.btnSymbol38.CanFocus = true;
+			this.btnSymbol38.Name = "btnSymbol38";
+			// Container child btnSymbol38.Gtk.Container+ContainerChild
 			this.image41 = new global::Gtk.Image ();
 			this.image41.Name = "image41";
 			this.image41.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.37.png");
-			this.button39.Add (this.image41);
-			this.table1.Add (this.button39);
-			global::Gtk.Table.TableChild w69 = ((global::Gtk.Table.TableChild)(this.table1 [this.button39]));
+			this.btnSymbol38.Add (this.image41);
+			this.table1.Add (this.btnSymbol38);
+			global::Gtk.Table.TableChild w69 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol38]));
 			w69.TopAttach = ((uint)(2));
 			w69.BottomAttach = ((uint)(3));
 			w69.LeftAttach = ((uint)(12));
@@ -871,46 +890,46 @@ namespace Zyrenth.OracleHack.GtkUI
 			w69.XOptions = ((global::Gtk.AttachOptions)(4));
 			w69.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button4 = new global::Gtk.Button ();
-			this.button4.CanFocus = true;
-			this.button4.Name = "button4";
-			// Container child button4.Gtk.Container+ContainerChild
-			this.image7 = new global::Gtk.Image ();
-			this.image7.Name = "image7";
-			this.image7.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.03.png");
-			this.button4.Add (this.image7);
-			this.table1.Add (this.button4);
-			global::Gtk.Table.TableChild w71 = ((global::Gtk.Table.TableChild)(this.table1 [this.button4]));
-			w71.LeftAttach = ((uint)(3));
-			w71.RightAttach = ((uint)(4));
-			w71.XOptions = ((global::Gtk.AttachOptions)(4));
-			w71.YOptions = ((global::Gtk.AttachOptions)(4));
-			// Container child table1.Gtk.Table+TableChild
-			this.button40 = new global::Gtk.Button ();
-			this.button40.CanFocus = true;
-			this.button40.Name = "button40";
-			// Container child button40.Gtk.Container+ContainerChild
+			this.btnSymbol39 = new global::Gtk.Button ();
+			this.btnSymbol39.CanFocus = true;
+			this.btnSymbol39.Name = "btnSymbol39";
+			// Container child btnSymbol39.Gtk.Container+ContainerChild
 			this.image42 = new global::Gtk.Image ();
 			this.image42.Name = "image42";
 			this.image42.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.38.png");
-			this.button40.Add (this.image42);
-			this.table1.Add (this.button40);
-			global::Gtk.Table.TableChild w73 = ((global::Gtk.Table.TableChild)(this.table1 [this.button40]));
-			w73.TopAttach = ((uint)(3));
-			w73.BottomAttach = ((uint)(4));
+			this.btnSymbol39.Add (this.image42);
+			this.table1.Add (this.btnSymbol39);
+			global::Gtk.Table.TableChild w71 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol39]));
+			w71.TopAttach = ((uint)(3));
+			w71.BottomAttach = ((uint)(4));
+			w71.XOptions = ((global::Gtk.AttachOptions)(4));
+			w71.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table1.Gtk.Table+TableChild
+			this.btnSymbol4 = new global::Gtk.Button ();
+			this.btnSymbol4.CanFocus = true;
+			this.btnSymbol4.Name = "btnSymbol4";
+			// Container child btnSymbol4.Gtk.Container+ContainerChild
+			this.image7 = new global::Gtk.Image ();
+			this.image7.Name = "image7";
+			this.image7.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.03.png");
+			this.btnSymbol4.Add (this.image7);
+			this.table1.Add (this.btnSymbol4);
+			global::Gtk.Table.TableChild w73 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol4]));
+			w73.LeftAttach = ((uint)(3));
+			w73.RightAttach = ((uint)(4));
 			w73.XOptions = ((global::Gtk.AttachOptions)(4));
 			w73.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button41 = new global::Gtk.Button ();
-			this.button41.CanFocus = true;
-			this.button41.Name = "button41";
-			// Container child button41.Gtk.Container+ContainerChild
+			this.btnSymbol40 = new global::Gtk.Button ();
+			this.btnSymbol40.CanFocus = true;
+			this.btnSymbol40.Name = "btnSymbol40";
+			// Container child btnSymbol40.Gtk.Container+ContainerChild
 			this.image43 = new global::Gtk.Image ();
 			this.image43.Name = "image43";
 			this.image43.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.39.png");
-			this.button41.Add (this.image43);
-			this.table1.Add (this.button41);
-			global::Gtk.Table.TableChild w75 = ((global::Gtk.Table.TableChild)(this.table1 [this.button41]));
+			this.btnSymbol40.Add (this.image43);
+			this.table1.Add (this.btnSymbol40);
+			global::Gtk.Table.TableChild w75 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol40]));
 			w75.TopAttach = ((uint)(3));
 			w75.BottomAttach = ((uint)(4));
 			w75.LeftAttach = ((uint)(1));
@@ -918,16 +937,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w75.XOptions = ((global::Gtk.AttachOptions)(4));
 			w75.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button42 = new global::Gtk.Button ();
-			this.button42.CanFocus = true;
-			this.button42.Name = "button42";
-			// Container child button42.Gtk.Container+ContainerChild
+			this.btnSymbol41 = new global::Gtk.Button ();
+			this.btnSymbol41.CanFocus = true;
+			this.btnSymbol41.Name = "btnSymbol41";
+			// Container child btnSymbol41.Gtk.Container+ContainerChild
 			this.image44 = new global::Gtk.Image ();
 			this.image44.Name = "image44";
 			this.image44.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.40.png");
-			this.button42.Add (this.image44);
-			this.table1.Add (this.button42);
-			global::Gtk.Table.TableChild w77 = ((global::Gtk.Table.TableChild)(this.table1 [this.button42]));
+			this.btnSymbol41.Add (this.image44);
+			this.table1.Add (this.btnSymbol41);
+			global::Gtk.Table.TableChild w77 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol41]));
 			w77.TopAttach = ((uint)(3));
 			w77.BottomAttach = ((uint)(4));
 			w77.LeftAttach = ((uint)(2));
@@ -935,16 +954,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w77.XOptions = ((global::Gtk.AttachOptions)(4));
 			w77.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button43 = new global::Gtk.Button ();
-			this.button43.CanFocus = true;
-			this.button43.Name = "button43";
-			// Container child button43.Gtk.Container+ContainerChild
+			this.btnSymbol42 = new global::Gtk.Button ();
+			this.btnSymbol42.CanFocus = true;
+			this.btnSymbol42.Name = "btnSymbol42";
+			// Container child btnSymbol42.Gtk.Container+ContainerChild
 			this.image45 = new global::Gtk.Image ();
 			this.image45.Name = "image45";
 			this.image45.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.41.png");
-			this.button43.Add (this.image45);
-			this.table1.Add (this.button43);
-			global::Gtk.Table.TableChild w79 = ((global::Gtk.Table.TableChild)(this.table1 [this.button43]));
+			this.btnSymbol42.Add (this.image45);
+			this.table1.Add (this.btnSymbol42);
+			global::Gtk.Table.TableChild w79 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol42]));
 			w79.TopAttach = ((uint)(3));
 			w79.BottomAttach = ((uint)(4));
 			w79.LeftAttach = ((uint)(3));
@@ -952,16 +971,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w79.XOptions = ((global::Gtk.AttachOptions)(4));
 			w79.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button44 = new global::Gtk.Button ();
-			this.button44.CanFocus = true;
-			this.button44.Name = "button44";
-			// Container child button44.Gtk.Container+ContainerChild
+			this.btnSymbol43 = new global::Gtk.Button ();
+			this.btnSymbol43.CanFocus = true;
+			this.btnSymbol43.Name = "btnSymbol43";
+			// Container child btnSymbol43.Gtk.Container+ContainerChild
 			this.image46 = new global::Gtk.Image ();
 			this.image46.Name = "image46";
 			this.image46.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.42.png");
-			this.button44.Add (this.image46);
-			this.table1.Add (this.button44);
-			global::Gtk.Table.TableChild w81 = ((global::Gtk.Table.TableChild)(this.table1 [this.button44]));
+			this.btnSymbol43.Add (this.image46);
+			this.table1.Add (this.btnSymbol43);
+			global::Gtk.Table.TableChild w81 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol43]));
 			w81.TopAttach = ((uint)(3));
 			w81.BottomAttach = ((uint)(4));
 			w81.LeftAttach = ((uint)(4));
@@ -969,16 +988,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w81.XOptions = ((global::Gtk.AttachOptions)(4));
 			w81.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button45 = new global::Gtk.Button ();
-			this.button45.CanFocus = true;
-			this.button45.Name = "button45";
-			// Container child button45.Gtk.Container+ContainerChild
+			this.btnSymbol44 = new global::Gtk.Button ();
+			this.btnSymbol44.CanFocus = true;
+			this.btnSymbol44.Name = "btnSymbol44";
+			// Container child btnSymbol44.Gtk.Container+ContainerChild
 			this.image47 = new global::Gtk.Image ();
 			this.image47.Name = "image47";
 			this.image47.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.43.png");
-			this.button45.Add (this.image47);
-			this.table1.Add (this.button45);
-			global::Gtk.Table.TableChild w83 = ((global::Gtk.Table.TableChild)(this.table1 [this.button45]));
+			this.btnSymbol44.Add (this.image47);
+			this.table1.Add (this.btnSymbol44);
+			global::Gtk.Table.TableChild w83 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol44]));
 			w83.TopAttach = ((uint)(3));
 			w83.BottomAttach = ((uint)(4));
 			w83.LeftAttach = ((uint)(5));
@@ -986,16 +1005,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w83.XOptions = ((global::Gtk.AttachOptions)(4));
 			w83.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button46 = new global::Gtk.Button ();
-			this.button46.CanFocus = true;
-			this.button46.Name = "button46";
-			// Container child button46.Gtk.Container+ContainerChild
+			this.btnSymbol45 = new global::Gtk.Button ();
+			this.btnSymbol45.CanFocus = true;
+			this.btnSymbol45.Name = "btnSymbol45";
+			// Container child btnSymbol45.Gtk.Container+ContainerChild
 			this.image48 = new global::Gtk.Image ();
 			this.image48.Name = "image48";
 			this.image48.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.44.png");
-			this.button46.Add (this.image48);
-			this.table1.Add (this.button46);
-			global::Gtk.Table.TableChild w85 = ((global::Gtk.Table.TableChild)(this.table1 [this.button46]));
+			this.btnSymbol45.Add (this.image48);
+			this.table1.Add (this.btnSymbol45);
+			global::Gtk.Table.TableChild w85 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol45]));
 			w85.TopAttach = ((uint)(3));
 			w85.BottomAttach = ((uint)(4));
 			w85.LeftAttach = ((uint)(6));
@@ -1003,16 +1022,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w85.XOptions = ((global::Gtk.AttachOptions)(4));
 			w85.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button47 = new global::Gtk.Button ();
-			this.button47.CanFocus = true;
-			this.button47.Name = "button47";
-			// Container child button47.Gtk.Container+ContainerChild
+			this.btnSymbol46 = new global::Gtk.Button ();
+			this.btnSymbol46.CanFocus = true;
+			this.btnSymbol46.Name = "btnSymbol46";
+			// Container child btnSymbol46.Gtk.Container+ContainerChild
 			this.image49 = new global::Gtk.Image ();
 			this.image49.Name = "image49";
 			this.image49.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.45.png");
-			this.button47.Add (this.image49);
-			this.table1.Add (this.button47);
-			global::Gtk.Table.TableChild w87 = ((global::Gtk.Table.TableChild)(this.table1 [this.button47]));
+			this.btnSymbol46.Add (this.image49);
+			this.table1.Add (this.btnSymbol46);
+			global::Gtk.Table.TableChild w87 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol46]));
 			w87.TopAttach = ((uint)(3));
 			w87.BottomAttach = ((uint)(4));
 			w87.LeftAttach = ((uint)(7));
@@ -1020,16 +1039,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w87.XOptions = ((global::Gtk.AttachOptions)(4));
 			w87.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button48 = new global::Gtk.Button ();
-			this.button48.CanFocus = true;
-			this.button48.Name = "button48";
-			// Container child button48.Gtk.Container+ContainerChild
+			this.btnSymbol47 = new global::Gtk.Button ();
+			this.btnSymbol47.CanFocus = true;
+			this.btnSymbol47.Name = "btnSymbol47";
+			// Container child btnSymbol47.Gtk.Container+ContainerChild
 			this.image50 = new global::Gtk.Image ();
 			this.image50.Name = "image50";
 			this.image50.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.46.png");
-			this.button48.Add (this.image50);
-			this.table1.Add (this.button48);
-			global::Gtk.Table.TableChild w89 = ((global::Gtk.Table.TableChild)(this.table1 [this.button48]));
+			this.btnSymbol47.Add (this.image50);
+			this.table1.Add (this.btnSymbol47);
+			global::Gtk.Table.TableChild w89 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol47]));
 			w89.TopAttach = ((uint)(3));
 			w89.BottomAttach = ((uint)(4));
 			w89.LeftAttach = ((uint)(8));
@@ -1037,16 +1056,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w89.XOptions = ((global::Gtk.AttachOptions)(4));
 			w89.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button49 = new global::Gtk.Button ();
-			this.button49.CanFocus = true;
-			this.button49.Name = "button49";
-			// Container child button49.Gtk.Container+ContainerChild
+			this.btnSymbol48 = new global::Gtk.Button ();
+			this.btnSymbol48.CanFocus = true;
+			this.btnSymbol48.Name = "btnSymbol48";
+			// Container child btnSymbol48.Gtk.Container+ContainerChild
 			this.image51 = new global::Gtk.Image ();
 			this.image51.Name = "image51";
 			this.image51.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.47.png");
-			this.button49.Add (this.image51);
-			this.table1.Add (this.button49);
-			global::Gtk.Table.TableChild w91 = ((global::Gtk.Table.TableChild)(this.table1 [this.button49]));
+			this.btnSymbol48.Add (this.image51);
+			this.table1.Add (this.btnSymbol48);
+			global::Gtk.Table.TableChild w91 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol48]));
 			w91.TopAttach = ((uint)(3));
 			w91.BottomAttach = ((uint)(4));
 			w91.LeftAttach = ((uint)(9));
@@ -1054,48 +1073,48 @@ namespace Zyrenth.OracleHack.GtkUI
 			w91.XOptions = ((global::Gtk.AttachOptions)(4));
 			w91.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button5 = new global::Gtk.Button ();
-			this.button5.CanFocus = true;
-			this.button5.Name = "button5";
-			// Container child button5.Gtk.Container+ContainerChild
-			this.image8 = new global::Gtk.Image ();
-			this.image8.Name = "image8";
-			this.image8.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.04.png");
-			this.button5.Add (this.image8);
-			this.table1.Add (this.button5);
-			global::Gtk.Table.TableChild w93 = ((global::Gtk.Table.TableChild)(this.table1 [this.button5]));
-			w93.LeftAttach = ((uint)(4));
-			w93.RightAttach = ((uint)(5));
-			w93.XOptions = ((global::Gtk.AttachOptions)(4));
-			w93.YOptions = ((global::Gtk.AttachOptions)(4));
-			// Container child table1.Gtk.Table+TableChild
-			this.button50 = new global::Gtk.Button ();
-			this.button50.CanFocus = true;
-			this.button50.Name = "button50";
-			// Container child button50.Gtk.Container+ContainerChild
+			this.btnSymbol49 = new global::Gtk.Button ();
+			this.btnSymbol49.CanFocus = true;
+			this.btnSymbol49.Name = "btnSymbol49";
+			// Container child btnSymbol49.Gtk.Container+ContainerChild
 			this.image52 = new global::Gtk.Image ();
 			this.image52.Name = "image52";
 			this.image52.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.48.png");
-			this.button50.Add (this.image52);
-			this.table1.Add (this.button50);
-			global::Gtk.Table.TableChild w95 = ((global::Gtk.Table.TableChild)(this.table1 [this.button50]));
-			w95.TopAttach = ((uint)(3));
-			w95.BottomAttach = ((uint)(4));
-			w95.LeftAttach = ((uint)(10));
-			w95.RightAttach = ((uint)(11));
+			this.btnSymbol49.Add (this.image52);
+			this.table1.Add (this.btnSymbol49);
+			global::Gtk.Table.TableChild w93 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol49]));
+			w93.TopAttach = ((uint)(3));
+			w93.BottomAttach = ((uint)(4));
+			w93.LeftAttach = ((uint)(10));
+			w93.RightAttach = ((uint)(11));
+			w93.XOptions = ((global::Gtk.AttachOptions)(4));
+			w93.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table1.Gtk.Table+TableChild
+			this.btnSymbol5 = new global::Gtk.Button ();
+			this.btnSymbol5.CanFocus = true;
+			this.btnSymbol5.Name = "btnSymbol5";
+			// Container child btnSymbol5.Gtk.Container+ContainerChild
+			this.image8 = new global::Gtk.Image ();
+			this.image8.Name = "image8";
+			this.image8.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.04.png");
+			this.btnSymbol5.Add (this.image8);
+			this.table1.Add (this.btnSymbol5);
+			global::Gtk.Table.TableChild w95 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol5]));
+			w95.LeftAttach = ((uint)(4));
+			w95.RightAttach = ((uint)(5));
 			w95.XOptions = ((global::Gtk.AttachOptions)(4));
 			w95.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button51 = new global::Gtk.Button ();
-			this.button51.CanFocus = true;
-			this.button51.Name = "button51";
-			// Container child button51.Gtk.Container+ContainerChild
+			this.btnSymbol50 = new global::Gtk.Button ();
+			this.btnSymbol50.CanFocus = true;
+			this.btnSymbol50.Name = "btnSymbol50";
+			// Container child btnSymbol50.Gtk.Container+ContainerChild
 			this.image53 = new global::Gtk.Image ();
 			this.image53.Name = "image53";
 			this.image53.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.49.png");
-			this.button51.Add (this.image53);
-			this.table1.Add (this.button51);
-			global::Gtk.Table.TableChild w97 = ((global::Gtk.Table.TableChild)(this.table1 [this.button51]));
+			this.btnSymbol50.Add (this.image53);
+			this.table1.Add (this.btnSymbol50);
+			global::Gtk.Table.TableChild w97 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol50]));
 			w97.TopAttach = ((uint)(3));
 			w97.BottomAttach = ((uint)(4));
 			w97.LeftAttach = ((uint)(11));
@@ -1103,16 +1122,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w97.XOptions = ((global::Gtk.AttachOptions)(4));
 			w97.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button52 = new global::Gtk.Button ();
-			this.button52.CanFocus = true;
-			this.button52.Name = "button52";
-			// Container child button52.Gtk.Container+ContainerChild
+			this.btnSymbol51 = new global::Gtk.Button ();
+			this.btnSymbol51.CanFocus = true;
+			this.btnSymbol51.Name = "btnSymbol51";
+			// Container child btnSymbol51.Gtk.Container+ContainerChild
 			this.image54 = new global::Gtk.Image ();
 			this.image54.Name = "image54";
 			this.image54.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.50.png");
-			this.button52.Add (this.image54);
-			this.table1.Add (this.button52);
-			global::Gtk.Table.TableChild w99 = ((global::Gtk.Table.TableChild)(this.table1 [this.button52]));
+			this.btnSymbol51.Add (this.image54);
+			this.table1.Add (this.btnSymbol51);
+			global::Gtk.Table.TableChild w99 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol51]));
 			w99.TopAttach = ((uint)(3));
 			w99.BottomAttach = ((uint)(4));
 			w99.LeftAttach = ((uint)(12));
@@ -1120,31 +1139,31 @@ namespace Zyrenth.OracleHack.GtkUI
 			w99.XOptions = ((global::Gtk.AttachOptions)(4));
 			w99.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button53 = new global::Gtk.Button ();
-			this.button53.CanFocus = true;
-			this.button53.Name = "button53";
-			// Container child button53.Gtk.Container+ContainerChild
+			this.btnSymbol52 = new global::Gtk.Button ();
+			this.btnSymbol52.CanFocus = true;
+			this.btnSymbol52.Name = "btnSymbol52";
+			// Container child btnSymbol52.Gtk.Container+ContainerChild
 			this.image55 = new global::Gtk.Image ();
 			this.image55.Name = "image55";
 			this.image55.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.51.png");
-			this.button53.Add (this.image55);
-			this.table1.Add (this.button53);
-			global::Gtk.Table.TableChild w101 = ((global::Gtk.Table.TableChild)(this.table1 [this.button53]));
+			this.btnSymbol52.Add (this.image55);
+			this.table1.Add (this.btnSymbol52);
+			global::Gtk.Table.TableChild w101 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol52]));
 			w101.TopAttach = ((uint)(4));
 			w101.BottomAttach = ((uint)(5));
 			w101.XOptions = ((global::Gtk.AttachOptions)(4));
 			w101.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button54 = new global::Gtk.Button ();
-			this.button54.CanFocus = true;
-			this.button54.Name = "button54";
-			// Container child button54.Gtk.Container+ContainerChild
+			this.btnSymbol53 = new global::Gtk.Button ();
+			this.btnSymbol53.CanFocus = true;
+			this.btnSymbol53.Name = "btnSymbol53";
+			// Container child btnSymbol53.Gtk.Container+ContainerChild
 			this.image56 = new global::Gtk.Image ();
 			this.image56.Name = "image56";
 			this.image56.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.52.png");
-			this.button54.Add (this.image56);
-			this.table1.Add (this.button54);
-			global::Gtk.Table.TableChild w103 = ((global::Gtk.Table.TableChild)(this.table1 [this.button54]));
+			this.btnSymbol53.Add (this.image56);
+			this.table1.Add (this.btnSymbol53);
+			global::Gtk.Table.TableChild w103 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol53]));
 			w103.TopAttach = ((uint)(4));
 			w103.BottomAttach = ((uint)(5));
 			w103.LeftAttach = ((uint)(1));
@@ -1152,16 +1171,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w103.XOptions = ((global::Gtk.AttachOptions)(4));
 			w103.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button55 = new global::Gtk.Button ();
-			this.button55.CanFocus = true;
-			this.button55.Name = "button55";
-			// Container child button55.Gtk.Container+ContainerChild
+			this.btnSymbol54 = new global::Gtk.Button ();
+			this.btnSymbol54.CanFocus = true;
+			this.btnSymbol54.Name = "btnSymbol54";
+			// Container child btnSymbol54.Gtk.Container+ContainerChild
 			this.image57 = new global::Gtk.Image ();
 			this.image57.Name = "image57";
 			this.image57.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.53.png");
-			this.button55.Add (this.image57);
-			this.table1.Add (this.button55);
-			global::Gtk.Table.TableChild w105 = ((global::Gtk.Table.TableChild)(this.table1 [this.button55]));
+			this.btnSymbol54.Add (this.image57);
+			this.table1.Add (this.btnSymbol54);
+			global::Gtk.Table.TableChild w105 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol54]));
 			w105.TopAttach = ((uint)(4));
 			w105.BottomAttach = ((uint)(5));
 			w105.LeftAttach = ((uint)(2));
@@ -1169,16 +1188,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w105.XOptions = ((global::Gtk.AttachOptions)(4));
 			w105.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button56 = new global::Gtk.Button ();
-			this.button56.CanFocus = true;
-			this.button56.Name = "button56";
-			// Container child button56.Gtk.Container+ContainerChild
+			this.btnSymbol55 = new global::Gtk.Button ();
+			this.btnSymbol55.CanFocus = true;
+			this.btnSymbol55.Name = "btnSymbol55";
+			// Container child btnSymbol55.Gtk.Container+ContainerChild
 			this.image58 = new global::Gtk.Image ();
 			this.image58.Name = "image58";
 			this.image58.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.54.png");
-			this.button56.Add (this.image58);
-			this.table1.Add (this.button56);
-			global::Gtk.Table.TableChild w107 = ((global::Gtk.Table.TableChild)(this.table1 [this.button56]));
+			this.btnSymbol55.Add (this.image58);
+			this.table1.Add (this.btnSymbol55);
+			global::Gtk.Table.TableChild w107 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol55]));
 			w107.TopAttach = ((uint)(4));
 			w107.BottomAttach = ((uint)(5));
 			w107.LeftAttach = ((uint)(3));
@@ -1186,16 +1205,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w107.XOptions = ((global::Gtk.AttachOptions)(4));
 			w107.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button57 = new global::Gtk.Button ();
-			this.button57.CanFocus = true;
-			this.button57.Name = "button57";
-			// Container child button57.Gtk.Container+ContainerChild
+			this.btnSymbol56 = new global::Gtk.Button ();
+			this.btnSymbol56.CanFocus = true;
+			this.btnSymbol56.Name = "btnSymbol56";
+			// Container child btnSymbol56.Gtk.Container+ContainerChild
 			this.image59 = new global::Gtk.Image ();
 			this.image59.Name = "image59";
 			this.image59.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.55.png");
-			this.button57.Add (this.image59);
-			this.table1.Add (this.button57);
-			global::Gtk.Table.TableChild w109 = ((global::Gtk.Table.TableChild)(this.table1 [this.button57]));
+			this.btnSymbol56.Add (this.image59);
+			this.table1.Add (this.btnSymbol56);
+			global::Gtk.Table.TableChild w109 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol56]));
 			w109.TopAttach = ((uint)(4));
 			w109.BottomAttach = ((uint)(5));
 			w109.LeftAttach = ((uint)(4));
@@ -1203,16 +1222,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w109.XOptions = ((global::Gtk.AttachOptions)(4));
 			w109.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button58 = new global::Gtk.Button ();
-			this.button58.CanFocus = true;
-			this.button58.Name = "button58";
-			// Container child button58.Gtk.Container+ContainerChild
+			this.btnSymbol57 = new global::Gtk.Button ();
+			this.btnSymbol57.CanFocus = true;
+			this.btnSymbol57.Name = "btnSymbol57";
+			// Container child btnSymbol57.Gtk.Container+ContainerChild
 			this.image60 = new global::Gtk.Image ();
 			this.image60.Name = "image60";
 			this.image60.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.56.png");
-			this.button58.Add (this.image60);
-			this.table1.Add (this.button58);
-			global::Gtk.Table.TableChild w111 = ((global::Gtk.Table.TableChild)(this.table1 [this.button58]));
+			this.btnSymbol57.Add (this.image60);
+			this.table1.Add (this.btnSymbol57);
+			global::Gtk.Table.TableChild w111 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol57]));
 			w111.TopAttach = ((uint)(4));
 			w111.BottomAttach = ((uint)(5));
 			w111.LeftAttach = ((uint)(5));
@@ -1220,16 +1239,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w111.XOptions = ((global::Gtk.AttachOptions)(4));
 			w111.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button59 = new global::Gtk.Button ();
-			this.button59.CanFocus = true;
-			this.button59.Name = "button59";
-			// Container child button59.Gtk.Container+ContainerChild
+			this.btnSymbol58 = new global::Gtk.Button ();
+			this.btnSymbol58.CanFocus = true;
+			this.btnSymbol58.Name = "btnSymbol58";
+			// Container child btnSymbol58.Gtk.Container+ContainerChild
 			this.image61 = new global::Gtk.Image ();
 			this.image61.Name = "image61";
 			this.image61.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.57.png");
-			this.button59.Add (this.image61);
-			this.table1.Add (this.button59);
-			global::Gtk.Table.TableChild w113 = ((global::Gtk.Table.TableChild)(this.table1 [this.button59]));
+			this.btnSymbol58.Add (this.image61);
+			this.table1.Add (this.btnSymbol58);
+			global::Gtk.Table.TableChild w113 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol58]));
 			w113.TopAttach = ((uint)(4));
 			w113.BottomAttach = ((uint)(5));
 			w113.LeftAttach = ((uint)(6));
@@ -1237,48 +1256,48 @@ namespace Zyrenth.OracleHack.GtkUI
 			w113.XOptions = ((global::Gtk.AttachOptions)(4));
 			w113.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button6 = new global::Gtk.Button ();
-			this.button6.CanFocus = true;
-			this.button6.Name = "button6";
-			// Container child button6.Gtk.Container+ContainerChild
-			this.image9 = new global::Gtk.Image ();
-			this.image9.Name = "image9";
-			this.image9.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.05.png");
-			this.button6.Add (this.image9);
-			this.table1.Add (this.button6);
-			global::Gtk.Table.TableChild w115 = ((global::Gtk.Table.TableChild)(this.table1 [this.button6]));
-			w115.LeftAttach = ((uint)(5));
-			w115.RightAttach = ((uint)(6));
-			w115.XOptions = ((global::Gtk.AttachOptions)(4));
-			w115.YOptions = ((global::Gtk.AttachOptions)(4));
-			// Container child table1.Gtk.Table+TableChild
-			this.button60 = new global::Gtk.Button ();
-			this.button60.CanFocus = true;
-			this.button60.Name = "button60";
-			// Container child button60.Gtk.Container+ContainerChild
+			this.btnSymbol59 = new global::Gtk.Button ();
+			this.btnSymbol59.CanFocus = true;
+			this.btnSymbol59.Name = "btnSymbol59";
+			// Container child btnSymbol59.Gtk.Container+ContainerChild
 			this.image62 = new global::Gtk.Image ();
 			this.image62.Name = "image62";
 			this.image62.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.58.png");
-			this.button60.Add (this.image62);
-			this.table1.Add (this.button60);
-			global::Gtk.Table.TableChild w117 = ((global::Gtk.Table.TableChild)(this.table1 [this.button60]));
-			w117.TopAttach = ((uint)(4));
-			w117.BottomAttach = ((uint)(5));
-			w117.LeftAttach = ((uint)(7));
-			w117.RightAttach = ((uint)(8));
+			this.btnSymbol59.Add (this.image62);
+			this.table1.Add (this.btnSymbol59);
+			global::Gtk.Table.TableChild w115 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol59]));
+			w115.TopAttach = ((uint)(4));
+			w115.BottomAttach = ((uint)(5));
+			w115.LeftAttach = ((uint)(7));
+			w115.RightAttach = ((uint)(8));
+			w115.XOptions = ((global::Gtk.AttachOptions)(4));
+			w115.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table1.Gtk.Table+TableChild
+			this.btnSymbol6 = new global::Gtk.Button ();
+			this.btnSymbol6.CanFocus = true;
+			this.btnSymbol6.Name = "btnSymbol6";
+			// Container child btnSymbol6.Gtk.Container+ContainerChild
+			this.image9 = new global::Gtk.Image ();
+			this.image9.Name = "image9";
+			this.image9.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.05.png");
+			this.btnSymbol6.Add (this.image9);
+			this.table1.Add (this.btnSymbol6);
+			global::Gtk.Table.TableChild w117 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol6]));
+			w117.LeftAttach = ((uint)(5));
+			w117.RightAttach = ((uint)(6));
 			w117.XOptions = ((global::Gtk.AttachOptions)(4));
 			w117.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button61 = new global::Gtk.Button ();
-			this.button61.CanFocus = true;
-			this.button61.Name = "button61";
-			// Container child button61.Gtk.Container+ContainerChild
+			this.btnSymbol60 = new global::Gtk.Button ();
+			this.btnSymbol60.CanFocus = true;
+			this.btnSymbol60.Name = "btnSymbol60";
+			// Container child btnSymbol60.Gtk.Container+ContainerChild
 			this.image63 = new global::Gtk.Image ();
 			this.image63.Name = "image63";
 			this.image63.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.59.png");
-			this.button61.Add (this.image63);
-			this.table1.Add (this.button61);
-			global::Gtk.Table.TableChild w119 = ((global::Gtk.Table.TableChild)(this.table1 [this.button61]));
+			this.btnSymbol60.Add (this.image63);
+			this.table1.Add (this.btnSymbol60);
+			global::Gtk.Table.TableChild w119 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol60]));
 			w119.TopAttach = ((uint)(4));
 			w119.BottomAttach = ((uint)(5));
 			w119.LeftAttach = ((uint)(8));
@@ -1286,16 +1305,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w119.XOptions = ((global::Gtk.AttachOptions)(4));
 			w119.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button62 = new global::Gtk.Button ();
-			this.button62.CanFocus = true;
-			this.button62.Name = "button62";
-			// Container child button62.Gtk.Container+ContainerChild
+			this.btnSymbol61 = new global::Gtk.Button ();
+			this.btnSymbol61.CanFocus = true;
+			this.btnSymbol61.Name = "btnSymbol61";
+			// Container child btnSymbol61.Gtk.Container+ContainerChild
 			this.image64 = new global::Gtk.Image ();
 			this.image64.Name = "image64";
 			this.image64.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.60.png");
-			this.button62.Add (this.image64);
-			this.table1.Add (this.button62);
-			global::Gtk.Table.TableChild w121 = ((global::Gtk.Table.TableChild)(this.table1 [this.button62]));
+			this.btnSymbol61.Add (this.image64);
+			this.table1.Add (this.btnSymbol61);
+			global::Gtk.Table.TableChild w121 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol61]));
 			w121.TopAttach = ((uint)(4));
 			w121.BottomAttach = ((uint)(5));
 			w121.LeftAttach = ((uint)(9));
@@ -1303,16 +1322,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w121.XOptions = ((global::Gtk.AttachOptions)(4));
 			w121.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button63 = new global::Gtk.Button ();
-			this.button63.CanFocus = true;
-			this.button63.Name = "button63";
-			// Container child button63.Gtk.Container+ContainerChild
+			this.btnSymbol62 = new global::Gtk.Button ();
+			this.btnSymbol62.CanFocus = true;
+			this.btnSymbol62.Name = "btnSymbol62";
+			// Container child btnSymbol62.Gtk.Container+ContainerChild
 			this.image65 = new global::Gtk.Image ();
 			this.image65.Name = "image65";
 			this.image65.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.61.png");
-			this.button63.Add (this.image65);
-			this.table1.Add (this.button63);
-			global::Gtk.Table.TableChild w123 = ((global::Gtk.Table.TableChild)(this.table1 [this.button63]));
+			this.btnSymbol62.Add (this.image65);
+			this.table1.Add (this.btnSymbol62);
+			global::Gtk.Table.TableChild w123 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol62]));
 			w123.TopAttach = ((uint)(4));
 			w123.BottomAttach = ((uint)(5));
 			w123.LeftAttach = ((uint)(10));
@@ -1320,16 +1339,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w123.XOptions = ((global::Gtk.AttachOptions)(4));
 			w123.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button64 = new global::Gtk.Button ();
-			this.button64.CanFocus = true;
-			this.button64.Name = "button64";
-			// Container child button64.Gtk.Container+ContainerChild
+			this.btnSymbol63 = new global::Gtk.Button ();
+			this.btnSymbol63.CanFocus = true;
+			this.btnSymbol63.Name = "btnSymbol63";
+			// Container child btnSymbol63.Gtk.Container+ContainerChild
 			this.image66 = new global::Gtk.Image ();
 			this.image66.Name = "image66";
 			this.image66.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.62.png");
-			this.button64.Add (this.image66);
-			this.table1.Add (this.button64);
-			global::Gtk.Table.TableChild w125 = ((global::Gtk.Table.TableChild)(this.table1 [this.button64]));
+			this.btnSymbol63.Add (this.image66);
+			this.table1.Add (this.btnSymbol63);
+			global::Gtk.Table.TableChild w125 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol63]));
 			w125.TopAttach = ((uint)(4));
 			w125.BottomAttach = ((uint)(5));
 			w125.LeftAttach = ((uint)(11));
@@ -1337,16 +1356,16 @@ namespace Zyrenth.OracleHack.GtkUI
 			w125.XOptions = ((global::Gtk.AttachOptions)(4));
 			w125.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button65 = new global::Gtk.Button ();
-			this.button65.CanFocus = true;
-			this.button65.Name = "button65";
-			// Container child button65.Gtk.Container+ContainerChild
+			this.btnSymbol64 = new global::Gtk.Button ();
+			this.btnSymbol64.CanFocus = true;
+			this.btnSymbol64.Name = "btnSymbol64";
+			// Container child btnSymbol64.Gtk.Container+ContainerChild
 			this.image67 = new global::Gtk.Image ();
 			this.image67.Name = "image67";
 			this.image67.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.63.png");
-			this.button65.Add (this.image67);
-			this.table1.Add (this.button65);
-			global::Gtk.Table.TableChild w127 = ((global::Gtk.Table.TableChild)(this.table1 [this.button65]));
+			this.btnSymbol64.Add (this.image67);
+			this.table1.Add (this.btnSymbol64);
+			global::Gtk.Table.TableChild w127 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol64]));
 			w127.TopAttach = ((uint)(4));
 			w127.BottomAttach = ((uint)(5));
 			w127.LeftAttach = ((uint)(12));
@@ -1354,55 +1373,108 @@ namespace Zyrenth.OracleHack.GtkUI
 			w127.XOptions = ((global::Gtk.AttachOptions)(4));
 			w127.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button7 = new global::Gtk.Button ();
-			this.button7.CanFocus = true;
-			this.button7.Name = "button7";
-			// Container child button7.Gtk.Container+ContainerChild
+			this.btnSymbol7 = new global::Gtk.Button ();
+			this.btnSymbol7.CanFocus = true;
+			this.btnSymbol7.Name = "btnSymbol7";
+			// Container child btnSymbol7.Gtk.Container+ContainerChild
 			this.image10 = new global::Gtk.Image ();
 			this.image10.Name = "image10";
 			this.image10.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.06.png");
-			this.button7.Add (this.image10);
-			this.table1.Add (this.button7);
-			global::Gtk.Table.TableChild w129 = ((global::Gtk.Table.TableChild)(this.table1 [this.button7]));
+			this.btnSymbol7.Add (this.image10);
+			this.table1.Add (this.btnSymbol7);
+			global::Gtk.Table.TableChild w129 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol7]));
 			w129.LeftAttach = ((uint)(6));
 			w129.RightAttach = ((uint)(7));
 			w129.XOptions = ((global::Gtk.AttachOptions)(4));
 			w129.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button8 = new global::Gtk.Button ();
-			this.button8.CanFocus = true;
-			this.button8.Name = "button8";
-			// Container child button8.Gtk.Container+ContainerChild
+			this.btnSymbol8 = new global::Gtk.Button ();
+			this.btnSymbol8.CanFocus = true;
+			this.btnSymbol8.Name = "btnSymbol8";
+			// Container child btnSymbol8.Gtk.Container+ContainerChild
 			this.image11 = new global::Gtk.Image ();
 			this.image11.Name = "image11";
 			this.image11.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.07.png");
-			this.button8.Add (this.image11);
-			this.table1.Add (this.button8);
-			global::Gtk.Table.TableChild w131 = ((global::Gtk.Table.TableChild)(this.table1 [this.button8]));
+			this.btnSymbol8.Add (this.image11);
+			this.table1.Add (this.btnSymbol8);
+			global::Gtk.Table.TableChild w131 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol8]));
 			w131.LeftAttach = ((uint)(7));
 			w131.RightAttach = ((uint)(8));
 			w131.XOptions = ((global::Gtk.AttachOptions)(4));
 			w131.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table1.Gtk.Table+TableChild
-			this.button9 = new global::Gtk.Button ();
-			this.button9.CanFocus = true;
-			this.button9.Name = "button9";
-			// Container child button9.Gtk.Container+ContainerChild
+			this.btnSymbol9 = new global::Gtk.Button ();
+			this.btnSymbol9.CanFocus = true;
+			this.btnSymbol9.Name = "btnSymbol9";
+			// Container child btnSymbol9.Gtk.Container+ContainerChild
 			this.image12 = new global::Gtk.Image ();
 			this.image12.Name = "image12";
 			this.image12.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Symbols.08.png");
-			this.button9.Add (this.image12);
-			this.table1.Add (this.button9);
-			global::Gtk.Table.TableChild w133 = ((global::Gtk.Table.TableChild)(this.table1 [this.button9]));
+			this.btnSymbol9.Add (this.image12);
+			this.table1.Add (this.btnSymbol9);
+			global::Gtk.Table.TableChild w133 = ((global::Gtk.Table.TableChild)(this.table1 [this.btnSymbol9]));
 			w133.LeftAttach = ((uint)(8));
 			w133.RightAttach = ((uint)(9));
 			w133.XOptions = ((global::Gtk.AttachOptions)(4));
 			w133.YOptions = ((global::Gtk.AttachOptions)(4));
-			this.vbox1.Add (this.table1);
-			global::Gtk.Box.BoxChild w134 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.table1]));
-			w134.Position = 1;
-			w134.Expand = false;
-			w134.Fill = false;
+			this.notebook1.Add (this.table1);
+			// Notebook tab
+			this.label5 = new global::Gtk.Label ();
+			this.label5.Name = "label5";
+			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Symbol Keyboard");
+			this.notebook1.SetTabLabel (this.table1, this.label5);
+			this.label5.ShowAll ();
+			// Container child notebook1.Gtk.Notebook+NotebookChild
+			this.vbox3 = new global::Gtk.VBox ();
+			this.vbox3.Name = "vbox3";
+			this.vbox3.Spacing = 6;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.txtSymbols = new global::Gtk.Entry ();
+			this.txtSymbols.CanFocus = true;
+			this.txtSymbols.Name = "txtSymbols";
+			this.txtSymbols.IsEditable = true;
+			this.txtSymbols.InvisibleChar = '●';
+			this.vbox3.Add (this.txtSymbols);
+			global::Gtk.Box.BoxChild w135 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.txtSymbols]));
+			w135.Position = 0;
+			w135.Expand = false;
+			w135.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.label7 = new global::Gtk.Label ();
+			this.label7.Name = "label7";
+			this.label7.Xalign = 0F;
+			this.label7.LabelProp = global::Mono.Unix.Catalog.GetString ("Secrets can be entered in any mix of following formats:");
+			this.label7.Wrap = true;
+			this.vbox3.Add (this.label7);
+			global::Gtk.Box.BoxChild w136 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.label7]));
+			w136.Position = 1;
+			w136.Expand = false;
+			w136.Fill = false;
+			// Container child vbox3.Gtk.Box+BoxChild
+			this.label8 = new global::Gtk.Label ();
+			this.label8.Name = "label8";
+			this.label8.Xpad = 10;
+			this.label8.Xalign = 0F;
+			this.label8.LabelProp = "→N♥Nh\nright N heart N h\n{right}N{heart}Nh\nRigHtN ♥N  h";
+			this.vbox3.Add (this.label8);
+			global::Gtk.Box.BoxChild w137 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.label8]));
+			w137.Position = 2;
+			w137.Expand = false;
+			w137.Fill = false;
+			this.notebook1.Add (this.vbox3);
+			global::Gtk.Notebook.NotebookChild w138 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1 [this.vbox3]));
+			w138.Position = 1;
+			// Notebook tab
+			this.label6 = new global::Gtk.Label ();
+			this.label6.Name = "label6";
+			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("Text Entry");
+			this.notebook1.SetTabLabel (this.vbox3, this.label6);
+			this.label6.ShowAll ();
+			this.vbox1.Add (this.notebook1);
+			global::Gtk.Box.BoxChild w139 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.notebook1]));
+			w139.Position = 1;
+			w139.Expand = false;
+			w139.Fill = false;
 			// Container child vbox1.Gtk.Box+BoxChild
 			this.hbox2 = new global::Gtk.HBox ();
 			this.hbox2.Name = "hbox2";
@@ -1415,22 +1487,22 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.chkAppendRings.DrawIndicator = true;
 			this.chkAppendRings.UseUnderline = true;
 			this.hbox2.Add (this.chkAppendRings);
-			global::Gtk.Box.BoxChild w135 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.chkAppendRings]));
-			w135.Position = 0;
+			global::Gtk.Box.BoxChild w140 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.chkAppendRings]));
+			w140.Position = 0;
 			this.vbox1.Add (this.hbox2);
-			global::Gtk.Box.BoxChild w136 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox2]));
-			w136.Position = 2;
-			w136.Expand = false;
-			w136.Fill = false;
+			global::Gtk.Box.BoxChild w141 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox2]));
+			w141.Position = 2;
+			w141.Expand = false;
+			w141.Fill = false;
 			w1.Add (this.vbox1);
-			global::Gtk.Box.BoxChild w137 = ((global::Gtk.Box.BoxChild)(w1 [this.vbox1]));
-			w137.Position = 0;
+			global::Gtk.Box.BoxChild w142 = ((global::Gtk.Box.BoxChild)(w1 [this.vbox1]));
+			w142.Position = 0;
 			// Internal child Zyrenth.OracleHack.GtkUI.DecoderForm.ActionArea
-			global::Gtk.HButtonBox w138 = this.ActionArea;
-			w138.Name = "dialog1_ActionArea";
-			w138.Spacing = 10;
-			w138.BorderWidth = ((uint)(5));
-			w138.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			global::Gtk.HButtonBox w143 = this.ActionArea;
+			w143.Name = "dialog1_ActionArea";
+			w143.Spacing = 10;
+			w143.BorderWidth = ((uint)(5));
+			w143.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonCancel = new global::Gtk.Button ();
 			this.buttonCancel.CanDefault = true;
@@ -1440,9 +1512,9 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.buttonCancel.UseUnderline = true;
 			this.buttonCancel.Label = "gtk-cancel";
 			this.AddActionWidget (this.buttonCancel, -6);
-			global::Gtk.ButtonBox.ButtonBoxChild w139 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w138 [this.buttonCancel]));
-			w139.Expand = false;
-			w139.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w144 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w143 [this.buttonCancel]));
+			w144.Expand = false;
+			w144.Fill = false;
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonOk = new global::Gtk.Button ();
 			this.buttonOk.CanDefault = true;
@@ -1452,83 +1524,86 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = "gtk-ok";
 			this.AddActionWidget (this.buttonOk, -5);
-			global::Gtk.ButtonBox.ButtonBoxChild w140 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w138 [this.buttonOk]));
-			w140.Position = 1;
-			w140.Expand = false;
-			w140.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w145 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w143 [this.buttonOk]));
+			w145.Position = 1;
+			w145.Expand = false;
+			w145.Fill = false;
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 342;
-			this.DefaultHeight = 286;
+			this.DefaultWidth = 348;
+			this.DefaultHeight = 317;
 			this.Show ();
 			this.btnReset.Clicked += new global::System.EventHandler (this.OnBtnResetClicked);
 			this.btnBack.Clicked += new global::System.EventHandler (this.OnBtnBackClicked);
-			this.button9.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button8.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button7.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button65.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button64.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button63.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button62.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button61.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button60.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button6.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button59.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button58.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button57.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button56.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button55.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button54.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button53.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button52.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button51.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button50.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button5.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button49.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button48.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button47.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button46.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button45.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button44.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button43.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button42.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button41.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button40.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button4.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button39.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button38.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button37.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button36.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button35.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button33.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button32.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button31.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button30.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button3.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button29.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button28.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button27.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button26.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button25.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button24.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button23.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button22.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button21.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button20.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button2.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button19.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button18.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button17.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button16.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button15.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button14.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button13.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button12.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button11.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button10.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.button1.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
-			this.buttonOk.Clicked += new global::System.EventHandler (this.OnButtonOkClicked);
+			this.notebook1.SwitchPage += new global::Gtk.SwitchPageHandler (this.OnNotebook1SwitchPage);
+			this.btnSymbol9.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol8.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol7.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol64.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol63.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol62.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol61.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol60.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol6.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol59.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol58.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol57.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol56.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol55.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol54.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol53.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol52.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol51.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol50.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol5.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol49.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol48.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol47.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol46.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol45.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol44.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol43.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol42.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol41.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol40.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol4.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol39.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol38.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol37.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol36.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol35.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol34.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol33.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol32.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol31.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol30.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol3.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol29.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol28.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol27.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol26.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol25.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol24.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol23.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol22.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol21.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol20.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol2.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol19.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol18.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol17.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol16.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol15.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol14.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol13.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol12.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol11.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol10.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.btnSymbol1.Clicked += new global::System.EventHandler (this.OnSymbolClicked);
+			this.txtSymbols.Changed += new global::System.EventHandler (this.OnTxtSymbolsChanged);
+			this.buttonCancel.Pressed += new global::System.EventHandler (this.OnButtonCancelPressed);
+			this.buttonOk.Pressed += new global::System.EventHandler (this.OnButtonOkPressed);
 		}
 	}
 }

@@ -185,7 +185,6 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child frmGameType.Gtk.Container+ContainerChild
 			this.GtkAlignment = new global::Gtk.Alignment (0F, 0F, 1F, 1F);
 			this.GtkAlignment.Name = "GtkAlignment";
-			this.GtkAlignment.LeftPadding = ((uint)(12));
 			// Container child GtkAlignment.Gtk.Container+ContainerChild
 			this.table1 = new global::Gtk.Table (((uint)(2)), ((uint)(2)), false);
 			this.table1.Name = "table1";
@@ -238,7 +237,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.frmGameType.Add (this.GtkAlignment);
 			this.GtkLabel6 = new global::Gtk.Label ();
 			this.GtkLabel6.Name = "GtkLabel6";
-			this.GtkLabel6.LabelProp = global::Mono.Unix.Catalog.GetString ("Game");
+			this.GtkLabel6.LabelProp = global::Mono.Unix.Catalog.GetString ("Secret For...");
 			this.GtkLabel6.UseMarkup = true;
 			this.frmGameType.LabelWidget = this.GtkLabel6;
 			this.hbox1.Add (this.frmGameType);
@@ -252,7 +251,6 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child frame2.Gtk.Container+ContainerChild
 			this.GtkAlignment1 = new global::Gtk.Alignment (0F, 0F, 1F, 1F);
 			this.GtkAlignment1.Name = "GtkAlignment1";
-			this.GtkAlignment1.LeftPadding = ((uint)(12));
 			// Container child GtkAlignment1.Gtk.Container+ContainerChild
 			this.table2 = new global::Gtk.Table (((uint)(2)), ((uint)(1)), false);
 			this.table2.Name = "table2";
@@ -283,7 +281,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.frame2.Add (this.GtkAlignment1);
 			this.GtkLabel9 = new global::Gtk.Label ();
 			this.GtkLabel9.Name = "GtkLabel9";
-			this.GtkLabel9.LabelProp = global::Mono.Unix.Catalog.GetString ("Quest Type");
+			this.GtkLabel9.LabelProp = global::Mono.Unix.Catalog.GetString ("Game Type");
 			this.GtkLabel9.UseMarkup = true;
 			this.frame2.LabelWidget = this.GtkLabel9;
 			this.hbox1.Add (this.frame2);
@@ -341,6 +339,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child table3.Gtk.Table+TableChild
 			this.label2 = new global::Gtk.Label ();
 			this.label2.Name = "label2";
+			this.label2.Xalign = 0F;
 			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("ID");
 			this.table3.Add (this.label2);
 			global::Gtk.Table.TableChild w19 = ((global::Gtk.Table.TableChild)(this.table3 [this.label2]));
@@ -351,6 +350,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child table3.Gtk.Table+TableChild
 			this.label3 = new global::Gtk.Label ();
 			this.label3.Name = "label3";
+			this.label3.Xalign = 0F;
 			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Hero");
 			this.table3.Add (this.label3);
 			global::Gtk.Table.TableChild w20 = ((global::Gtk.Table.TableChild)(this.table3 [this.label3]));
@@ -359,6 +359,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child table3.Gtk.Table+TableChild
 			this.label4 = new global::Gtk.Label ();
 			this.label4.Name = "label4";
+			this.label4.Xalign = 0F;
 			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Child");
 			this.table3.Add (this.label4);
 			global::Gtk.Table.TableChild w21 = ((global::Gtk.Table.TableChild)(this.table3 [this.label4]));
@@ -369,6 +370,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child table3.Gtk.Table+TableChild
 			this.label5 = new global::Gtk.Label ();
 			this.label5.Name = "label5";
+			this.label5.Xalign = 0F;
 			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Behavior");
 			this.table3.Add (this.label5);
 			global::Gtk.Table.TableChild w22 = ((global::Gtk.Table.TableChild)(this.table3 [this.label5]));
@@ -381,6 +383,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child table3.Gtk.Table+TableChild
 			this.label6 = new global::Gtk.Label ();
 			this.label6.Name = "label6";
+			this.label6.Xalign = 0F;
 			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("Animal");
 			this.table3.Add (this.label6);
 			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table3 [this.label6]));
