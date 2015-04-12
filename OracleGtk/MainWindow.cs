@@ -2,6 +2,7 @@ using System;
 using Gtk;
 using System.Diagnostics;
 using System.Reflection;
+using System.Linq;
 
 namespace Zyrenth.OracleHack.GtkUI
 {
@@ -9,6 +10,29 @@ namespace Zyrenth.OracleHack.GtkUI
 	{
 		GameInfo _info = new GameInfo();
 		string _currentFile = null;
+
+		Gtk.NodeStore _ringStore;
+
+		Gtk.NodeStore RingStore
+		{
+			get
+			{
+				if (_ringStore == null)
+				{
+					_ringStore = new Gtk.NodeStore(typeof(RingTreeNode));
+
+					Type ringType = typeof(Rings);
+
+					Array values = Enum.GetValues(ringType);
+					var availableRings = values.OfType<Rings>().Where(x => x != Rings.All && x != Rings.None)
+						.OrderBy(x => (ulong)x).ToList();
+
+					foreach (var val in availableRings)
+						_ringStore.AddNode(new RingTreeNode(val));
+				}
+				return _ringStore;
+			}
+		}
 
 		public MainWindow() : base(Gtk.WindowType.Toplevel)
 		{
@@ -20,6 +44,8 @@ namespace Zyrenth.OracleHack.GtkUI
 			}
 			cmbBehavior.Active = 0;
 			OnCmbAnimalChanged(this, EventArgs.Empty);
+
+			InitializeRings();
 		}
 
 		protected void OnDeleteEvent(object sender, DeleteEventArgs a)
@@ -32,6 +58,7 @@ namespace Zyrenth.OracleHack.GtkUI
 		{
 			_info = new GameInfo();
 			_currentFile = null;
+			SetControlValues();
 		}
 
 		protected void OnOpen(object sender, EventArgs e)
@@ -64,7 +91,10 @@ namespace Zyrenth.OracleHack.GtkUI
 			dialog.Modal = true;
 
 			if (dialog.Run() == (int)Gtk.ResponseType.Ok)
+			{
 				_info = dialog.GameInfo;
+				SetControlValues();
+			}
 			dialog.Destroy();
 		}
 
@@ -118,6 +148,12 @@ namespace Zyrenth.OracleHack.GtkUI
 				rdoSeasons.Active = true;
 
 			// TODO: Set rings
+
+			foreach (RingTreeNode node in _ringStore.OfType<RingTreeNode>())
+			{
+				node.IsChecked = (_info.Rings & node.RingValue) == node.RingValue;
+			}
+			nvRings.QueueDraw();
 		}
 
 		private void GetControlValues()
@@ -313,6 +349,49 @@ namespace Zyrenth.OracleHack.GtkUI
 					chooser.PreviewWidgetActive = false;
 				}
 			}
+		}
+
+		void InitializeRings()
+		{
+			nvRings.NodeStore = RingStore;
+			var toggleCell = new Gtk.CellRendererToggle();
+			toggleCell.Activatable = true;
+			toggleCell.Toggled += OnRingToggled;
+
+			nvRings.AppendColumn("d", toggleCell, "active", 0);
+			nvRings.AppendColumn("Image", new Gtk.CellRendererPixbuf(), "pixbuf", 1);
+			nvRings.AppendColumn("Name", new Gtk.CellRendererText(), "text", 2);
+			nvRings.ShowAll();
+		}
+
+		void OnRingToggled(object sender, ToggledArgs e)
+		{
+			RingTreeNode node = _ringStore.GetNode(new Gtk.TreePath(e.Path)) as RingTreeNode;
+			node.IsChecked = !node.IsChecked;
+			if (node.IsChecked)
+				_info.Rings |= node.RingValue;
+			else
+				_info.Rings ^= node.RingValue;
+		}
+
+		protected void OnBtnAllClicked(object sender, EventArgs e)
+		{
+			foreach (RingTreeNode node in _ringStore.OfType<RingTreeNode>())
+			{
+				node.IsChecked = true;
+			}
+			_info.Rings = Rings.All;
+			nvRings.QueueDraw();
+		}
+
+		protected void OnBtnNoneClicked(object sender, EventArgs e)
+		{
+			foreach (RingTreeNode node in _ringStore.OfType<RingTreeNode>())
+			{
+				node.IsChecked = false;
+			}
+			_info.Rings = Rings.None;
+			nvRings.QueueDraw();
 		}
 	}
 }

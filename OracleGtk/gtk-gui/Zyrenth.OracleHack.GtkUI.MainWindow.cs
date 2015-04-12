@@ -94,6 +94,8 @@ namespace Zyrenth.OracleHack.GtkUI
 		
 		private global::Gtk.Entry txtHero;
 		
+		private global::Gtk.VBox vbox3;
+		
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 		
 		private global::Gtk.NodeView nvRings;
@@ -445,26 +447,36 @@ namespace Zyrenth.OracleHack.GtkUI
 			w28.Expand = false;
 			w28.Fill = false;
 			// Container child hbox4.Gtk.Box+BoxChild
+			this.vbox3 = new global::Gtk.VBox ();
+			this.vbox3.Name = "vbox3";
+			this.vbox3.Spacing = 6;
+			// Container child vbox3.Gtk.Box+BoxChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
+			this.GtkScrolledWindow.WidthRequest = 170;
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
+			this.GtkScrolledWindow.HscrollbarPolicy = ((global::Gtk.PolicyType)(2));
 			this.GtkScrolledWindow.ShadowType = ((global::Gtk.ShadowType)(1));
 			// Container child GtkScrolledWindow.Gtk.Container+ContainerChild
 			this.nvRings = new global::Gtk.NodeView ();
 			this.nvRings.CanFocus = true;
 			this.nvRings.Name = "nvRings";
+			this.nvRings.HeadersVisible = false;
 			this.GtkScrolledWindow.Add (this.nvRings);
-			this.hbox4.Add (this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.GtkScrolledWindow]));
+			this.vbox3.Add (this.GtkScrolledWindow);
+			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.GtkScrolledWindow]));
 			w30.Position = 1;
-			this.vbox1.Add (this.hbox4);
-			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox4]));
+			this.hbox4.Add (this.vbox3);
+			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.vbox3]));
 			w31.Position = 1;
+			this.vbox1.Add (this.hbox4);
+			global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox4]));
+			w32.Position = 1;
 			this.Add (this.vbox1);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 353;
-			this.DefaultHeight = 250;
+			this.DefaultWidth = 444;
+			this.DefaultHeight = 237;
 			this.Show ();
 			this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 			this.newAction.Activated += new global::System.EventHandler (this.OnNew);
