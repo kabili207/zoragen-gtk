@@ -299,9 +299,10 @@ namespace Zyrenth.OracleHack.GtkUI
 			global::Stetic.Gui.Initialize (this);
 			// Widget Zyrenth.OracleHack.GtkUI.DecoderForm
 			this.Name = "Zyrenth.OracleHack.GtkUI.DecoderForm";
-			this.Title = global::Mono.Unix.Catalog.GetString ("DecoderForm");
+			this.Title = global::Mono.Unix.Catalog.GetString ("Decode Secret");
 			this.Icon = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Farore.ico");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
+			this.Modal = true;
 			// Internal child Zyrenth.OracleHack.GtkUI.DecoderForm.VBox
 			global::Gtk.VBox w1 = this.VBox;
 			w1.Name = "dialog1_VBox";
@@ -345,6 +346,8 @@ namespace Zyrenth.OracleHack.GtkUI
 			w3.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.secretwidget1 = new global::Zyrenth.OracleHack.GtkUI.LargeSecretWidget ();
+			this.secretwidget1.WidthRequest = 172;
+			this.secretwidget1.HeightRequest = 52;
 			this.secretwidget1.Events = ((global::Gdk.EventMask)(256));
 			this.secretwidget1.Name = "secretwidget1";
 			this.table3.Add (this.secretwidget1);
@@ -361,7 +364,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.notebook1 = new global::Gtk.Notebook ();
 			this.notebook1.CanFocus = true;
 			this.notebook1.Name = "notebook1";
-			this.notebook1.CurrentPage = 1;
+			this.notebook1.CurrentPage = 0;
 			// Container child notebook1.Gtk.Notebook+NotebookChild
 			this.table1 = new global::Gtk.Table (((uint)(5)), ((uint)(13)), false);
 			this.table1.Name = "table1";

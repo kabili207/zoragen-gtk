@@ -82,6 +82,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.hbox1 = new global::Gtk.HBox ();
 			this.hbox1.Name = "hbox1";
 			this.hbox1.Spacing = 6;
+			this.hbox1.BorderWidth = ((uint)(8));
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.vbox2 = new global::Gtk.VBox ();
 			this.vbox2.Name = "vbox2";
@@ -147,7 +148,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.table1 = new global::Gtk.Table (((uint)(11)), ((uint)(2)), false);
 			this.table1.Name = "table1";
-			this.table1.RowSpacing = ((uint)(6));
+			this.table1.RowSpacing = ((uint)(1));
 			this.table1.ColumnSpacing = ((uint)(6));
 			// Container child table1.Gtk.Table+TableChild
 			this.label3 = new global::Gtk.Label ();
@@ -419,8 +420,8 @@ namespace Zyrenth.OracleHack.GtkUI
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
-			this.DefaultWidth = 295;
-			this.DefaultHeight = 326;
+			this.DefaultWidth = 305;
+			this.DefaultHeight = 286;
 			this.Show ();
 			this.buttonOk.Pressed += new global::System.EventHandler (this.OnButtonOkPressed);
 		}

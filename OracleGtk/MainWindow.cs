@@ -255,11 +255,13 @@ namespace Zyrenth.OracleHack.GtkUI
 
 		private void SaveFile()
 		{
+			GetControlValues();
 			_info.Write(_currentFile);
 		}
 
 		private void SaveAsFile()
 		{
+			GetControlValues();
 			Gtk.FileChooserDialog fc =
 				new Gtk.FileChooserDialog("Choose the file to save",
 					this,
