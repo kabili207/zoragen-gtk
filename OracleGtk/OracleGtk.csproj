@@ -53,6 +53,7 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -298,13 +299,6 @@
     <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.FilePreviewWidget.cs" />
     <Compile Include="RingTreeNode.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\OracleHack\OracleHack.csproj">
-      <Project>{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}</Project>
-      <Name>OracleHack</Name>
-    </ProjectReference>
-  </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Rings\" />
   </ItemGroup>
@@ -502,4 +496,11 @@
       <Link>Images\Rings\ZoraRing.gif</Link>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OracleHack\src\OracleHack.csproj">
+      <Project>{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}</Project>
+      <Name>OracleHack</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

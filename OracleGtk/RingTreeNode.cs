@@ -42,8 +42,8 @@ namespace Zyrenth.OracleHack.GtkUI
 			RingInfoAttribute attr = ringType.GetMember(ringValue.ToString())[0].GetCustomAttributes(infoType, false)
 					.Cast<RingInfoAttribute>().SingleOrDefault();
 
-			_name = attr.name;
-			_description = attr.description;
+			_name = attr.Name;
+			_description = attr.Description;
 		}
 	}
 }

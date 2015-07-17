@@ -21,22 +21,22 @@ namespace Zyrenth.OracleHack.GtkUI
 		
 		private void SetSecrets()
 		{
-			swGame.SetSecret(_info.CreateGameSecret());
-			swRings.SetSecret(_info.CreateRingSecret());
+			swGame.SetSecret(new GameSecret(_info));
+			swRings.SetSecret(new RingSecret(_info));
 			
 			if (_info.IsLinkedGame)
 			{
 				bool returnSecret = true;
-				swMem1.SetSecret(_info.CreateMemorySecret(Memory.ClockShopKingZora, returnSecret));
-				swMem2.SetSecret(_info.CreateMemorySecret(Memory.GraveyardFairy, returnSecret));
-				swMem3.SetSecret(_info.CreateMemorySecret(Memory.SubrosianTroy, returnSecret));
-				swMem4.SetSecret(_info.CreateMemorySecret(Memory.DiverPlen, returnSecret));
-				swMem5.SetSecret(_info.CreateMemorySecret(Memory.SmithLibrary, returnSecret));
-				swMem6.SetSecret(_info.CreateMemorySecret(Memory.PirateTokay, returnSecret));
-				swMem7.SetSecret(_info.CreateMemorySecret(Memory.TempleMamamu, returnSecret));
-				swMem8.SetSecret(_info.CreateMemorySecret(Memory.DekuTingle, returnSecret));
-				swMem9.SetSecret(_info.CreateMemorySecret(Memory.BiggoronElder, returnSecret));
-				swMem10.SetSecret(_info.CreateMemorySecret(Memory.RuulSymmetry, returnSecret));
+				swMem1.SetSecret(new MemorySecret(_info, Memory.ClockShopKingZora, returnSecret));
+				swMem2.SetSecret(new MemorySecret(_info, Memory.GraveyardFairy, returnSecret));
+				swMem3.SetSecret(new MemorySecret(_info, Memory.SubrosianTroy, returnSecret));
+				swMem4.SetSecret(new MemorySecret(_info, Memory.DiverPlen, returnSecret));
+				swMem5.SetSecret(new MemorySecret(_info, Memory.SmithLibrary, returnSecret));
+				swMem6.SetSecret(new MemorySecret(_info, Memory.PirateTokay, returnSecret));
+				swMem7.SetSecret(new MemorySecret(_info, Memory.TempleMamamu, returnSecret));
+				swMem8.SetSecret(new MemorySecret(_info, Memory.DekuTingle, returnSecret));
+				swMem9.SetSecret(new MemorySecret(_info, Memory.BiggoronElder, returnSecret));
+				swMem10.SetSecret(new MemorySecret(_info, Memory.RuulSymmetry, returnSecret));
 			}
 			
 			if (_info.Game == Game.Ages)

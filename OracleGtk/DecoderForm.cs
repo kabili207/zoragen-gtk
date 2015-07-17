@@ -70,7 +70,7 @@ namespace Zyrenth.OracleHack.GtkUI
 					secretwidget1.SetSecret(data.Take(currentPic).ToArray());
 				}
 
-				txtSymbols.Text = GameInfo.ByteArrayToSecretString(data.Take(currentPic).ToArray());
+				txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray());
 			}
 		}
 
@@ -78,7 +78,7 @@ namespace Zyrenth.OracleHack.GtkUI
 		{
 			secretwidget1.Reset();
 			currentPic = 0;
-			txtSymbols.Text = GameInfo.ByteArrayToSecretString(data.Take(currentPic).ToArray());
+			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray());
 		}
 
 		protected void OnBtnBackClicked(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			if (currentPic > 0)
 				currentPic--;
 			secretwidget1.SetSecret(data.Take(currentPic).ToArray());
-			txtSymbols.Text = GameInfo.ByteArrayToSecretString(data.Take(currentPic).ToArray());
+			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray());
 		}
 
 		protected void OnButtonOkPressed(object sender, EventArgs e)
@@ -100,13 +100,19 @@ namespace Zyrenth.OracleHack.GtkUI
 				switch (Mode)
 				{
 					case SecretType.Game:
-						GameInfo.LoadGameData(trimmedData);
+						GameSecret gs = new GameSecret();
+						gs.Load(trimmedData);
+						gs.UpdateGameInfo(GameInfo);
 						break;
 					case SecretType.Ring:
-						GameInfo.LoadRings(trimmedData, chkAppendRings.Active);
+						RingSecret rs = new RingSecret();
+						rs.Load(trimmedData);
+						rs.UpdateGameInfo(GameInfo, chkAppendRings.Active);
 						break;
 					case SecretType.Memory:
-						GameInfo.ReadMemorySecret(trimmedData);
+						MemorySecret ms = new MemorySecret();
+						ms.Load(trimmedData);
+						// Now what?
 						break;
 				}
 
@@ -134,7 +140,7 @@ namespace Zyrenth.OracleHack.GtkUI
 
 			try
 			{
-				byte[] parsedSecret = GameInfo.SecretStringToByteArray(txtSymbols.Text);
+				byte[] parsedSecret = SecretParser.ParseSecret(txtSymbols.Text);
 				byte[] trimmedData = parsedSecret.Take(parsedSecret.Length.Clamp(0, _secretLength)).ToArray();
 
 				secretwidget1.SetSecret(trimmedData);
@@ -152,7 +158,7 @@ namespace Zyrenth.OracleHack.GtkUI
 
 		protected void OnNotebook1SwitchPage(object o, SwitchPageArgs args)
 		{
-			txtSymbols.Text = GameInfo.ByteArrayToSecretString(data.Take(currentPic).ToArray());
+			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray());
 		}
 
 	}
