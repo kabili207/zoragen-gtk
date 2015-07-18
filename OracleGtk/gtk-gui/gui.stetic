@@ -90,6 +90,12 @@
         <property name="StockId">gtk-about</property>
         <signal name="Activated" handler="OnAbout" />
       </action>
+      <action id="CheckForUpdatesAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Check for Updates</property>
+        <property name="ShortLabel" translatable="yes">Check for Updates</property>
+        <signal name="Activated" handler="OnCheckForUpdatesActionActivated" />
+      </action>
     </action-group>
     <property name="MemberName" />
     <property name="Title" translatable="yes">Oracle of Secrets</property>
@@ -120,6 +126,7 @@
               </node>
               <node type="Menu" action="HelpAction">
                 <node type="Menuitem" action="aboutAction" />
+                <node type="Menuitem" action="CheckForUpdatesAction" />
               </node>
             </node>
           </widget>

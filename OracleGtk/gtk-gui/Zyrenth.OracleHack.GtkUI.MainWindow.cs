@@ -32,6 +32,8 @@ namespace Zyrenth.OracleHack.GtkUI
 		
 		private global::Gtk.Action aboutAction;
 		
+		private global::Gtk.Action CheckForUpdatesAction;
+		
 		private global::Gtk.VBox vbox1;
 		
 		private global::Gtk.MenuBar menubar1;
@@ -145,6 +147,9 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.aboutAction = new global::Gtk.Action ("aboutAction", global::Mono.Unix.Catalog.GetString ("About"), null, "gtk-about");
 			this.aboutAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("About");
 			w1.Add (this.aboutAction, null);
+			this.CheckForUpdatesAction = new global::Gtk.Action ("CheckForUpdatesAction", global::Mono.Unix.Catalog.GetString ("Check for Updates"), null, null);
+			this.CheckForUpdatesAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Check for Updates");
+			w1.Add (this.CheckForUpdatesAction, null);
 			this.UIManager.InsertActionGroup (w1, 0);
 			this.AddAccelGroup (this.UIManager.AccelGroup);
 			this.Name = "Zyrenth.OracleHack.GtkUI.MainWindow";
@@ -157,7 +162,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.vbox1.Name = "vbox1";
 			this.vbox1.Spacing = 6;
 			// Container child vbox1.Gtk.Box+BoxChild
-			this.UIManager.AddUiFromString ("<ui><menubar name='menubar1'><menu name='FileAction' action='FileAction'><menuitem name='newAction' action='newAction'/><menuitem name='openAction' action='openAction'/><menuitem name='saveAction' action='saveAction'/><menuitem name='saveAsAction' action='saveAsAction'/><menuitem name='quitAction' action='quitAction'/></menu><menu name='SecretsAction' action='SecretsAction'><menuitem name='LoadGameSecretAction' action='LoadGameSecretAction'/><menuitem name='LoadRingSecretAction' action='LoadRingSecretAction'/><separator/><menuitem name='GenerateSecretsAction' action='GenerateSecretsAction'/></menu><menu name='HelpAction' action='HelpAction'><menuitem name='aboutAction' action='aboutAction'/></menu></menubar></ui>");
+			this.UIManager.AddUiFromString ("<ui><menubar name='menubar1'><menu name='FileAction' action='FileAction'><menuitem name='newAction' action='newAction'/><menuitem name='openAction' action='openAction'/><menuitem name='saveAction' action='saveAction'/><menuitem name='saveAsAction' action='saveAsAction'/><menuitem name='quitAction' action='quitAction'/></menu><menu name='SecretsAction' action='SecretsAction'><menuitem name='LoadGameSecretAction' action='LoadGameSecretAction'/><menuitem name='LoadRingSecretAction' action='LoadRingSecretAction'/><separator/><menuitem name='GenerateSecretsAction' action='GenerateSecretsAction'/></menu><menu name='HelpAction' action='HelpAction'><menuitem name='aboutAction' action='aboutAction'/><menuitem name='CheckForUpdatesAction' action='CheckForUpdatesAction'/></menu></menubar></ui>");
 			this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget ("/menubar1")));
 			this.menubar1.Name = "menubar1";
 			this.vbox1.Add (this.menubar1);
@@ -488,6 +493,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.LoadRingSecretAction.Activated += new global::System.EventHandler (this.OnLoadRingSecret);
 			this.GenerateSecretsAction.Activated += new global::System.EventHandler (this.OnGenerateSecrets);
 			this.aboutAction.Activated += new global::System.EventHandler (this.OnAbout);
+			this.CheckForUpdatesAction.Activated += new global::System.EventHandler (this.OnCheckForUpdatesActionActivated);
 			this.chkLinked.Toggled += new global::System.EventHandler (this.OnChkLinkedToggled);
 			this.chkHeros.Toggled += new global::System.EventHandler (this.OnChkHerosToggled);
 			this.txtHero.Changed += new global::System.EventHandler (this.OnTxtHeroChanged);

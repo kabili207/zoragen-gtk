@@ -54,6 +54,7 @@
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -298,6 +299,9 @@
     <Compile Include="FilePreviewWidget.cs" />
     <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.FilePreviewWidget.cs" />
     <Compile Include="RingTreeNode.cs" />
+    <Compile Include="GitHubRelease.cs" />
+    <Compile Include="GitHubReleaseJsonConverter.cs" />
+    <Compile Include="SemanticVersion.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Rings\" />

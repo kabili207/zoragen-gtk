@@ -20,9 +20,13 @@
 
 using System;
 using Gtk;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
 using System.Linq;
+using System.Net;
+using System.IO;
+using System.Web.Script.Serialization;
 
 namespace Zyrenth.OracleHack.GtkUI
 {
@@ -66,6 +70,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			OnCmbAnimalChanged(this, EventArgs.Empty);
 
 			InitializeRings();
+			CheckForUpdates(true);
 		}
 
 		protected void OnDeleteEvent(object sender, DeleteEventArgs a)
@@ -144,7 +149,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			dialog.Version = details.ProductVersion;
 			dialog.Comments = details.Description;
 			dialog.Authors = new string [] { "Andrew Nagle" };
-			dialog.Website = "https://github.com/kabili207/oracle-hack-gtk";
+			dialog.Website = "https://github.com/kabili207/oracle-of-secrets-gtk";
 			dialog.Copyright = details.Copyright;
 			dialog.Logo = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleHack.GtkUI.Farore.ico");
 			dialog.Icon = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleHack.GtkUI.Farore.ico");
@@ -415,6 +420,81 @@ namespace Zyrenth.OracleHack.GtkUI
 			_info.Rings = Rings.None;
 			nvRings.QueueDraw();
 		}
+
+		private void CheckForUpdates(bool silentCheck)
+		{
+			List<GitHubRelease> releases = null;
+			try
+			{
+				string sURL;
+				sURL = "https://api.github.com/repos/kabili207/oracle-of-secrets-gtk/releases";
+
+				// Mono doesn't need this, but it's a good idea to do it anyway in case
+				// someone decides to run this on the .NET Framework.
+				Extensions.SetAllowUnsafeHeaderParsing();
+
+				// Mono, by default, doesn't include ANY ca certificates, nor does
+				// it try to bridge to the OS cert store. So we have to trade features
+				// for insecurity. I don't like it, but it's better than hard-coding
+				// github's certificate...
+				ServicePointManager.ServerCertificateValidationCallback = 
+					new System.Net.Security.RemoteCertificateValidationCallback
+					(
+						(srvPoint, certificate, chain, errors) => true
+					);
+				
+				WebRequest request = WebRequest.Create(sURL);
+
+				// GitHub requires a user agent
+				((HttpWebRequest)request).UserAgent = "OracleHack updater";
+
+				using (Stream objStream = request.GetResponse().GetResponseStream())
+				{
+					StreamReader objReader = new StreamReader(objStream);
+					string json = objReader.ReadToEnd();
+					var serializer = new JavaScriptSerializer();
+					serializer.RegisterConverters(new[] { new GitHubReleaseJsonConverter() });
+					releases = serializer.Deserialize<List<GitHubRelease>>(json);
+				}
+			}
+			catch (Exception ex)
+			{
+				if (!silentCheck)
+					MessageBox.Show("Unable to check for updates." + Environment.NewLine +
+						ex.Message, "Check for updates", ButtonsType.Ok, MessageType.Error);
+			}
+
+			if (releases != null)
+			{
+				AssemblyDetail detail = new AssemblyDetail(Assembly.GetExecutingAssembly());
+				var releaseInfo = releases.Where(x => !x.IsPreRelease && !x.IsDraft &&
+					x.TagName.StartsWith("v")).Select(x =>
+					{
+						string versionString = x.TagName.TrimStart('v', 'V');
+						SemanticVersion version = SemanticVersion.Parse(versionString);
+						return new { Version = version, Release = x };
+					}).Where(x => x.Version > detail.ProductVersion).OrderByDescending(x => x.Version);
+
+				if (releaseInfo.Count() > 0)
+				{
+					MessageBox.Show("There is an update available." + Environment.NewLine +
+						"Current Version: " + detail.ProductVersion + Environment.NewLine +
+						"Latest Version: " + releaseInfo.First().Release,
+						"Update Available", ButtonsType.YesNo, MessageType.Info);
+				}
+				else if (!silentCheck)
+				{
+					MessageBox.Show("There are no new updates available", "No updates", ButtonsType.Ok, MessageType.Info);
+				}
+			}
+		}
+
+		protected void OnCheckForUpdatesActionActivated(object sender, EventArgs e)
+		{
+			CheckForUpdates(false);
+		}
+
+
 	}
 }
 
