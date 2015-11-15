@@ -1,0 +1,6 @@
+language: csharp
+solution: OracleHackGtk.sln
+sudo: true
+install:
+  - sudo apt-get install -y gtk-sharp2
+  - nuget restore OracleHackGtk.sln
