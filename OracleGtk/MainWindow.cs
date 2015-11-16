@@ -129,7 +129,6 @@ namespace Zyrenth.OracleHack.GtkUI
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
 			dialog.Run();
-			// TODO: Do something?
 			dialog.Destroy();
 		}
 
@@ -164,6 +163,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			spinID.Value = _info.GameID;
 			chkLinked.Active = _info.IsLinkedGame;
 			chkHeros.Active = _info.IsHeroQuest;
+			chkFreeRingGiven.Active = _info.WasGivenFreeRing;
 			cmbAnimal.SetActiveText(_info.Animal.ToString());
 			cmbBehavior.SetActiveText(_info.Behavior.ToString());
 
@@ -171,8 +171,6 @@ namespace Zyrenth.OracleHack.GtkUI
 				rdoAges.Active = true;
 			else
 				rdoSeasons.Active = true;
-
-			// TODO: Set rings
 
 			foreach (RingTreeNode node in _ringStore.OfType<RingTreeNode>())
 			{
@@ -188,6 +186,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			_info.GameID = (short)spinID.ValueAsInt;
 			_info.IsLinkedGame = chkLinked.Active;
 			_info.IsHeroQuest = chkHeros.Active;
+			_info.WasGivenFreeRing = chkFreeRingGiven.Active;
 
 			_info.Game = rdoAges.Active ? Game.Ages : Game.Seasons;
 
@@ -337,20 +336,6 @@ namespace Zyrenth.OracleHack.GtkUI
 			fc.Destroy();
 		}
 
-		private void GenerateSecrets()
-		{
-			GetControlValues();
-			if (_info.GameID == 0)
-			{
-				Random rnd = new Random();
-				_info.GameID = (short)rnd.Next(1, short.MaxValue);
-				spinID.Value = _info.GameID;
-			}
-			var dialog = new ViewSecretsDialog(_info);
-			dialog.Run();
-			dialog.Destroy();
-		}
-
 		private void OnUpdatePreview(object sender, EventArgs e)
 		{
 			var chooser = sender as Gtk.FileChooserDialog;
@@ -378,6 +363,58 @@ namespace Zyrenth.OracleHack.GtkUI
 			}
 		}
 
+		protected void OnImportBattery(object sender, EventArgs e)
+		{
+			Gtk.FileChooserDialog fc =
+				new Gtk.FileChooserDialog("Choose the file to open",
+					this,
+					FileChooserAction.Open,
+					"Cancel", ResponseType.Cancel,
+					"Open", ResponseType.Accept);
+			var filter = new FileFilter();
+			filter.Name = "Battery Files (*.sav)";
+			filter.AddPattern("*.sav");
+			fc.AddFilter(filter);
+
+			if (fc.Run() == (int)ResponseType.Accept)
+			{
+				using (System.IO.FileStream file = System.IO.File.OpenRead(fc.Filename))
+				{
+					var data = VbaSaveFileLoader.LoadAll(file);
+					OpenGameInfoPicker(data);
+				}
+			}
+
+			fc.Destroy();
+		}
+
+		private void OpenGameInfoPicker(IEnumerable<GameInfo> infos)
+		{
+			var dialog = new GamePickerDialog(infos);
+			dialog.Modal = true;
+			if (dialog.Run() ==(int) ResponseType.Ok)
+			{
+				_info = dialog.SelectedGameInfo;
+				_currentFile = "";
+				SetControlValues();
+			}
+			dialog.Destroy();
+		}
+
+		private void GenerateSecrets()
+		{
+			GetControlValues();
+			if (_info.GameID == 0)
+			{
+				Random rnd = new Random();
+				_info.GameID = (short)rnd.Next(1, short.MaxValue);
+				spinID.Value = _info.GameID;
+			}
+			var dialog = new ViewSecretsDialog(_info);
+			dialog.Run();
+			dialog.Destroy();
+		}
+
 		void InitializeRings()
 		{
 			nvRings.NodeStore = RingStore;
@@ -401,7 +438,7 @@ namespace Zyrenth.OracleHack.GtkUI
 				_info.Rings ^= node.RingValue;
 		}
 
-		protected void OnBtnAllClicked(object sender, EventArgs e)
+		protected void OnBtnAllRingsClicked(object sender, EventArgs e)
 		{
 			foreach (RingTreeNode node in _ringStore.OfType<RingTreeNode>())
 			{
@@ -411,7 +448,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			nvRings.QueueDraw();
 		}
 
-		protected void OnBtnNoneClicked(object sender, EventArgs e)
+		protected void OnBtnNoRingsClicked(object sender, EventArgs e)
 		{
 			foreach (RingTreeNode node in _ringStore.OfType<RingTreeNode>())
 			{
@@ -493,8 +530,6 @@ namespace Zyrenth.OracleHack.GtkUI
 		{
 			CheckForUpdates(false);
 		}
-
-
 	}
 }
 

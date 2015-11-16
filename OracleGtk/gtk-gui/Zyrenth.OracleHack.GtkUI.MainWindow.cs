@@ -34,6 +34,10 @@ namespace Zyrenth.OracleHack.GtkUI
 		
 		private global::Gtk.Action CheckForUpdatesAction;
 		
+		private global::Gtk.Action ImportBatteryAction;
+		
+		private global::Gtk.Action importBatteryAction;
+		
 		private global::Gtk.VBox vbox1;
 		
 		private global::Gtk.MenuBar menubar1;
@@ -70,6 +74,8 @@ namespace Zyrenth.OracleHack.GtkUI
 		
 		private global::Gtk.CheckButton chkLinked;
 		
+		private global::Gtk.Image image3;
+		
 		private global::Gtk.Label GtkLabel9;
 		
 		private global::Gtk.Table table3;
@@ -98,9 +104,19 @@ namespace Zyrenth.OracleHack.GtkUI
 		
 		private global::Gtk.VBox vbox3;
 		
+		private global::Gtk.VBox vbox4;
+		
+		private global::Gtk.HBox hbox2;
+		
+		private global::Gtk.Button btnAllRings;
+		
+		private global::Gtk.Button btnNoRings;
+		
 		private global::Gtk.ScrolledWindow GtkScrolledWindow;
 		
 		private global::Gtk.NodeView nvRings;
+		
+		private global::Gtk.CheckButton chkFreeRingGiven;
 
 		protected virtual void Build ()
 		{
@@ -150,6 +166,12 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.CheckForUpdatesAction = new global::Gtk.Action ("CheckForUpdatesAction", global::Mono.Unix.Catalog.GetString ("Check for Updates"), null, null);
 			this.CheckForUpdatesAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Check for Updates");
 			w1.Add (this.CheckForUpdatesAction, null);
+			this.ImportBatteryAction = new global::Gtk.Action ("ImportBatteryAction", global::Mono.Unix.Catalog.GetString ("Import Battery"), null, null);
+			this.ImportBatteryAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Import Battery");
+			w1.Add (this.ImportBatteryAction, null);
+			this.importBatteryAction = new global::Gtk.Action ("importBatteryAction", global::Mono.Unix.Catalog.GetString ("Import Battery"), global::Mono.Unix.Catalog.GetString ("Imports a VBA battery file"), null);
+			this.importBatteryAction.ShortLabel = global::Mono.Unix.Catalog.GetString ("Import Battery");
+			w1.Add (this.importBatteryAction, null);
 			this.UIManager.InsertActionGroup (w1, 0);
 			this.AddAccelGroup (this.UIManager.AccelGroup);
 			this.Name = "Zyrenth.OracleHack.GtkUI.MainWindow";
@@ -160,9 +182,8 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child Zyrenth.OracleHack.GtkUI.MainWindow.Gtk.Container+ContainerChild
 			this.vbox1 = new global::Gtk.VBox ();
 			this.vbox1.Name = "vbox1";
-			this.vbox1.Spacing = 6;
 			// Container child vbox1.Gtk.Box+BoxChild
-			this.UIManager.AddUiFromString ("<ui><menubar name='menubar1'><menu name='FileAction' action='FileAction'><menuitem name='newAction' action='newAction'/><menuitem name='openAction' action='openAction'/><menuitem name='saveAction' action='saveAction'/><menuitem name='saveAsAction' action='saveAsAction'/><menuitem name='quitAction' action='quitAction'/></menu><menu name='SecretsAction' action='SecretsAction'><menuitem name='LoadGameSecretAction' action='LoadGameSecretAction'/><menuitem name='LoadRingSecretAction' action='LoadRingSecretAction'/><separator/><menuitem name='GenerateSecretsAction' action='GenerateSecretsAction'/></menu><menu name='HelpAction' action='HelpAction'><menuitem name='aboutAction' action='aboutAction'/><menuitem name='CheckForUpdatesAction' action='CheckForUpdatesAction'/></menu></menubar></ui>");
+			this.UIManager.AddUiFromString ("<ui><menubar name='menubar1'><menu name='FileAction' action='FileAction'><menuitem name='newAction' action='newAction'/><menuitem name='openAction' action='openAction'/><menuitem name='saveAction' action='saveAction'/><menuitem name='saveAsAction' action='saveAsAction'/><separator/><menuitem name='importBatteryAction' action='importBatteryAction'/><separator/><menuitem name='quitAction' action='quitAction'/></menu><menu name='SecretsAction' action='SecretsAction'><menuitem name='LoadGameSecretAction' action='LoadGameSecretAction'/><menuitem name='LoadRingSecretAction' action='LoadRingSecretAction'/><separator/><menuitem name='GenerateSecretsAction' action='GenerateSecretsAction'/></menu><menu name='HelpAction' action='HelpAction'><menuitem name='aboutAction' action='aboutAction'/><menuitem name='CheckForUpdatesAction' action='CheckForUpdatesAction'/></menu></menubar></ui>");
 			this.menubar1 = ((global::Gtk.MenuBar)(this.UIManager.GetWidget ("/menubar1")));
 			this.menubar1.Name = "menubar1";
 			this.vbox1.Add (this.menubar1);
@@ -182,7 +203,6 @@ namespace Zyrenth.OracleHack.GtkUI
 			// Container child vbox2.Gtk.Box+BoxChild
 			this.hbox1 = new global::Gtk.HBox ();
 			this.hbox1.Name = "hbox1";
-			this.hbox1.Homogeneous = true;
 			this.hbox1.Spacing = 6;
 			// Container child hbox1.Gtk.Box+BoxChild
 			this.frmGameType = new global::Gtk.Frame ();
@@ -259,7 +279,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.GtkAlignment1 = new global::Gtk.Alignment (0F, 0F, 1F, 1F);
 			this.GtkAlignment1.Name = "GtkAlignment1";
 			// Container child GtkAlignment1.Gtk.Container+ContainerChild
-			this.table2 = new global::Gtk.Table (((uint)(2)), ((uint)(1)), false);
+			this.table2 = new global::Gtk.Table (((uint)(2)), ((uint)(2)), false);
 			this.table2.Name = "table2";
 			this.table2.BorderWidth = ((uint)(3));
 			// Container child table2.Gtk.Table+TableChild
@@ -273,6 +293,8 @@ namespace Zyrenth.OracleHack.GtkUI
 			global::Gtk.Table.TableChild w10 = ((global::Gtk.Table.TableChild)(this.table2 [this.chkHeros]));
 			w10.TopAttach = ((uint)(1));
 			w10.BottomAttach = ((uint)(2));
+			w10.LeftAttach = ((uint)(1));
+			w10.RightAttach = ((uint)(2));
 			w10.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table2.Gtk.Table+TableChild
 			this.chkLinked = new global::Gtk.CheckButton ();
@@ -283,7 +305,19 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.chkLinked.UseUnderline = true;
 			this.table2.Add (this.chkLinked);
 			global::Gtk.Table.TableChild w11 = ((global::Gtk.Table.TableChild)(this.table2 [this.chkLinked]));
+			w11.LeftAttach = ((uint)(1));
+			w11.RightAttach = ((uint)(2));
 			w11.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.image3 = new global::Gtk.Image ();
+			this.image3.Name = "image3";
+			this.image3.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("Zyrenth.OracleHack.GtkUI.Images.Triforce.png");
+			this.table2.Add (this.image3);
+			global::Gtk.Table.TableChild w12 = ((global::Gtk.Table.TableChild)(this.table2 [this.image3]));
+			w12.TopAttach = ((uint)(1));
+			w12.BottomAttach = ((uint)(2));
+			w12.XOptions = ((global::Gtk.AttachOptions)(4));
+			w12.YOptions = ((global::Gtk.AttachOptions)(4));
 			this.GtkAlignment1.Add (this.table2);
 			this.frame2.Add (this.GtkAlignment1);
 			this.GtkLabel9 = new global::Gtk.Label ();
@@ -292,15 +326,15 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.GtkLabel9.UseMarkup = true;
 			this.frame2.LabelWidget = this.GtkLabel9;
 			this.hbox1.Add (this.frame2);
-			global::Gtk.Box.BoxChild w14 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.frame2]));
-			w14.Position = 1;
-			w14.Expand = false;
-			w14.Fill = false;
-			this.vbox2.Add (this.hbox1);
-			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox1]));
-			w15.Position = 0;
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.frame2]));
+			w15.Position = 1;
 			w15.Expand = false;
 			w15.Fill = false;
+			this.vbox2.Add (this.hbox1);
+			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.hbox1]));
+			w16.Position = 0;
+			w16.Expand = false;
+			w16.Fill = false;
 			// Container child vbox2.Gtk.Box+BoxChild
 			this.table3 = new global::Gtk.Table (((uint)(3)), ((uint)(4)), false);
 			this.table3.Name = "table3";
@@ -314,90 +348,90 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.cmbAnimal.Name = "cmbAnimal";
 			this.cmbAnimal.Active = 0;
 			this.table3.Add (this.cmbAnimal);
-			global::Gtk.Table.TableChild w16 = ((global::Gtk.Table.TableChild)(this.table3 [this.cmbAnimal]));
-			w16.TopAttach = ((uint)(2));
-			w16.BottomAttach = ((uint)(3));
-			w16.LeftAttach = ((uint)(1));
-			w16.RightAttach = ((uint)(2));
-			w16.XOptions = ((global::Gtk.AttachOptions)(4));
-			w16.YOptions = ((global::Gtk.AttachOptions)(0));
+			global::Gtk.Table.TableChild w17 = ((global::Gtk.Table.TableChild)(this.table3 [this.cmbAnimal]));
+			w17.TopAttach = ((uint)(2));
+			w17.BottomAttach = ((uint)(3));
+			w17.LeftAttach = ((uint)(1));
+			w17.RightAttach = ((uint)(2));
+			w17.XOptions = ((global::Gtk.AttachOptions)(4));
+			w17.YOptions = ((global::Gtk.AttachOptions)(0));
 			// Container child table3.Gtk.Table+TableChild
 			this.cmbBehavior = global::Gtk.ComboBox.NewText ();
 			this.cmbBehavior.Name = "cmbBehavior";
 			this.table3.Add (this.cmbBehavior);
-			global::Gtk.Table.TableChild w17 = ((global::Gtk.Table.TableChild)(this.table3 [this.cmbBehavior]));
-			w17.TopAttach = ((uint)(1));
-			w17.BottomAttach = ((uint)(2));
-			w17.LeftAttach = ((uint)(3));
-			w17.RightAttach = ((uint)(4));
-			w17.XOptions = ((global::Gtk.AttachOptions)(4));
-			w17.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w18 = ((global::Gtk.Table.TableChild)(this.table3 [this.cmbBehavior]));
+			w18.TopAttach = ((uint)(1));
+			w18.BottomAttach = ((uint)(2));
+			w18.LeftAttach = ((uint)(3));
+			w18.RightAttach = ((uint)(4));
+			w18.XOptions = ((global::Gtk.AttachOptions)(4));
+			w18.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.imgAnimal = new global::Gtk.Image ();
 			this.imgAnimal.Name = "imgAnimal";
 			this.table3.Add (this.imgAnimal);
-			global::Gtk.Table.TableChild w18 = ((global::Gtk.Table.TableChild)(this.table3 [this.imgAnimal]));
-			w18.TopAttach = ((uint)(2));
-			w18.BottomAttach = ((uint)(3));
-			w18.LeftAttach = ((uint)(2));
-			w18.RightAttach = ((uint)(3));
-			w18.XOptions = ((global::Gtk.AttachOptions)(4));
-			w18.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w19 = ((global::Gtk.Table.TableChild)(this.table3 [this.imgAnimal]));
+			w19.TopAttach = ((uint)(2));
+			w19.BottomAttach = ((uint)(3));
+			w19.LeftAttach = ((uint)(2));
+			w19.RightAttach = ((uint)(3));
+			w19.XOptions = ((global::Gtk.AttachOptions)(4));
+			w19.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label2 = new global::Gtk.Label ();
 			this.label2.Name = "label2";
 			this.label2.Xalign = 0F;
 			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("ID");
 			this.table3.Add (this.label2);
-			global::Gtk.Table.TableChild w19 = ((global::Gtk.Table.TableChild)(this.table3 [this.label2]));
-			w19.TopAttach = ((uint)(1));
-			w19.BottomAttach = ((uint)(2));
-			w19.XOptions = ((global::Gtk.AttachOptions)(4));
-			w19.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w20 = ((global::Gtk.Table.TableChild)(this.table3 [this.label2]));
+			w20.TopAttach = ((uint)(1));
+			w20.BottomAttach = ((uint)(2));
+			w20.XOptions = ((global::Gtk.AttachOptions)(4));
+			w20.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label3 = new global::Gtk.Label ();
 			this.label3.Name = "label3";
 			this.label3.Xalign = 0F;
 			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString ("Hero");
 			this.table3.Add (this.label3);
-			global::Gtk.Table.TableChild w20 = ((global::Gtk.Table.TableChild)(this.table3 [this.label3]));
-			w20.XOptions = ((global::Gtk.AttachOptions)(4));
-			w20.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w21 = ((global::Gtk.Table.TableChild)(this.table3 [this.label3]));
+			w21.XOptions = ((global::Gtk.AttachOptions)(4));
+			w21.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label4 = new global::Gtk.Label ();
 			this.label4.Name = "label4";
 			this.label4.Xalign = 0F;
 			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Child");
 			this.table3.Add (this.label4);
-			global::Gtk.Table.TableChild w21 = ((global::Gtk.Table.TableChild)(this.table3 [this.label4]));
-			w21.LeftAttach = ((uint)(2));
-			w21.RightAttach = ((uint)(3));
-			w21.XOptions = ((global::Gtk.AttachOptions)(4));
-			w21.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w22 = ((global::Gtk.Table.TableChild)(this.table3 [this.label4]));
+			w22.LeftAttach = ((uint)(2));
+			w22.RightAttach = ((uint)(3));
+			w22.XOptions = ((global::Gtk.AttachOptions)(4));
+			w22.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label5 = new global::Gtk.Label ();
 			this.label5.Name = "label5";
 			this.label5.Xalign = 0F;
 			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString ("Behavior");
 			this.table3.Add (this.label5);
-			global::Gtk.Table.TableChild w22 = ((global::Gtk.Table.TableChild)(this.table3 [this.label5]));
-			w22.TopAttach = ((uint)(1));
-			w22.BottomAttach = ((uint)(2));
-			w22.LeftAttach = ((uint)(2));
-			w22.RightAttach = ((uint)(3));
-			w22.XOptions = ((global::Gtk.AttachOptions)(4));
-			w22.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table3 [this.label5]));
+			w23.TopAttach = ((uint)(1));
+			w23.BottomAttach = ((uint)(2));
+			w23.LeftAttach = ((uint)(2));
+			w23.RightAttach = ((uint)(3));
+			w23.XOptions = ((global::Gtk.AttachOptions)(4));
+			w23.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label6 = new global::Gtk.Label ();
 			this.label6.Name = "label6";
 			this.label6.Xalign = 0F;
 			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("Animal");
 			this.table3.Add (this.label6);
-			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table3 [this.label6]));
-			w23.TopAttach = ((uint)(2));
-			w23.BottomAttach = ((uint)(3));
-			w23.XOptions = ((global::Gtk.AttachOptions)(4));
-			w23.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w24 = ((global::Gtk.Table.TableChild)(this.table3 [this.label6]));
+			w24.TopAttach = ((uint)(2));
+			w24.BottomAttach = ((uint)(3));
+			w24.XOptions = ((global::Gtk.AttachOptions)(4));
+			w24.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.spinID = new global::Gtk.SpinButton (0, 32767, 1);
 			this.spinID.CanFocus = true;
@@ -406,13 +440,13 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.spinID.ClimbRate = 1;
 			this.spinID.Numeric = true;
 			this.table3.Add (this.spinID);
-			global::Gtk.Table.TableChild w24 = ((global::Gtk.Table.TableChild)(this.table3 [this.spinID]));
-			w24.TopAttach = ((uint)(1));
-			w24.BottomAttach = ((uint)(2));
-			w24.LeftAttach = ((uint)(1));
-			w24.RightAttach = ((uint)(2));
-			w24.XOptions = ((global::Gtk.AttachOptions)(4));
-			w24.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.table3 [this.spinID]));
+			w25.TopAttach = ((uint)(1));
+			w25.BottomAttach = ((uint)(2));
+			w25.LeftAttach = ((uint)(1));
+			w25.RightAttach = ((uint)(2));
+			w25.XOptions = ((global::Gtk.AttachOptions)(4));
+			w25.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.txtChild = new global::Gtk.Entry ();
 			this.txtChild.WidthRequest = 70;
@@ -422,11 +456,11 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.txtChild.MaxLength = 5;
 			this.txtChild.InvisibleChar = '●';
 			this.table3.Add (this.txtChild);
-			global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.table3 [this.txtChild]));
-			w25.LeftAttach = ((uint)(3));
-			w25.RightAttach = ((uint)(4));
-			w25.XOptions = ((global::Gtk.AttachOptions)(4));
-			w25.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w26 = ((global::Gtk.Table.TableChild)(this.table3 [this.txtChild]));
+			w26.LeftAttach = ((uint)(3));
+			w26.RightAttach = ((uint)(4));
+			w26.XOptions = ((global::Gtk.AttachOptions)(4));
+			w26.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.txtHero = new global::Gtk.Entry ();
 			this.txtHero.WidthRequest = 70;
@@ -436,26 +470,64 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.txtHero.MaxLength = 5;
 			this.txtHero.InvisibleChar = '●';
 			this.table3.Add (this.txtHero);
-			global::Gtk.Table.TableChild w26 = ((global::Gtk.Table.TableChild)(this.table3 [this.txtHero]));
-			w26.LeftAttach = ((uint)(1));
-			w26.RightAttach = ((uint)(2));
-			w26.XOptions = ((global::Gtk.AttachOptions)(4));
-			w26.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.table3 [this.txtHero]));
+			w27.LeftAttach = ((uint)(1));
+			w27.RightAttach = ((uint)(2));
+			w27.XOptions = ((global::Gtk.AttachOptions)(4));
+			w27.YOptions = ((global::Gtk.AttachOptions)(4));
 			this.vbox2.Add (this.table3);
-			global::Gtk.Box.BoxChild w27 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.table3]));
-			w27.Position = 1;
-			w27.Expand = false;
-			w27.Fill = false;
-			this.hbox4.Add (this.vbox2);
-			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.vbox2]));
-			w28.Position = 0;
+			global::Gtk.Box.BoxChild w28 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.table3]));
+			w28.Position = 1;
 			w28.Expand = false;
 			w28.Fill = false;
-			// Container child hbox4.Gtk.Box+BoxChild
+			// Container child vbox2.Gtk.Box+BoxChild
 			this.vbox3 = new global::Gtk.VBox ();
 			this.vbox3.Name = "vbox3";
 			this.vbox3.Spacing = 6;
-			// Container child vbox3.Gtk.Box+BoxChild
+			this.vbox2.Add (this.vbox3);
+			global::Gtk.Box.BoxChild w29 = ((global::Gtk.Box.BoxChild)(this.vbox2 [this.vbox3]));
+			w29.Position = 2;
+			this.hbox4.Add (this.vbox2);
+			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.vbox2]));
+			w30.Position = 0;
+			w30.Expand = false;
+			w30.Fill = false;
+			// Container child hbox4.Gtk.Box+BoxChild
+			this.vbox4 = new global::Gtk.VBox ();
+			this.vbox4.Name = "vbox4";
+			this.vbox4.Spacing = 6;
+			// Container child vbox4.Gtk.Box+BoxChild
+			this.hbox2 = new global::Gtk.HBox ();
+			this.hbox2.Name = "hbox2";
+			this.hbox2.Spacing = 6;
+			// Container child hbox2.Gtk.Box+BoxChild
+			this.btnAllRings = new global::Gtk.Button ();
+			this.btnAllRings.CanFocus = true;
+			this.btnAllRings.Name = "btnAllRings";
+			this.btnAllRings.UseUnderline = true;
+			this.btnAllRings.Label = global::Mono.Unix.Catalog.GetString ("All Rings");
+			this.hbox2.Add (this.btnAllRings);
+			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.btnAllRings]));
+			w31.Position = 0;
+			w31.Expand = false;
+			w31.Fill = false;
+			// Container child hbox2.Gtk.Box+BoxChild
+			this.btnNoRings = new global::Gtk.Button ();
+			this.btnNoRings.CanFocus = true;
+			this.btnNoRings.Name = "btnNoRings";
+			this.btnNoRings.UseUnderline = true;
+			this.btnNoRings.Label = global::Mono.Unix.Catalog.GetString ("None");
+			this.hbox2.Add (this.btnNoRings);
+			global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.hbox2 [this.btnNoRings]));
+			w32.Position = 1;
+			w32.Expand = false;
+			w32.Fill = false;
+			this.vbox4.Add (this.hbox2);
+			global::Gtk.Box.BoxChild w33 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.hbox2]));
+			w33.Position = 0;
+			w33.Expand = false;
+			w33.Fill = false;
+			// Container child vbox4.Gtk.Box+BoxChild
 			this.GtkScrolledWindow = new global::Gtk.ScrolledWindow ();
 			this.GtkScrolledWindow.WidthRequest = 170;
 			this.GtkScrolledWindow.Name = "GtkScrolledWindow";
@@ -467,21 +539,34 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.nvRings.Name = "nvRings";
 			this.nvRings.HeadersVisible = false;
 			this.GtkScrolledWindow.Add (this.nvRings);
-			this.vbox3.Add (this.GtkScrolledWindow);
-			global::Gtk.Box.BoxChild w30 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.GtkScrolledWindow]));
-			w30.Position = 1;
-			this.hbox4.Add (this.vbox3);
-			global::Gtk.Box.BoxChild w31 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.vbox3]));
-			w31.Position = 1;
+			this.vbox4.Add (this.GtkScrolledWindow);
+			global::Gtk.Box.BoxChild w35 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.GtkScrolledWindow]));
+			w35.Position = 1;
+			// Container child vbox4.Gtk.Box+BoxChild
+			this.chkFreeRingGiven = new global::Gtk.CheckButton ();
+			this.chkFreeRingGiven.TooltipMarkup = "Whether or not Vasu has given the player the free Friendship Ring";
+			this.chkFreeRingGiven.CanFocus = true;
+			this.chkFreeRingGiven.Name = "chkFreeRingGiven";
+			this.chkFreeRingGiven.Label = global::Mono.Unix.Catalog.GetString ("Free Ring Given");
+			this.chkFreeRingGiven.DrawIndicator = true;
+			this.chkFreeRingGiven.UseUnderline = true;
+			this.vbox4.Add (this.chkFreeRingGiven);
+			global::Gtk.Box.BoxChild w36 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.chkFreeRingGiven]));
+			w36.Position = 2;
+			w36.Expand = false;
+			w36.Fill = false;
+			this.hbox4.Add (this.vbox4);
+			global::Gtk.Box.BoxChild w37 = ((global::Gtk.Box.BoxChild)(this.hbox4 [this.vbox4]));
+			w37.Position = 1;
 			this.vbox1.Add (this.hbox4);
-			global::Gtk.Box.BoxChild w32 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox4]));
-			w32.Position = 1;
+			global::Gtk.Box.BoxChild w38 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox4]));
+			w38.Position = 1;
 			this.Add (this.vbox1);
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
 			this.DefaultWidth = 444;
-			this.DefaultHeight = 237;
+			this.DefaultHeight = 258;
 			this.Show ();
 			this.DeleteEvent += new global::Gtk.DeleteEventHandler (this.OnDeleteEvent);
 			this.newAction.Activated += new global::System.EventHandler (this.OnNew);
@@ -494,13 +579,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			this.GenerateSecretsAction.Activated += new global::System.EventHandler (this.OnGenerateSecrets);
 			this.aboutAction.Activated += new global::System.EventHandler (this.OnAbout);
 			this.CheckForUpdatesAction.Activated += new global::System.EventHandler (this.OnCheckForUpdatesActionActivated);
-			this.chkLinked.Toggled += new global::System.EventHandler (this.OnChkLinkedToggled);
-			this.chkHeros.Toggled += new global::System.EventHandler (this.OnChkHerosToggled);
-			this.txtHero.Changed += new global::System.EventHandler (this.OnTxtHeroChanged);
-			this.txtChild.Changed += new global::System.EventHandler (this.OnTxtChildChanged);
-			this.spinID.Changed += new global::System.EventHandler (this.OnSpinIDChanged);
-			this.cmbBehavior.Changed += new global::System.EventHandler (this.OnCmbBehaviorChanged);
-			this.cmbAnimal.Changed += new global::System.EventHandler (this.OnCmbAnimalChanged);
+			this.importBatteryAction.Activated += new global::System.EventHandler (this.OnImportBattery);
 		}
 	}
 }

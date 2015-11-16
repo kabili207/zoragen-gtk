@@ -8,7 +8,7 @@
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/OracleGtk.exe" internal="true" />
   </import>
-  <widget class="Gtk.Window" id="Zyrenth.OracleHack.GtkUI.MainWindow" design-size="444 237">
+  <widget class="Gtk.Window" id="Zyrenth.OracleHack.GtkUI.MainWindow" design-size="444 258">
     <action-group name="Default">
       <action id="FileAction">
         <property name="Type">Action</property>
@@ -96,6 +96,18 @@
         <property name="ShortLabel" translatable="yes">Check for Updates</property>
         <signal name="Activated" handler="OnCheckForUpdatesActionActivated" />
       </action>
+      <action id="ImportBatteryAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Import Battery</property>
+        <property name="ShortLabel" translatable="yes">Import Battery</property>
+      </action>
+      <action id="importBatteryAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Import Battery</property>
+        <property name="ShortLabel" translatable="yes">Import Battery</property>
+        <property name="Tooltip" translatable="yes">Imports a VBA battery file</property>
+        <signal name="Activated" handler="OnImportBattery" />
+      </action>
     </action-group>
     <property name="MemberName" />
     <property name="Title" translatable="yes">Oracle of Secrets</property>
@@ -106,7 +118,6 @@
     <child>
       <widget class="Gtk.VBox" id="vbox1">
         <property name="MemberName" />
-        <property name="Spacing">6</property>
         <child>
           <widget class="Gtk.MenuBar" id="menubar1">
             <property name="MemberName" />
@@ -116,6 +127,9 @@
                 <node type="Menuitem" action="openAction" />
                 <node type="Menuitem" action="saveAction" />
                 <node type="Menuitem" action="saveAsAction" />
+                <node type="Separator" />
+                <node type="Menuitem" action="importBatteryAction" />
+                <node type="Separator" />
                 <node type="Menuitem" action="quitAction" />
               </node>
               <node type="Menu" action="SecretsAction">
@@ -149,7 +163,6 @@
                 <child>
                   <widget class="Gtk.HBox" id="hbox1">
                     <property name="MemberName" />
-                    <property name="Homogeneous">True</property>
                     <property name="Spacing">6</property>
                     <child>
                       <widget class="Gtk.Frame" id="frmGameType">
@@ -208,6 +221,7 @@
                                     <property name="MemberName" />
                                     <property name="CanFocus">True</property>
                                     <property name="Label" translatable="yes">Ages</property>
+                                    <property name="Active">True</property>
                                     <property name="DrawIndicator">True</property>
                                     <property name="HasLabel">True</property>
                                     <property name="UseUnderline">True</property>
@@ -285,7 +299,11 @@
                               <widget class="Gtk.Table" id="table2">
                                 <property name="MemberName" />
                                 <property name="NRows">2</property>
+                                <property name="NColumns">2</property>
                                 <property name="BorderWidth">3</property>
+                                <child>
+                                  <placeholder />
+                                </child>
                                 <child>
                                   <widget class="Gtk.CheckButton" id="chkHeros">
                                     <property name="MemberName" />
@@ -294,11 +312,12 @@
                                     <property name="DrawIndicator">True</property>
                                     <property name="HasLabel">True</property>
                                     <property name="UseUnderline">True</property>
-                                    <signal name="Toggled" handler="OnChkHerosToggled" />
                                   </widget>
                                   <packing>
                                     <property name="TopAttach">1</property>
                                     <property name="BottomAttach">2</property>
+                                    <property name="LeftAttach">1</property>
+                                    <property name="RightAttach">2</property>
                                     <property name="AutoSize">True</property>
                                     <property name="YOptions">Fill</property>
                                     <property name="XExpand">True</property>
@@ -317,12 +336,32 @@
                                     <property name="DrawIndicator">True</property>
                                     <property name="HasLabel">True</property>
                                     <property name="UseUnderline">True</property>
-                                    <signal name="Toggled" handler="OnChkLinkedToggled" />
                                   </widget>
                                   <packing>
+                                    <property name="LeftAttach">1</property>
+                                    <property name="RightAttach">2</property>
                                     <property name="AutoSize">True</property>
                                     <property name="YOptions">Fill</property>
                                     <property name="XExpand">True</property>
+                                    <property name="XFill">True</property>
+                                    <property name="XShrink">False</property>
+                                    <property name="YExpand">False</property>
+                                    <property name="YFill">True</property>
+                                    <property name="YShrink">False</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <widget class="Gtk.Image" id="image3">
+                                    <property name="MemberName" />
+                                    <property name="Pixbuf">resource:Zyrenth.OracleHack.GtkUI.Images.Triforce.png</property>
+                                  </widget>
+                                  <packing>
+                                    <property name="TopAttach">1</property>
+                                    <property name="BottomAttach">2</property>
+                                    <property name="AutoSize">True</property>
+                                    <property name="XOptions">Fill</property>
+                                    <property name="YOptions">Fill</property>
+                                    <property name="XExpand">False</property>
                                     <property name="XFill">True</property>
                                     <property name="XShrink">False</property>
                                     <property name="YExpand">False</property>
@@ -355,7 +394,7 @@
                   </widget>
                   <packing>
                     <property name="Position">0</property>
-                    <property name="AutoSize">True</property>
+                    <property name="AutoSize">False</property>
                     <property name="Expand">False</property>
                     <property name="Fill">False</property>
                   </packing>
@@ -378,7 +417,6 @@
 Dimitri
 Moosh</property>
                         <property name="Active">0</property>
-                        <signal name="Changed" handler="OnCmbAnimalChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">2</property>
@@ -401,7 +439,6 @@ Moosh</property>
                         <property name="MemberName" />
                         <property name="IsTextCombo">True</property>
                         <property name="Items" translatable="yes" />
-                        <signal name="Changed" handler="OnCmbBehaviorChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">1</property>
@@ -548,7 +585,6 @@ Moosh</property>
                         <property name="StepIncrement">1</property>
                         <property name="ClimbRate">1</property>
                         <property name="Numeric">True</property>
-                        <signal name="Changed" handler="OnSpinIDChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">1</property>
@@ -574,7 +610,6 @@ Moosh</property>
                         <property name="IsEditable">True</property>
                         <property name="MaxLength">5</property>
                         <property name="InvisibleChar">●</property>
-                        <signal name="Changed" handler="OnTxtChildChanged" />
                       </widget>
                       <packing>
                         <property name="LeftAttach">3</property>
@@ -598,7 +633,6 @@ Moosh</property>
                         <property name="IsEditable">True</property>
                         <property name="MaxLength">5</property>
                         <property name="InvisibleChar">●</property>
-                        <signal name="Changed" handler="OnTxtHeroChanged" />
                       </widget>
                       <packing>
                         <property name="LeftAttach">1</property>
@@ -623,7 +657,17 @@ Moosh</property>
                   </packing>
                 </child>
                 <child>
-                  <placeholder />
+                  <widget class="Gtk.VBox" id="vbox3">
+                    <property name="MemberName" />
+                    <property name="Spacing">6</property>
+                    <child>
+                      <placeholder />
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">2</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
                 </child>
               </widget>
               <packing>
@@ -634,11 +678,53 @@ Moosh</property>
               </packing>
             </child>
             <child>
-              <widget class="Gtk.VBox" id="vbox3">
+              <widget class="Gtk.VBox" id="vbox4">
                 <property name="MemberName" />
                 <property name="Spacing">6</property>
                 <child>
-                  <placeholder />
+                  <widget class="Gtk.HBox" id="hbox2">
+                    <property name="MemberName" />
+                    <property name="Spacing">6</property>
+                    <child>
+                      <widget class="Gtk.Button" id="btnAllRings">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes">All Rings</property>
+                        <property name="UseUnderline">True</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">0</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <widget class="Gtk.Button" id="btnNoRings">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                        <property name="Type">TextOnly</property>
+                        <property name="Label" translatable="yes">None</property>
+                        <property name="UseUnderline">True</property>
+                      </widget>
+                      <packing>
+                        <property name="Position">1</property>
+                        <property name="AutoSize">True</property>
+                        <property name="Expand">False</property>
+                        <property name="Fill">False</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <placeholder />
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
+                  </packing>
                 </child>
                 <child>
                   <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
@@ -658,6 +744,23 @@ Moosh</property>
                   <packing>
                     <property name="Position">1</property>
                     <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <widget class="Gtk.CheckButton" id="chkFreeRingGiven">
+                    <property name="MemberName" />
+                    <property name="Tooltip" translatable="yes">Whether or not Vasu has given the player the free Friendship Ring</property>
+                    <property name="CanFocus">True</property>
+                    <property name="Label" translatable="yes">Free Ring Given</property>
+                    <property name="DrawIndicator">True</property>
+                    <property name="HasLabel">True</property>
+                    <property name="UseUnderline">True</property>
+                  </widget>
+                  <packing>
+                    <property name="Position">2</property>
+                    <property name="AutoSize">True</property>
+                    <property name="Expand">False</property>
+                    <property name="Fill">False</property>
                   </packing>
                 </child>
               </widget>
@@ -3359,16 +3462,51 @@ RigHtN ♥N  h</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Bin" id="Zyrenth.OracleHack.GtkUI.FilePreviewWidget" design-size="104 108">
+  <widget class="Gtk.Bin" id="Zyrenth.OracleHack.GtkUI.FilePreviewWidget" design-size="123 108">
     <property name="MemberName" />
     <property name="Visible">False</property>
     <child>
       <widget class="Gtk.Table" id="table1">
         <property name="MemberName" />
         <property name="NRows">6</property>
-        <property name="NColumns">2</property>
+        <property name="NColumns">3</property>
         <property name="RowSpacing">6</property>
         <property name="ColumnSpacing">6</property>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <placeholder />
+        </child>
+        <child>
+          <widget class="Gtk.Image" id="imgTriforce">
+            <property name="MemberName" />
+            <property name="Visible">False</property>
+            <property name="Pixbuf">resource:Zyrenth.OracleHack.GtkUI.Images.Triforce.png</property>
+          </widget>
+          <packing>
+            <property name="LeftAttach">2</property>
+            <property name="RightAttach">3</property>
+            <property name="AutoSize">True</property>
+            <property name="XOptions">Fill</property>
+            <property name="YOptions">Fill</property>
+            <property name="XExpand">False</property>
+            <property name="XFill">True</property>
+            <property name="XShrink">False</property>
+            <property name="YExpand">False</property>
+            <property name="YFill">True</property>
+            <property name="YShrink">False</property>
+          </packing>
+        </child>
         <child>
           <widget class="Gtk.Label" id="label10">
             <property name="MemberName" />
@@ -3497,7 +3635,7 @@ RigHtN ♥N  h</property>
           <widget class="Gtk.Label" id="lblAnimal">
             <property name="MemberName" />
             <property name="Xalign">0</property>
-            <property name="LabelProp" translatable="yes">label20</property>
+            <property name="LabelProp" translatable="yes">---</property>
           </widget>
           <packing>
             <property name="TopAttach">5</property>
@@ -3519,7 +3657,7 @@ RigHtN ♥N  h</property>
           <widget class="Gtk.Label" id="lblBehavior">
             <property name="MemberName" />
             <property name="Xalign">0</property>
-            <property name="LabelProp" translatable="yes">label19</property>
+            <property name="LabelProp" translatable="yes">---</property>
           </widget>
           <packing>
             <property name="TopAttach">4</property>
@@ -3541,7 +3679,7 @@ RigHtN ♥N  h</property>
           <widget class="Gtk.Label" id="lblChild">
             <property name="MemberName" />
             <property name="Xalign">0</property>
-            <property name="LabelProp" translatable="yes">label18</property>
+            <property name="LabelProp" translatable="yes">---</property>
           </widget>
           <packing>
             <property name="TopAttach">3</property>
@@ -3563,7 +3701,7 @@ RigHtN ♥N  h</property>
           <widget class="Gtk.Label" id="lblGame">
             <property name="MemberName" />
             <property name="Xalign">0</property>
-            <property name="LabelProp" translatable="yes">label17</property>
+            <property name="LabelProp" translatable="yes">---</property>
           </widget>
           <packing>
             <property name="TopAttach">2</property>
@@ -3585,7 +3723,7 @@ RigHtN ♥N  h</property>
           <widget class="Gtk.Label" id="lblHero">
             <property name="MemberName" />
             <property name="Xalign">0</property>
-            <property name="LabelProp" translatable="yes">label15</property>
+            <property name="LabelProp" translatable="yes">---</property>
           </widget>
           <packing>
             <property name="LeftAttach">1</property>
@@ -3605,7 +3743,7 @@ RigHtN ♥N  h</property>
           <widget class="Gtk.Label" id="lblID">
             <property name="MemberName" />
             <property name="Xalign">0</property>
-            <property name="LabelProp" translatable="yes">label16</property>
+            <property name="LabelProp" translatable="yes">---</property>
           </widget>
           <packing>
             <property name="TopAttach">1</property>
@@ -3621,6 +3759,105 @@ RigHtN ♥N  h</property>
             <property name="YExpand">False</property>
             <property name="YFill">True</property>
             <property name="YShrink">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="Zyrenth.OracleHack.GtkUI.GamePickerDialog" design-size="400 155">
+    <property name="MemberName" />
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.HBox" id="hbox3">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.ScrolledWindow" id="GtkScrolledWindow">
+                <property name="MemberName" />
+                <property name="ShadowType">In</property>
+                <child>
+                  <widget class="Gtk.NodeView" id="nvInfos">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShowScrollbars">True</property>
+                    <signal name="RowActivated" handler="OnNvInfosRowActivated" />
+                  </widget>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder />
+            </child>
+            <child>
+              <widget class="Zyrenth.OracleHack.GtkUI.FilePreviewWidget" id="previewWidget">
+                <property name="MemberName" />
+                <property name="Events">ButtonPressMask</property>
+              </widget>
+              <packing>
+                <property name="Position">2</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-cancel</property>
+            <property name="ResponseId">-6</property>
+            <property name="label">gtk-cancel</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
           </packing>
         </child>
       </widget>

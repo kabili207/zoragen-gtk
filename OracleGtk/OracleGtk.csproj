@@ -280,6 +280,9 @@
       <Link>Images\Symbols\63.png</Link>
     </EmbeddedResource>
     <EmbeddedResource Include="Farore.ico" />
+    <EmbeddedResource Include="..\Images\Triforce.png">
+      <Link>Images\Triforce.png</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
@@ -302,6 +305,9 @@
     <Compile Include="GitHubRelease.cs" />
     <Compile Include="GitHubReleaseJsonConverter.cs" />
     <Compile Include="SemanticVersion.cs" />
+    <Compile Include="GamePickerDialog.cs" />
+    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.GamePickerDialog.cs" />
+    <Compile Include="GameInfoNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Rings\" />

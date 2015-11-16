@@ -56,6 +56,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			lblChild.Text = _info.Child;
 			lblAnimal.Text = _info.Animal.ToString();
 			lblBehavior.Text = _info.Behavior.ToString();
+			imgTriforce.Visible = _info.IsHeroQuest;
 		}
 	}
 }
