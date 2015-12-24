@@ -1,7 +1,7 @@
-# Oracle of Secrets Password Generator [![Travis CI Build Status](https://travis-ci.org/kabili207/oracle-of-secrets-gtk.svg?branch=master)](https://travis-ci.org/kabili207/oracle-of-secrets-gtk) [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/p6hcxt2xfal44mmo/branch/master?svg=true)](https://ci.appveyor.com/project/kabili207/oracle-of-secrets-gtk/branch/master)
+# ZoraGen GTK [![Travis CI Build Status](https://travis-ci.org/kabili207/zoragen-gtk.svg?branch=master)](https://travis-ci.org/kabili207/zoragen-gtk) [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/p6hcxt2xfal44mmo/branch/master?svg=true)](https://ci.appveyor.com/project/kabili207/zoragen-gtk/branch/master)
 
 A generator and decoder for the password system used in the Legend of Zelda Oracle of Ages and Oracle of Seasons games.
-Built using the [OracleHack](https://github.com/kabili207/oracle-hack) library.
+Built using the [ZoraSharp](https://github.com/kabili207/zora-sharp) library.
 
 ### Features
  * Decodes game and ring secrets
@@ -17,8 +17,8 @@ Built using the [OracleHack](https://github.com/kabili207/oracle-hack) library.
  * [LunarCookies](https://github.com/LunarCookies) - Discovered the correct cipher and checksum logic used to generate secrets
 
 ### License
-Oracle of Secrets is licensed under the GNU General Public License version 3.
+ZoraGen GTK is licensed under the GNU General Public License version 3.
 
-Oracle of Secrets makes use of the following libraries:
- * [OracleHack](https://github.com/kabili207/oracle-hack), licensed under the GNU Lesser General Public License version 3
+ZoraGen GTK makes use of the following libraries:
+ * [ZoraSharp](https://github.com/kabili207/ZoraSharp), licensed under the GNU Lesser General Public License version 3
  * [SemVer](https://github.com/maxhauser/semver), licensed under the MIT License

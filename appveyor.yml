@@ -7,11 +7,11 @@ install:
 - msiexec /i gtk-sharp-2.12.25.msi /qn /norestart
 - git submodule update --init --recursive
 build:
-  project: OracleHackGtk.sln
+  project: ZoraGenGtk.sln
   verbosity: minimal
 after_build:
-- 7z a OracleGtk.zip %APPVEYOR_BUILD_FOLDER%\OracleGtk\bin\%CONFIGURATION%\OracleGtk.exe %APPVEYOR_BUILD_FOLDER%\OracleGtk\bin\%CONFIGURATION%\OracleHack.dll
+- 7z a ZoraGenGtk.zip %APPVEYOR_BUILD_FOLDER%\ZoraGenGtk\bin\%CONFIGURATION%\ZoraGenGtk.exe %APPVEYOR_BUILD_FOLDER%\ZoraGenGtk\bin\%CONFIGURATION%\ZoraSharp.dll
 test: off
 artifacts:
-- path: OracleGtk.zip
-  name: OracleGtk
+- path: ZoraGenGtk.zip
+  name: ZoraGenGtk

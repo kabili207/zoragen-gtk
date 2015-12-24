@@ -25,7 +25,7 @@ using System.Runtime.Serialization;
 using System.Security.Permissions;
 using System.Text.RegularExpressions;
 
-namespace Zyrenth.OracleHack.GtkUI
+namespace Zyrenth.ZoraGen.GtkUI
 {
 	/// <summary>
 	/// A semantic version implementation.

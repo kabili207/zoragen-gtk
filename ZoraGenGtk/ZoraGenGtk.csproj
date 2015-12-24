@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProjectGuid>{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Zyrenth.OracleHack.GtkUI</RootNamespace>
-    <AssemblyName>OracleGtk</AssemblyName>
+    <RootNamespace>Zyrenth.ZoraGen.GtkUI</RootNamespace>
+    <AssemblyName>ZoraGenGtk</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>True</DebugSymbols>
@@ -289,25 +289,25 @@
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="DecoderForm.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.DecoderForm.cs" />
     <Compile Include="MessageBox.cs" />
     <Compile Include="ViewSecretsDialog.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.ViewSecretsDialog.cs" />
     <Compile Include="MainWindow.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.MainWindow.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="SmallSecretWidget.cs" />
     <Compile Include="LargeSecretWidget.cs" />
     <Compile Include="BinContainer.cs" />
     <Compile Include="FilePreviewWidget.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.FilePreviewWidget.cs" />
     <Compile Include="RingTreeNode.cs" />
     <Compile Include="GitHubRelease.cs" />
     <Compile Include="GitHubReleaseJsonConverter.cs" />
     <Compile Include="SemanticVersion.cs" />
     <Compile Include="GamePickerDialog.cs" />
-    <Compile Include="gtk-gui\Zyrenth.OracleHack.GtkUI.GamePickerDialog.cs" />
     <Compile Include="GameInfoNode.cs" />
+    <Compile Include="gtk-gui\Zyrenth.ZoraGen.GtkUI.DecoderForm.cs" />
+    <Compile Include="gtk-gui\Zyrenth.ZoraGen.GtkUI.FilePreviewWidget.cs" />
+    <Compile Include="gtk-gui\Zyrenth.ZoraGen.GtkUI.GamePickerDialog.cs" />
+    <Compile Include="gtk-gui\Zyrenth.ZoraGen.GtkUI.MainWindow.cs" />
+    <Compile Include="gtk-gui\Zyrenth.ZoraGen.GtkUI.ViewSecretsDialog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Images\Rings\" />
@@ -513,4 +513,14 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <StandardHeader Text="Copyright © 2013-2015, Andrew Nagle.&#xA;All rights reserved.&#xA;&#xA;This file is part of ZoraGen GTK.&#xA;&#xA;ZoraGen GTK is free software: you can redistribute it and/or modify&#xA;it under the terms of the GNU General Public License as published by&#xA;the Free Software Foundation, either version 3 of the License, or&#xA;(at your option) any later version.&#xA;&#xA;ZoraGen GTK is distributed in the hope that it will be useful,&#xA;but WITHOUT ANY WARRANTY; without even the implied warranty of&#xA;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#xA;GNU General Public License for more details.&#xA;&#xA;You should have received a copy of the GNU General Public License&#xA;along with ZoraGen GTK.  If not, see &lt;http://www.gnu.org/licenses/&gt;." IncludeInNewFiles="True" />
+        </Policies>
+        <Deployment.LinuxDeployData scriptName="zoragen" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
 </Project>

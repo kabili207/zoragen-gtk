@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoraSharp", "ZoraSharp\src\ZoraSharp.csproj", "{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OracleGtk", "OracleGtk\OracleGtk.csproj", "{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoraGenGtk", "ZoraGenGtk\ZoraGenGtk.csproj", "{A4BDF0D2-5622-4EB0-8323-5F476CFCF660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,7 +31,6 @@ Global
 		{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = OracleGtk\OracleGtk.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
 		$1.FileWidth = 120

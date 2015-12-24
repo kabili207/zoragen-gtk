@@ -2,20 +2,20 @@
  * Copyright © 2013-2015, Andrew Nagle.
  * All rights reserved.
  * 
- * This file is part of Oracle of Secrets.
+ * This file is part of ZoraGen GTK.
  *
- * Oracle of Secrets is free software: you can redistribute it and/or modify
+ * ZoraGen GTK is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * Oracle of Secrets is distributed in the hope that it will be useful,
+ * ZoraGen GTK is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  * 
  * You should have received a copy of the GNU General Public License
- * along with Oracle of Secrets.  If not, see <http://www.gnu.org/licenses/>.
+ * along with ZoraGen GTK.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 using System;
@@ -29,7 +29,7 @@ using System.IO;
 using System.Web.Script.Serialization;
 using Zyrenth.Zora;
 
-namespace Zyrenth.OracleHack.GtkUI
+namespace Zyrenth.ZoraGen.GtkUI
 {
 	public partial class MainWindow : Gtk.Window
 	{
@@ -149,10 +149,10 @@ namespace Zyrenth.OracleHack.GtkUI
 			dialog.Version = details.ProductVersion;
 			dialog.Comments = details.Description;
 			dialog.Authors = new string [] { "Andrew Nagle" };
-			dialog.Website = "https://github.com/kabili207/oracle-of-secrets-gtk";
+			dialog.Website = "https://github.com/kabili207/zoragen-gtk";
 			dialog.Copyright = details.Copyright;
-			dialog.Logo = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleHack.GtkUI.Farore.ico");
-			dialog.Icon = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleHack.GtkUI.Farore.ico");
+			dialog.Logo = Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Farore.ico");
+			dialog.Icon = Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Farore.ico");
 			dialog.Run();
 			dialog.Destroy();
 		}
@@ -266,13 +266,13 @@ namespace Zyrenth.OracleHack.GtkUI
 				{
 					default:
 					case Animal.Ricky:
-						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleHack.GtkUI.Images.Characters.Ricky.gif");
+						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Characters.Ricky.gif");
 						break;
 					case Animal.Dimitri:
-						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleHack.GtkUI.Images.Characters.Dimitri.gif");
+						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Characters.Dimitri.gif");
 						break;
 					case Animal.Moosh:
-						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.OracleHack.GtkUI.Images.Characters.Moosh.gif");
+						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Characters.Moosh.gif");
 						break;
 				}
 			}
@@ -465,7 +465,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			try
 			{
 				string sURL;
-				sURL = "https://api.github.com/repos/kabili207/oracle-of-secrets-gtk/releases";
+				sURL = "https://api.github.com/repos/kabili207/zoragen-gtk/releases";
 
 				// Mono doesn't need this, but it's a good idea to do it anyway in case
 				// someone decides to run this on the .NET Framework.
@@ -484,7 +484,7 @@ namespace Zyrenth.OracleHack.GtkUI
 				WebRequest request = WebRequest.Create(sURL);
 
 				// GitHub requires a user agent
-				((HttpWebRequest)request).UserAgent = "OracleHack updater";
+				((HttpWebRequest)request).UserAgent = "ZoraGen updater";
 
 				using (Stream objStream = request.GetResponse().GetResponseStream())
 				{
