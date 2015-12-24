@@ -24,6 +24,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using Zyrenth.Zora;
 
 namespace Zyrenth.OracleHack.GtkUI
 {

@@ -22,6 +22,7 @@ using System;
 using System.Linq;
 using Gdk;
 using Gtk;
+using Zyrenth.Zora;
 
 namespace Zyrenth.OracleHack.GtkUI
 {

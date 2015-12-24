@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Collections.Generic;
 using Gtk;
+using Zyrenth.Zora;
 
 namespace Zyrenth.OracleHack.GtkUI
 {

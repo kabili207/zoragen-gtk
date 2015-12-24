@@ -27,6 +27,7 @@ using System.Linq;
 using System.Net;
 using System.IO;
 using System.Web.Script.Serialization;
+using Zyrenth.Zora;
 
 namespace Zyrenth.OracleHack.GtkUI
 {
@@ -380,7 +381,7 @@ namespace Zyrenth.OracleHack.GtkUI
 			{
 				using (System.IO.FileStream file = System.IO.File.OpenRead(fc.Filename))
 				{
-					var data = VbaSaveFileLoader.LoadAll(file);
+					var data = BatteryFileLoader.LoadAll(file);
 					OpenGameInfoPicker(data);
 				}
 			}

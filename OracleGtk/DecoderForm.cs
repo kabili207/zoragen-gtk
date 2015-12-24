@@ -22,6 +22,7 @@ using System;
 using Gtk;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Zyrenth.Zora;
 
 namespace Zyrenth.OracleHack.GtkUI
 {

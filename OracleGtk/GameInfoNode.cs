@@ -1,4 +1,5 @@
 ﻿using System;
+using Zyrenth.Zora;
 
 namespace Zyrenth.OracleHack.GtkUI
 {

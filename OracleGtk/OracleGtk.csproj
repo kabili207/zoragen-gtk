@@ -507,9 +507,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OracleHack\src\OracleHack.csproj">
+    <ProjectReference Include="..\ZoraSharp\src\ZoraSharp.csproj">
       <Project>{E40D4A82-F5F3-4712-A8E2-AD3C77B1E5A8}</Project>
-      <Name>OracleHack</Name>
+      <Name>ZoraSharp</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
