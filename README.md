@@ -1,4 +1,4 @@
-# ZoraGen GTK [![Travis CI Build Status](https://travis-ci.org/kabili207/zoragen-gtk.svg?branch=master)](https://travis-ci.org/kabili207/zoragen-gtk) [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/p6hcxt2xfal44mmo/branch/master?svg=true)](https://ci.appveyor.com/project/kabili207/zoragen-gtk/branch/master)
+# ZoraGen GTK [![Travis CI Build Status](https://travis-ci.org/kabili207/zoragen-gtk.svg?branch=master)](https://travis-ci.org/kabili207/zoragen-gtk) [![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/b2ch8r9lbb8f8khn/branch/master?svg=true)](https://ci.appveyor.com/project/kabili207/zoragen-gtk/branch/master)
 
 A generator and decoder for the password system used in the Legend of Zelda Oracle of Ages and Oracle of Seasons games.
 Built using the [ZoraSharp](https://github.com/kabili207/zora-sharp) library.
