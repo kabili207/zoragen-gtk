@@ -692,6 +692,7 @@ Moosh</property>
                         <property name="Type">TextOnly</property>
                         <property name="Label" translatable="yes">All Rings</property>
                         <property name="UseUnderline">True</property>
+                        <signal name="Clicked" handler="OnBtnAllRingsClicked" />
                       </widget>
                       <packing>
                         <property name="Position">0</property>
@@ -707,6 +708,7 @@ Moosh</property>
                         <property name="Type">TextOnly</property>
                         <property name="Label" translatable="yes">None</property>
                         <property name="UseUnderline">True</property>
+                        <signal name="Clicked" handler="OnBtnNoRingsClicked" />
                       </widget>
                       <packing>
                         <property name="Position">1</property>
@@ -3280,7 +3282,6 @@ RigHtN ♥N  h</property>
                   <widget class="Gtk.Label" id="lblMem2">
                     <property name="MemberName" />
                     <property name="Xalign">0</property>
-                    <property name="LabelProp" translatable="yes" />
                   </widget>
                   <packing>
                     <property name="TopAttach">2</property>
