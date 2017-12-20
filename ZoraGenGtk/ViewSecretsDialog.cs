@@ -38,6 +38,14 @@ namespace Zyrenth.ZoraGen.GtkUI
 				throw new ArgumentNullException("info", "Game info cannot be null");
 			_info = info;
 			SetSecrets();
+
+			if (_info.Game == Game.Seasons) {
+				label3.Text = "Memories\n(for Seasons)";
+				label5.Text = "Secrets\n(for Ages)";
+			} else {
+				label3.Text = "Memories\n(for Ages)";
+				label5.Text = "Secrets\n(for Seasons)";
+			}
 		}
 		
 		private void SetSecrets()
@@ -47,6 +55,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			
 			if (_info.IsLinkedGame)
 			{
+				// Return secrets
 				bool returnSecret = true;
 				swMem1.SetSecret(new MemorySecret(_info, Memory.ClockShopKingZora, returnSecret));
 				swMem2.SetSecret(new MemorySecret(_info, Memory.GraveyardFairy, returnSecret));
@@ -58,6 +67,28 @@ namespace Zyrenth.ZoraGen.GtkUI
 				swMem8.SetSecret(new MemorySecret(_info, Memory.DekuTingle, returnSecret));
 				swMem9.SetSecret(new MemorySecret(_info, Memory.BiggoronElder, returnSecret));
 				swMem10.SetSecret(new MemorySecret(_info, Memory.RuulSymmetry, returnSecret));
+
+				// Other-game secrets
+				returnSecret = false;
+
+				// swap the game for this secret
+				GameInfo info2 = new GameInfo ();
+				info2.GameID = _info.GameID;
+				if (_info.Game == Game.Ages)
+					info2.Game = Game.Seasons;
+				else
+					info2.Game = Game.Ages;
+
+				swSec1.SetSecret (new MemorySecret (info2, Memory.ClockShopKingZora, returnSecret));
+				swSec2.SetSecret (new MemorySecret (info2, Memory.GraveyardFairy, returnSecret));
+				swSec3.SetSecret (new MemorySecret (info2, Memory.SubrosianTroy, returnSecret));
+				swSec4.SetSecret (new MemorySecret (info2, Memory.DiverPlen, returnSecret));
+				swSec5.SetSecret (new MemorySecret (info2, Memory.SmithLibrary, returnSecret));
+				swSec6.SetSecret (new MemorySecret (info2, Memory.PirateTokay, returnSecret));
+				swSec7.SetSecret (new MemorySecret (info2, Memory.TempleMamamu, returnSecret));
+				swSec8.SetSecret (new MemorySecret (info2, Memory.DekuTingle, returnSecret));
+				swSec9.SetSecret (new MemorySecret (info2, Memory.BiggoronElder, returnSecret));
+				swSec10.SetSecret (new MemorySecret (info2, Memory.RuulSymmetry, returnSecret));
 			}
 			
 			if (_info.Game == Game.Ages)
