@@ -50,7 +50,12 @@ namespace Zyrenth.ZoraGen.GtkUI
 		
 		private void SetSecrets()
 		{
-			swGame.SetSecret(new GameSecret(_info));
+			GameSecret gameSecret = new GameSecret(_info);
+
+			if (_info.Region == GameRegion.US && !gameSecret.IsValidForPAL())
+				palInfoLabel.Text = "Name has abnormal characters.\nPassword won't work on PAL.";
+
+			swGame.SetSecret(gameSecret);
 			swRings.SetSecret(new RingSecret(_info));
 			
 			if (_info.IsLinkedGame)
