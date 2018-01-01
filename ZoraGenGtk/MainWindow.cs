@@ -135,7 +135,13 @@ namespace Zyrenth.ZoraGen.GtkUI
 			var dialog = new DecoderForm(DecoderForm.SecretType.Ring, _info.Region);
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
-			dialog.Run();
+
+			if (dialog.Run() == (int)Gtk.ResponseType.Ok)
+			{
+				_info = dialog.GameInfo;
+				SetControlValues();
+			}
+
 			dialog.Destroy();
 		}
 
