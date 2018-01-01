@@ -221,6 +221,7 @@
                                     <property name="MemberName" />
                                     <property name="CanFocus">True</property>
                                     <property name="Label" translatable="yes">Ages</property>
+                                    <property name="Active">True</property>
                                     <property name="DrawIndicator">True</property>
                                     <property name="HasLabel">True</property>
                                     <property name="UseUnderline">True</property>
@@ -410,6 +411,7 @@
                                     <property name="MemberName" />
                                     <property name="CanFocus">True</property>
                                     <property name="Label" translatable="yes">JP</property>
+                                    <property name="Active">True</property>
                                     <property name="DrawIndicator">True</property>
                                     <property name="HasLabel">True</property>
                                     <property name="UseUnderline">True</property>
@@ -498,6 +500,7 @@
 Dimitri
 Moosh</property>
                         <property name="Active">0</property>
+                        <signal name="Changed" handler="OnCmbAnimalChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">2</property>
