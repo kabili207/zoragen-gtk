@@ -391,8 +391,9 @@ namespace Zyrenth.ZoraGen.GtkUI
 					"Cancel", ResponseType.Cancel,
 					"Open", ResponseType.Accept);
 			var filter = new FileFilter();
-			filter.Name = "Battery Files (*.sav)";
+			filter.Name = "Battery Files (*.sav, *.srm)";
 			filter.AddPattern("*.sav");
+			filter.AddPattern("*.srm");
 			fc.AddFilter(filter);
 
 			if (fc.Run() == (int)ResponseType.Accept)
