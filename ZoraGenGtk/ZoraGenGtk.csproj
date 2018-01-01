@@ -283,6 +283,198 @@
     <EmbeddedResource Include="..\Images\Triforce.png">
       <Link>Images\Triforce.png</Link>
     </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\00.png">
+      <Link>Images\Symbols_JP\00.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\01.png">
+      <Link>Images\Symbols_JP\01.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\02.png">
+      <Link>Images\Symbols_JP\02.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\03.png">
+      <Link>Images\Symbols_JP\03.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\04.png">
+      <Link>Images\Symbols_JP\04.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\05.png">
+      <Link>Images\Symbols_JP\05.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\06.png">
+      <Link>Images\Symbols_JP\06.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\07.png">
+      <Link>Images\Symbols_JP\07.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\08.png">
+      <Link>Images\Symbols_JP\08.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\09.png">
+      <Link>Images\Symbols_JP\09.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\10.png">
+      <Link>Images\Symbols_JP\10.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\11.png">
+      <Link>Images\Symbols_JP\11.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\12.png">
+      <Link>Images\Symbols_JP\12.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\13.png">
+      <Link>Images\Symbols_JP\13.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\14.png">
+      <Link>Images\Symbols_JP\14.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\15.png">
+      <Link>Images\Symbols_JP\15.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\16.png">
+      <Link>Images\Symbols_JP\16.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\17.png">
+      <Link>Images\Symbols_JP\17.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\18.png">
+      <Link>Images\Symbols_JP\18.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\19.png">
+      <Link>Images\Symbols_JP\19.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\20.png">
+      <Link>Images\Symbols_JP\20.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\21.png">
+      <Link>Images\Symbols_JP\21.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\22.png">
+      <Link>Images\Symbols_JP\22.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\23.png">
+      <Link>Images\Symbols_JP\23.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\24.png">
+      <Link>Images\Symbols_JP\24.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\25.png">
+      <Link>Images\Symbols_JP\25.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\26.png">
+      <Link>Images\Symbols_JP\26.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\27.png">
+      <Link>Images\Symbols_JP\27.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\28.png">
+      <Link>Images\Symbols_JP\28.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\29.png">
+      <Link>Images\Symbols_JP\29.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\30.png">
+      <Link>Images\Symbols_JP\30.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\31.png">
+      <Link>Images\Symbols_JP\31.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\32.png">
+      <Link>Images\Symbols_JP\32.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\33.png">
+      <Link>Images\Symbols_JP\33.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\34.png">
+      <Link>Images\Symbols_JP\34.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\35.png">
+      <Link>Images\Symbols_JP\35.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\36.png">
+      <Link>Images\Symbols_JP\36.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\37.png">
+      <Link>Images\Symbols_JP\37.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\38.png">
+      <Link>Images\Symbols_JP\38.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\39.png">
+      <Link>Images\Symbols_JP\39.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\40.png">
+      <Link>Images\Symbols_JP\40.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\41.png">
+      <Link>Images\Symbols_JP\41.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\42.png">
+      <Link>Images\Symbols_JP\42.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\43.png">
+      <Link>Images\Symbols_JP\43.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\44.png">
+      <Link>Images\Symbols_JP\44.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\45.png">
+      <Link>Images\Symbols_JP\45.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\46.png">
+      <Link>Images\Symbols_JP\46.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\47.png">
+      <Link>Images\Symbols_JP\47.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\48.png">
+      <Link>Images\Symbols_JP\48.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\49.png">
+      <Link>Images\Symbols_JP\49.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\50.png">
+      <Link>Images\Symbols_JP\50.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\51.png">
+      <Link>Images\Symbols_JP\51.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\52.png">
+      <Link>Images\Symbols_JP\52.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\53.png">
+      <Link>Images\Symbols_JP\53.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\54.png">
+      <Link>Images\Symbols_JP\54.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\55.png">
+      <Link>Images\Symbols_JP\55.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\56.png">
+      <Link>Images\Symbols_JP\56.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\57.png">
+      <Link>Images\Symbols_JP\57.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\58.png">
+      <Link>Images\Symbols_JP\58.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\59.png">
+      <Link>Images\Symbols_JP\59.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\60.png">
+      <Link>Images\Symbols_JP\60.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\61.png">
+      <Link>Images\Symbols_JP\61.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\62.png">
+      <Link>Images\Symbols_JP\62.png</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\Images\Symbols_JP\63.png">
+      <Link>Images\Symbols_JP\63.png</Link>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />

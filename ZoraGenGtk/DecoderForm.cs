@@ -31,6 +31,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 		private byte[] data;
 		private int currentPic;
 		private int _secretLength;
+		private GameRegion _region;
 		
 		public enum SecretType
 		{
@@ -45,12 +46,12 @@ namespace Zyrenth.ZoraGen.GtkUI
 		
 		public bool DebugMode { get; set; }
 		
-		public DecoderForm() : 
-			this(SecretType.Game)
+		public DecoderForm(GameRegion region) :
+			this(SecretType.Game, region)
 		{
 		}
 		
-		public DecoderForm(SecretType mode)
+		public DecoderForm(SecretType mode, GameRegion region)
 		{
 			this.Build();
 			switch (mode)
@@ -65,9 +66,17 @@ namespace Zyrenth.ZoraGen.GtkUI
 					_secretLength = 5;
 					break;
 			}
+			_region = region;
 			data = new byte[_secretLength];
 			Mode = mode;
 			chkAppendRings.Visible = Mode == SecretType.Ring;
+
+			if (region != GameRegion.US) {
+				notebook1.CurrentPage = 1;
+				notebook1.ShowTabs = false;
+				label7.Text = "Enter a secret (japanese characters).";
+				label8.Text = "";
+			}
 		}
 
 		protected void OnSymbolClicked(object sender, EventArgs e)
@@ -82,16 +91,16 @@ namespace Zyrenth.ZoraGen.GtkUI
 				if (currentPic >= _secretLength)
 				{
 					data[_secretLength - 1] = id;
-					secretwidget1.SetSecret(data);
+					secretwidget1.SetSecret(data, _region);
 				}
 				else
 				{
 					data[currentPic] = id;
 					currentPic++;
-					secretwidget1.SetSecret(data.Take(currentPic).ToArray());
+					secretwidget1.SetSecret(data.Take(currentPic).ToArray(), _region);
 				}
 
-				txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray());
+				txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray(), _region);
 			}
 		}
 
@@ -99,15 +108,15 @@ namespace Zyrenth.ZoraGen.GtkUI
 		{
 			secretwidget1.Reset();
 			currentPic = 0;
-			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray());
+			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray(), _region);
 		}
 
 		protected void OnBtnBackClicked(object sender, EventArgs e)
 		{
 			if (currentPic > 0)
 				currentPic--;
-			secretwidget1.SetSecret(data.Take(currentPic).ToArray());
-			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray());
+			secretwidget1.SetSecret(data.Take(currentPic).ToArray(), _region);
+			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray(), _region);
 		}
 
 		protected void OnButtonOkPressed(object sender, EventArgs e)
@@ -121,17 +130,17 @@ namespace Zyrenth.ZoraGen.GtkUI
 				switch (Mode)
 				{
 					case SecretType.Game:
-						GameSecret gs = new GameSecret();
+						GameSecret gs = new GameSecret(_region);
 						gs.Load(trimmedData);
 						gs.UpdateGameInfo(GameInfo);
 						break;
 					case SecretType.Ring:
-						RingSecret rs = new RingSecret();
+						RingSecret rs = new RingSecret(_region);
 						rs.Load(trimmedData);
 						rs.UpdateGameInfo(GameInfo, chkAppendRings.Active);
 						break;
 					case SecretType.Memory:
-						MemorySecret ms = new MemorySecret();
+						MemorySecret ms = new MemorySecret(_region);
 						ms.Load(trimmedData);
 						// Now what?
 						break;
@@ -161,10 +170,10 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 			try
 			{
-				byte[] parsedSecret = SecretParser.ParseSecret(txtSymbols.Text);
+				byte[] parsedSecret = SecretParser.ParseSecret(txtSymbols.Text, _region);
 				byte[] trimmedData = parsedSecret.Take(parsedSecret.Length.Clamp(0, _secretLength)).ToArray();
 
-				secretwidget1.SetSecret(trimmedData);
+				secretwidget1.SetSecret(trimmedData, _region);
 
 				for (int i = 0; i < trimmedData.Length; ++i)
 				{
@@ -179,9 +188,8 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		protected void OnNotebook1SwitchPage(object o, SwitchPageArgs args)
 		{
-			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray());
+			txtSymbols.Text = SecretParser.CreateString(data.Take(currentPic).ToArray(), _region);
 		}
-
 	}
 }
 

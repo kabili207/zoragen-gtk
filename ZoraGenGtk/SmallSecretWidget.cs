@@ -50,10 +50,10 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		public void SetSecret(Secret secret)
 		{
-			SetSecret(secret.ToBytes());
+			SetSecret(secret.ToBytes(), secret.Region);
 		}
 
-		public void SetSecret(byte[] secret)
+		public void SetSecret(byte[] secret, GameRegion region)
 		{
 			Reset();
 			for (int i = 0; i < secret.Length && i < pics.Length; i++)
@@ -64,7 +64,13 @@ namespace Zyrenth.ZoraGen.GtkUI
 				}
 				else
 				{
-					string imgUri = string.Format("Zyrenth.ZoraGen.GtkUI.Images.Symbols.{0:00}.png", secret[i]);
+					string folder;
+					if (region == GameRegion.JP)
+						folder = "Symbols_JP";
+					else
+						folder = "Symbols";
+
+					string imgUri = string.Format("Zyrenth.ZoraGen.GtkUI.Images." + folder + ".{0:00}.png", secret[i]);
 					pics[i].Pixbuf = Gdk.Pixbuf.LoadFromResource(imgUri);
 
 				}

@@ -63,6 +63,8 @@ namespace Zyrenth.ZoraGen.GtkUI
 		{
 			this.Build();
 
+			rdoUS.Active = true;
+
 			foreach (var val in Enum.GetNames(typeof(ChildBehavior)))
 			{
 				cmbBehavior.AppendText(val);
@@ -112,7 +114,9 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		protected void OnLoadGameSecret(object sender, EventArgs e)
 		{
-			var dialog = new DecoderForm(DecoderForm.SecretType.Game);
+			GetControlValues();
+
+			var dialog = new DecoderForm(DecoderForm.SecretType.Game, _info.Region);
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
 
@@ -126,7 +130,9 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		protected void OnLoadRingSecret(object sender, EventArgs e)
 		{
-			var dialog = new DecoderForm(DecoderForm.SecretType.Ring);
+			GetControlValues();
+
+			var dialog = new DecoderForm(DecoderForm.SecretType.Ring, _info.Region);
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
 			dialog.Run();
@@ -173,6 +179,11 @@ namespace Zyrenth.ZoraGen.GtkUI
 			else
 				rdoSeasons.Active = true;
 
+			if (_info.Region == GameRegion.JP)
+				rdoJP.Active = true;
+			else if (_info.Region == GameRegion.US)
+				rdoUS.Active = true;
+
 			foreach (RingTreeNode node in _ringStore.OfType<RingTreeNode>())
 			{
 				node.IsChecked = (_info.Rings & node.RingValue) == node.RingValue;
@@ -190,6 +201,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			_info.WasGivenFreeRing = chkFreeRingGiven.Active;
 
 			_info.Game = rdoAges.Active ? Game.Ages : Game.Seasons;
+			_info.Region = rdoJP.Active ? GameRegion.JP : GameRegion.US;
 
 			ChildBehavior behavior;
 			if (!Enum.TryParse<ChildBehavior>(cmbBehavior.ActiveText, out behavior))

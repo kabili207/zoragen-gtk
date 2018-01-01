@@ -74,6 +74,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 				// swap the game for this secret
 				GameInfo info2 = new GameInfo ();
 				info2.GameID = _info.GameID;
+				info2.Region = _info.Region;
 				if (_info.Game == Game.Ages)
 					info2.Game = Game.Seasons;
 				else
