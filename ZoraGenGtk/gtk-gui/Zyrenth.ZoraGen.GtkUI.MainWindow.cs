@@ -581,6 +581,13 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.aboutAction.Activated += new global::System.EventHandler(this.OnAbout);
 			this.CheckForUpdatesAction.Activated += new global::System.EventHandler(this.OnCheckForUpdatesActionActivated);
 			this.importBatteryAction.Activated += new global::System.EventHandler(this.OnImportBattery);
+			this.chkLinked.Toggled += new global::System.EventHandler(this.OnChkLinkedToggled);
+			this.chkHeros.Toggled += new global::System.EventHandler(this.OnChkHerosToggled);
+			this.txtHero.Changed += new global::System.EventHandler(this.OnTxtHeroChanged);
+			this.txtChild.Changed += new global::System.EventHandler(this.OnTxtChildChanged);
+			this.spinID.Changed += new global::System.EventHandler(this.OnSpinIDChanged);
+			this.cmbBehavior.Changed += new global::System.EventHandler(this.OnCmbBehaviorChanged);
+			this.cmbAnimal.Changed += new global::System.EventHandler(this.OnCmbAnimalChanged);
 			this.btnAllRings.Clicked += new global::System.EventHandler(this.OnBtnAllRingsClicked);
 			this.btnNoRings.Clicked += new global::System.EventHandler(this.OnBtnNoRingsClicked);
 		}

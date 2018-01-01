@@ -134,6 +134,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			w3.Fill = false;
 			// Container child vbox2.Gtk.Box+BoxChild
 			this.label2 = new global::Gtk.Label();
+			this.label2.Name = "label2";
 			this.label2.Xalign = 0F;
 			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString("Ring Secret:");
 			this.vbox2.Add(this.label2);
@@ -332,7 +333,6 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.lblMem2 = new global::Gtk.Label();
 			this.lblMem2.Name = "lblMem2";
 			this.lblMem2.Xalign = 0F;
-			this.lblMem2.LabelProp = "";
 			this.table1.Add(this.lblMem2);
 			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table1[this.lblMem2]));
 			w23.TopAttach = ((uint)(2));

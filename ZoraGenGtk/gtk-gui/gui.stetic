@@ -221,7 +221,6 @@
                                     <property name="MemberName" />
                                     <property name="CanFocus">True</property>
                                     <property name="Label" translatable="yes">Ages</property>
-                                    <property name="Active">True</property>
                                     <property name="DrawIndicator">True</property>
                                     <property name="HasLabel">True</property>
                                     <property name="UseUnderline">True</property>
@@ -312,6 +311,7 @@
                                     <property name="DrawIndicator">True</property>
                                     <property name="HasLabel">True</property>
                                     <property name="UseUnderline">True</property>
+                                    <signal name="Toggled" handler="OnChkHerosToggled" />
                                   </widget>
                                   <packing>
                                     <property name="TopAttach">1</property>
@@ -336,6 +336,7 @@
                                     <property name="DrawIndicator">True</property>
                                     <property name="HasLabel">True</property>
                                     <property name="UseUnderline">True</property>
+                                    <signal name="Toggled" handler="OnChkLinkedToggled" />
                                   </widget>
                                   <packing>
                                     <property name="LeftAttach">1</property>
@@ -417,6 +418,7 @@
 Dimitri
 Moosh</property>
                         <property name="Active">0</property>
+                        <signal name="Changed" handler="OnCmbAnimalChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">2</property>
@@ -439,6 +441,7 @@ Moosh</property>
                         <property name="MemberName" />
                         <property name="IsTextCombo">True</property>
                         <property name="Items" translatable="yes" />
+                        <signal name="Changed" handler="OnCmbBehaviorChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">1</property>
@@ -585,6 +588,7 @@ Moosh</property>
                         <property name="StepIncrement">1</property>
                         <property name="ClimbRate">1</property>
                         <property name="Numeric">True</property>
+                        <signal name="Changed" handler="OnSpinIDChanged" />
                       </widget>
                       <packing>
                         <property name="TopAttach">1</property>
@@ -610,6 +614,7 @@ Moosh</property>
                         <property name="IsEditable">True</property>
                         <property name="MaxLength">5</property>
                         <property name="InvisibleChar">●</property>
+                        <signal name="Changed" handler="OnTxtChildChanged" />
                       </widget>
                       <packing>
                         <property name="LeftAttach">3</property>
@@ -633,6 +638,7 @@ Moosh</property>
                         <property name="IsEditable">True</property>
                         <property name="MaxLength">5</property>
                         <property name="InvisibleChar">●</property>
+                        <signal name="Changed" handler="OnTxtHeroChanged" />
                       </widget>
                       <packing>
                         <property name="LeftAttach">1</property>
@@ -780,7 +786,7 @@ Moosh</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Dialog" id="Zyrenth.ZoraGen.GtkUI.DecoderForm" design-size="348 317">
+  <widget class="Gtk.Dialog" id="Zyrenth.ZoraGen.GtkUI.DecoderForm" design-size="348 326">
     <property name="MemberName" />
     <property name="Title" translatable="yes">Decode Secret</property>
     <property name="Icon">resource:Zyrenth.ZoraGen.GtkUI.Farore.ico</property>
@@ -3688,7 +3694,7 @@ RigHtN ♥N  h</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Bin" id="Zyrenth.ZoraGen.GtkUI.FilePreviewWidget" design-size="123 108">
+  <widget class="Gtk.Bin" id="Zyrenth.ZoraGen.GtkUI.FilePreviewWidget" design-size="123 126">
     <property name="MemberName" />
     <property name="Visible">False</property>
     <child>
@@ -3990,7 +3996,7 @@ RigHtN ♥N  h</property>
       </widget>
     </child>
   </widget>
-  <widget class="Gtk.Dialog" id="Zyrenth.ZoraGen.GtkUI.GamePickerDialog" design-size="400 155">
+  <widget class="Gtk.Dialog" id="Zyrenth.ZoraGen.GtkUI.GamePickerDialog" design-size="481 175">
     <property name="MemberName" />
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Buttons">2</property>
