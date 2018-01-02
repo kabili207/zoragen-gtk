@@ -63,6 +63,8 @@ namespace Zyrenth.ZoraGen.GtkUI
 		{
 			this.Build();
 
+			rdoUS.Active = true;
+
 			foreach (var val in Enum.GetNames(typeof(ChildBehavior)))
 			{
 				cmbBehavior.AppendText(val);
@@ -112,7 +114,9 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		protected void OnLoadGameSecret(object sender, EventArgs e)
 		{
-			var dialog = new DecoderForm(DecoderForm.SecretType.Game);
+			GetControlValues();
+
+			var dialog = new DecoderForm(DecoderForm.SecretType.Game, _info.Region);
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
 
@@ -126,10 +130,18 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		protected void OnLoadRingSecret(object sender, EventArgs e)
 		{
-			var dialog = new DecoderForm(DecoderForm.SecretType.Ring);
+			GetControlValues();
+
+			var dialog = new DecoderForm(DecoderForm.SecretType.Ring, _info.Region);
 			dialog.GameInfo = _info;
 			dialog.Modal = true;
-			dialog.Run();
+
+			if (dialog.Run() == (int)Gtk.ResponseType.Ok)
+			{
+				_info = dialog.GameInfo;
+				SetControlValues();
+			}
+
 			dialog.Destroy();
 		}
 
@@ -148,7 +160,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			dialog.ProgramName = details.Product;
 			dialog.Version = details.ProductVersion;
 			dialog.Comments = details.Description;
-			dialog.Authors = new string [] { "Andrew Nagle" };
+			dialog.Authors = new string[] { "Andrew Nagle" };
 			dialog.Website = "https://github.com/kabili207/zoragen-gtk";
 			dialog.Copyright = details.Copyright;
 			dialog.Logo = Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Farore.ico");
@@ -173,6 +185,11 @@ namespace Zyrenth.ZoraGen.GtkUI
 			else
 				rdoSeasons.Active = true;
 
+			if (_info.Region == GameRegion.JP)
+				rdoJP.Active = true;
+			else if (_info.Region == GameRegion.US)
+				rdoUS.Active = true;
+
 			foreach (RingTreeNode node in _ringStore.OfType<RingTreeNode>())
 			{
 				node.IsChecked = (_info.Rings & node.RingValue) == node.RingValue;
@@ -190,6 +207,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			_info.WasGivenFreeRing = chkFreeRingGiven.Active;
 
 			_info.Game = rdoAges.Active ? Game.Ages : Game.Seasons;
+			_info.Region = rdoJP.Active ? GameRegion.JP : GameRegion.US;
 
 			ChildBehavior behavior;
 			if (!Enum.TryParse<ChildBehavior>(cmbBehavior.ActiveText, out behavior))
@@ -394,7 +412,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 		{
 			var dialog = new GamePickerDialog(infos);
 			dialog.Modal = true;
-			if (dialog.Run() ==(int) ResponseType.Ok)
+			if (dialog.Run() == (int)ResponseType.Ok)
 			{
 				_info = dialog.SelectedGameInfo;
 				_currentFile = "";
@@ -476,12 +494,12 @@ namespace Zyrenth.ZoraGen.GtkUI
 				// it try to bridge to the OS cert store. So we have to trade features
 				// for insecurity. I don't like it, but it's better than hard-coding
 				// github's certificate...
-				ServicePointManager.ServerCertificateValidationCallback = 
+				ServicePointManager.ServerCertificateValidationCallback =
 					new System.Net.Security.RemoteCertificateValidationCallback
 					(
 						(srvPoint, certificate, chain, errors) => true
 					);
-				
+
 				WebRequest request = WebRequest.Create(sURL);
 
 				// GitHub requires a user agent

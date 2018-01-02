@@ -43,17 +43,17 @@ namespace Zyrenth.ZoraGen.GtkUI
 		{
 			this.Build();
 
-			pics = new [] {
+			pics = new[] {
 				img01, img02, img03, img04, img05
 			};
 		}
 
 		public void SetSecret(Secret secret)
 		{
-			SetSecret(secret.ToBytes());
+			SetSecret(secret.ToBytes(), secret.Region);
 		}
 
-		public void SetSecret(byte[] secret)
+		public void SetSecret(byte[] secret, GameRegion region)
 		{
 			Reset();
 			for (int i = 0; i < secret.Length && i < pics.Length; i++)
@@ -64,7 +64,13 @@ namespace Zyrenth.ZoraGen.GtkUI
 				}
 				else
 				{
-					string imgUri = string.Format("Zyrenth.ZoraGen.GtkUI.Images.Symbols.{0:00}.png", secret[i]);
+					string folder;
+					if (region == GameRegion.JP)
+						folder = "Symbols_JP";
+					else
+						folder = "Symbols";
+
+					string imgUri = string.Format("Zyrenth.ZoraGen.GtkUI.Images." + folder + ".{0:00}.png", secret[i]);
 					pics[i].Pixbuf = Gdk.Pixbuf.LoadFromResource(imgUri);
 
 				}
@@ -108,7 +114,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 		private Size getMininumSize()
 		{
 			int width = 172, height = 52;
-			
+
 			width = 82;
 			height = 22;
 

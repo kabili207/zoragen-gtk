@@ -43,16 +43,16 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		public void SetSecret(Secret secret)
 		{
-			SetSecret(secret.ToBytes());
+			SetSecret(secret.ToBytes(), secret.Region);
 		}
 
-		public void SetSecret(byte[] secret)
+		public void SetSecret(byte[] secret, GameRegion region)
 		{
 			Reset();
-			sym01.SetSecret(secret.Take(5).ToArray());
-			sym02.SetSecret(secret.Skip(5).Take(5).ToArray());
-			sym03.SetSecret(secret.Skip(10).Take(5).ToArray());
-			sym04.SetSecret(secret.Skip(15).Take(5).ToArray());
+			sym01.SetSecret(secret.Take(5).ToArray(), region);
+			sym02.SetSecret(secret.Skip(5).Take(5).ToArray(), region);
+			sym03.SetSecret(secret.Skip(10).Take(5).ToArray(), region);
+			sym04.SetSecret(secret.Skip(15).Take(5).ToArray(), region);
 		}
 
 		public void Reset()

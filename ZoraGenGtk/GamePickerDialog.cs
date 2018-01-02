@@ -44,7 +44,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			{
 				_gameData = value;
 				nvInfos.NodeStore = CreateModel();
-				if(_gameData.Count() > 0)
+				if (_gameData.Count() > 0)
 					nvInfos.NodeSelection.SelectPath(new TreePath("0"));
 			}
 		}
@@ -106,9 +106,9 @@ namespace Zyrenth.ZoraGen.GtkUI
 			}
 		}
 
-		void NvInfos_NodeSelection_Changed (object sender, EventArgs e)
+		void NvInfos_NodeSelection_Changed(object sender, EventArgs e)
 		{
-			Gtk.NodeSelection selection = (Gtk.NodeSelection) sender;
+			Gtk.NodeSelection selection = (Gtk.NodeSelection)sender;
 			GameInfoNode node = selection.SelectedNode as GameInfoNode;
 			if (node != null)
 			{

@@ -91,7 +91,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			{
 				this.Child.ShowAll();
 			}
-			this.DefaultWidth = 481;
+			this.DefaultWidth = 478;
 			this.DefaultHeight = 175;
 			this.Show();
 			this.nvInfos.RowActivated += new global::Gtk.RowActivatedHandler(this.OnNvInfosRowActivated);

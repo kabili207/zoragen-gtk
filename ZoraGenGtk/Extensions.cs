@@ -32,7 +32,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 	{
 		public static void SetActiveText(this ComboBox comboBox, string str)
 		{
-			var store = (ListStore) comboBox.Model;
+			var store = (ListStore)comboBox.Model;
 			int index = 0;
 
 			foreach (object[] row in store)
