@@ -276,6 +276,266 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		private global::Gtk.Label label5;
 
+		private global::Gtk.Table table2;
+
+		private global::Gtk.Button btnSymbolJP1;
+
+		private global::Gtk.Image image130;
+
+		private global::Gtk.Button btnSymbolJP10;
+
+		private global::Gtk.Image image129;
+
+		private global::Gtk.Button btnSymbolJP11;
+
+		private global::Gtk.Image image128;
+
+		private global::Gtk.Button btnSymbolJP12;
+
+		private global::Gtk.Image image127;
+
+		private global::Gtk.Button btnSymbolJP13;
+
+		private global::Gtk.Image image126;
+
+		private global::Gtk.Button btnSymbolJP14;
+
+		private global::Gtk.Image image125;
+
+		private global::Gtk.Button btnSymbolJP15;
+
+		private global::Gtk.Image image124;
+
+		private global::Gtk.Button btnSymbolJP16;
+
+		private global::Gtk.Image image123;
+
+		private global::Gtk.Button btnSymbolJP17;
+
+		private global::Gtk.Image image122;
+
+		private global::Gtk.Button btnSymbolJP18;
+
+		private global::Gtk.Image image121;
+
+		private global::Gtk.Button btnSymbolJP19;
+
+		private global::Gtk.Image image120;
+
+		private global::Gtk.Button btnSymbolJP2;
+
+		private global::Gtk.Image image119;
+
+		private global::Gtk.Button btnSymbolJP20;
+
+		private global::Gtk.Image image118;
+
+		private global::Gtk.Button btnSymbolJP21;
+
+		private global::Gtk.Image image117;
+
+		private global::Gtk.Button btnSymbolJP22;
+
+		private global::Gtk.Image image116;
+
+		private global::Gtk.Button btnSymbolJP23;
+
+		private global::Gtk.Image image115;
+
+		private global::Gtk.Button btnSymbolJP24;
+
+		private global::Gtk.Image image114;
+
+		private global::Gtk.Button btnSymbolJP25;
+
+		private global::Gtk.Image image113;
+
+		private global::Gtk.Button btnSymbolJP26;
+
+		private global::Gtk.Image image112;
+
+		private global::Gtk.Button btnSymbolJP27;
+
+		private global::Gtk.Image image111;
+
+		private global::Gtk.Button btnSymbolJP28;
+
+		private global::Gtk.Image image110;
+
+		private global::Gtk.Button btnSymbolJP29;
+
+		private global::Gtk.Image image109;
+
+		private global::Gtk.Button btnSymbolJP3;
+
+		private global::Gtk.Image image108;
+
+		private global::Gtk.Button btnSymbolJP30;
+
+		private global::Gtk.Image image107;
+
+		private global::Gtk.Button btnSymbolJP31;
+
+		private global::Gtk.Image image106;
+
+		private global::Gtk.Button btnSymbolJP32;
+
+		private global::Gtk.Image image105;
+
+		private global::Gtk.Button btnSymbolJP33;
+
+		private global::Gtk.Image image104;
+
+		private global::Gtk.Button btnSymbolJP34;
+
+		private global::Gtk.Image image103;
+
+		private global::Gtk.Button btnSymbolJP35;
+
+		private global::Gtk.Image image102;
+
+		private global::Gtk.Button btnSymbolJP36;
+
+		private global::Gtk.Image image101;
+
+		private global::Gtk.Button btnSymbolJP37;
+
+		private global::Gtk.Image image100;
+
+		private global::Gtk.Button btnSymbolJP38;
+
+		private global::Gtk.Image image99;
+
+		private global::Gtk.Button btnSymbolJP39;
+
+		private global::Gtk.Image image98;
+
+		private global::Gtk.Button btnSymbolJP4;
+
+		private global::Gtk.Image image97;
+
+		private global::Gtk.Button btnSymbolJP40;
+
+		private global::Gtk.Image image96;
+
+		private global::Gtk.Button btnSymbolJP41;
+
+		private global::Gtk.Image image95;
+
+		private global::Gtk.Button btnSymbolJP42;
+
+		private global::Gtk.Image image94;
+
+		private global::Gtk.Button btnSymbolJP43;
+
+		private global::Gtk.Image image93;
+
+		private global::Gtk.Button btnSymbolJP44;
+
+		private global::Gtk.Image image92;
+
+		private global::Gtk.Button btnSymbolJP45;
+
+		private global::Gtk.Image image91;
+
+		private global::Gtk.Button btnSymbolJP46;
+
+		private global::Gtk.Image image90;
+
+		private global::Gtk.Button btnSymbolJP47;
+
+		private global::Gtk.Image image89;
+
+		private global::Gtk.Button btnSymbolJP48;
+
+		private global::Gtk.Image image88;
+
+		private global::Gtk.Button btnSymbolJP49;
+
+		private global::Gtk.Image image87;
+
+		private global::Gtk.Button btnSymbolJP5;
+
+		private global::Gtk.Image image86;
+
+		private global::Gtk.Button btnSymbolJP50;
+
+		private global::Gtk.Image image85;
+
+		private global::Gtk.Button btnSymbolJP51;
+
+		private global::Gtk.Image image84;
+
+		private global::Gtk.Button btnSymbolJP52;
+
+		private global::Gtk.Image image83;
+
+		private global::Gtk.Button btnSymbolJP53;
+
+		private global::Gtk.Image image82;
+
+		private global::Gtk.Button btnSymbolJP54;
+
+		private global::Gtk.Image image81;
+
+		private global::Gtk.Button btnSymbolJP55;
+
+		private global::Gtk.Image image80;
+
+		private global::Gtk.Button btnSymbolJP56;
+
+		private global::Gtk.Image image79;
+
+		private global::Gtk.Button btnSymbolJP57;
+
+		private global::Gtk.Image image78;
+
+		private global::Gtk.Button btnSymbolJP58;
+
+		private global::Gtk.Image image77;
+
+		private global::Gtk.Button btnSymbolJP59;
+
+		private global::Gtk.Image image76;
+
+		private global::Gtk.Button btnSymbolJP6;
+
+		private global::Gtk.Image image75;
+
+		private global::Gtk.Button btnSymbolJP60;
+
+		private global::Gtk.Image image74;
+
+		private global::Gtk.Button btnSymbolJP61;
+
+		private global::Gtk.Image image73;
+
+		private global::Gtk.Button btnSymbolJP62;
+
+		private global::Gtk.Image image72;
+
+		private global::Gtk.Button btnSymbolJP63;
+
+		private global::Gtk.Image image71;
+
+		private global::Gtk.Button btnSymbolJP64;
+
+		private global::Gtk.Image image70;
+
+		private global::Gtk.Button btnSymbolJP7;
+
+		private global::Gtk.Image image69;
+
+		private global::Gtk.Button btnSymbolJP8;
+
+		private global::Gtk.Image image68;
+
+		private global::Gtk.Button btnSymbolJP9;
+
+		private global::Gtk.Image image36;
+
+		private global::Gtk.Label label1;
+
 		private global::Gtk.VBox vbox3;
 
 		private global::Gtk.Entry txtSymbols;
@@ -364,7 +624,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.notebook1 = new global::Gtk.Notebook();
 			this.notebook1.CanFocus = true;
 			this.notebook1.Name = "notebook1";
-			this.notebook1.CurrentPage = 0;
+			this.notebook1.CurrentPage = 2;
 			// Container child notebook1.Gtk.Notebook+NotebookChild
 			this.table1 = new global::Gtk.Table(((uint)(5)), ((uint)(13)), false);
 			this.table1.Name = "table1";
@@ -1428,6 +1688,1070 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.notebook1.SetTabLabel(this.table1, this.label5);
 			this.label5.ShowAll();
 			// Container child notebook1.Gtk.Notebook+NotebookChild
+			this.table2 = new global::Gtk.Table(((uint)(5)), ((uint)(13)), false);
+			this.table2.Name = "table2";
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP1 = new global::Gtk.Button();
+			this.btnSymbolJP1.CanFocus = true;
+			this.btnSymbolJP1.Name = "btnSymbolJP1";
+			// Container child btnSymbolJP1.Gtk.Container+ContainerChild
+			this.image130 = new global::Gtk.Image();
+			this.image130.Name = "image130";
+			this.image130.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.00.png");
+			this.btnSymbolJP1.Add(this.image130);
+			this.table2.Add(this.btnSymbolJP1);
+			global::Gtk.Table.TableChild w136 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP1]));
+			w136.XOptions = ((global::Gtk.AttachOptions)(4));
+			w136.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP10 = new global::Gtk.Button();
+			this.btnSymbolJP10.CanFocus = true;
+			this.btnSymbolJP10.Name = "btnSymbolJP10";
+			// Container child btnSymbolJP10.Gtk.Container+ContainerChild
+			this.image129 = new global::Gtk.Image();
+			this.image129.Name = "image129";
+			this.image129.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.09.png");
+			this.btnSymbolJP10.Add(this.image129);
+			this.table2.Add(this.btnSymbolJP10);
+			global::Gtk.Table.TableChild w138 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP10]));
+			w138.LeftAttach = ((uint)(9));
+			w138.RightAttach = ((uint)(10));
+			w138.XOptions = ((global::Gtk.AttachOptions)(4));
+			w138.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP11 = new global::Gtk.Button();
+			this.btnSymbolJP11.CanFocus = true;
+			this.btnSymbolJP11.Name = "btnSymbolJP11";
+			// Container child btnSymbolJP11.Gtk.Container+ContainerChild
+			this.image128 = new global::Gtk.Image();
+			this.image128.Name = "image128";
+			this.image128.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.10.png");
+			this.btnSymbolJP11.Add(this.image128);
+			this.table2.Add(this.btnSymbolJP11);
+			global::Gtk.Table.TableChild w140 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP11]));
+			w140.LeftAttach = ((uint)(10));
+			w140.RightAttach = ((uint)(11));
+			w140.XOptions = ((global::Gtk.AttachOptions)(4));
+			w140.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP12 = new global::Gtk.Button();
+			this.btnSymbolJP12.CanFocus = true;
+			this.btnSymbolJP12.Name = "btnSymbolJP12";
+			// Container child btnSymbolJP12.Gtk.Container+ContainerChild
+			this.image127 = new global::Gtk.Image();
+			this.image127.Name = "image127";
+			this.image127.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.11.png");
+			this.btnSymbolJP12.Add(this.image127);
+			this.table2.Add(this.btnSymbolJP12);
+			global::Gtk.Table.TableChild w142 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP12]));
+			w142.LeftAttach = ((uint)(11));
+			w142.RightAttach = ((uint)(12));
+			w142.XOptions = ((global::Gtk.AttachOptions)(4));
+			w142.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP13 = new global::Gtk.Button();
+			this.btnSymbolJP13.CanFocus = true;
+			this.btnSymbolJP13.Name = "btnSymbolJP13";
+			// Container child btnSymbolJP13.Gtk.Container+ContainerChild
+			this.image126 = new global::Gtk.Image();
+			this.image126.Name = "image126";
+			this.image126.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.12.png");
+			this.btnSymbolJP13.Add(this.image126);
+			this.table2.Add(this.btnSymbolJP13);
+			global::Gtk.Table.TableChild w144 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP13]));
+			w144.LeftAttach = ((uint)(12));
+			w144.RightAttach = ((uint)(13));
+			w144.XOptions = ((global::Gtk.AttachOptions)(4));
+			w144.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP14 = new global::Gtk.Button();
+			this.btnSymbolJP14.CanFocus = true;
+			this.btnSymbolJP14.Name = "btnSymbolJP14";
+			// Container child btnSymbolJP14.Gtk.Container+ContainerChild
+			this.image125 = new global::Gtk.Image();
+			this.image125.Name = "image125";
+			this.image125.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.13.png");
+			this.btnSymbolJP14.Add(this.image125);
+			this.table2.Add(this.btnSymbolJP14);
+			global::Gtk.Table.TableChild w146 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP14]));
+			w146.TopAttach = ((uint)(1));
+			w146.BottomAttach = ((uint)(2));
+			w146.XOptions = ((global::Gtk.AttachOptions)(4));
+			w146.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP15 = new global::Gtk.Button();
+			this.btnSymbolJP15.CanFocus = true;
+			this.btnSymbolJP15.Name = "btnSymbolJP15";
+			// Container child btnSymbolJP15.Gtk.Container+ContainerChild
+			this.image124 = new global::Gtk.Image();
+			this.image124.Name = "image124";
+			this.image124.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.14.png");
+			this.btnSymbolJP15.Add(this.image124);
+			this.table2.Add(this.btnSymbolJP15);
+			global::Gtk.Table.TableChild w148 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP15]));
+			w148.TopAttach = ((uint)(1));
+			w148.BottomAttach = ((uint)(2));
+			w148.LeftAttach = ((uint)(1));
+			w148.RightAttach = ((uint)(2));
+			w148.XOptions = ((global::Gtk.AttachOptions)(4));
+			w148.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP16 = new global::Gtk.Button();
+			this.btnSymbolJP16.CanFocus = true;
+			this.btnSymbolJP16.Name = "btnSymbolJP16";
+			// Container child btnSymbolJP16.Gtk.Container+ContainerChild
+			this.image123 = new global::Gtk.Image();
+			this.image123.Name = "image123";
+			this.image123.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.15.png");
+			this.btnSymbolJP16.Add(this.image123);
+			this.table2.Add(this.btnSymbolJP16);
+			global::Gtk.Table.TableChild w150 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP16]));
+			w150.TopAttach = ((uint)(1));
+			w150.BottomAttach = ((uint)(2));
+			w150.LeftAttach = ((uint)(2));
+			w150.RightAttach = ((uint)(3));
+			w150.XOptions = ((global::Gtk.AttachOptions)(4));
+			w150.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP17 = new global::Gtk.Button();
+			this.btnSymbolJP17.CanFocus = true;
+			this.btnSymbolJP17.Name = "btnSymbolJP17";
+			// Container child btnSymbolJP17.Gtk.Container+ContainerChild
+			this.image122 = new global::Gtk.Image();
+			this.image122.Name = "image122";
+			this.image122.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.16.png");
+			this.btnSymbolJP17.Add(this.image122);
+			this.table2.Add(this.btnSymbolJP17);
+			global::Gtk.Table.TableChild w152 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP17]));
+			w152.TopAttach = ((uint)(1));
+			w152.BottomAttach = ((uint)(2));
+			w152.LeftAttach = ((uint)(3));
+			w152.RightAttach = ((uint)(4));
+			w152.XOptions = ((global::Gtk.AttachOptions)(4));
+			w152.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP18 = new global::Gtk.Button();
+			this.btnSymbolJP18.CanFocus = true;
+			this.btnSymbolJP18.Name = "btnSymbolJP18";
+			// Container child btnSymbolJP18.Gtk.Container+ContainerChild
+			this.image121 = new global::Gtk.Image();
+			this.image121.Name = "image121";
+			this.image121.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.17.png");
+			this.btnSymbolJP18.Add(this.image121);
+			this.table2.Add(this.btnSymbolJP18);
+			global::Gtk.Table.TableChild w154 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP18]));
+			w154.TopAttach = ((uint)(1));
+			w154.BottomAttach = ((uint)(2));
+			w154.LeftAttach = ((uint)(4));
+			w154.RightAttach = ((uint)(5));
+			w154.XOptions = ((global::Gtk.AttachOptions)(4));
+			w154.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP19 = new global::Gtk.Button();
+			this.btnSymbolJP19.CanFocus = true;
+			this.btnSymbolJP19.Name = "btnSymbolJP19";
+			// Container child btnSymbolJP19.Gtk.Container+ContainerChild
+			this.image120 = new global::Gtk.Image();
+			this.image120.Name = "image120";
+			this.image120.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.18.png");
+			this.btnSymbolJP19.Add(this.image120);
+			this.table2.Add(this.btnSymbolJP19);
+			global::Gtk.Table.TableChild w156 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP19]));
+			w156.TopAttach = ((uint)(1));
+			w156.BottomAttach = ((uint)(2));
+			w156.LeftAttach = ((uint)(5));
+			w156.RightAttach = ((uint)(6));
+			w156.XOptions = ((global::Gtk.AttachOptions)(4));
+			w156.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP2 = new global::Gtk.Button();
+			this.btnSymbolJP2.CanFocus = true;
+			this.btnSymbolJP2.Name = "btnSymbolJP2";
+			// Container child btnSymbolJP2.Gtk.Container+ContainerChild
+			this.image119 = new global::Gtk.Image();
+			this.image119.Name = "image119";
+			this.image119.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.01.png");
+			this.btnSymbolJP2.Add(this.image119);
+			this.table2.Add(this.btnSymbolJP2);
+			global::Gtk.Table.TableChild w158 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP2]));
+			w158.LeftAttach = ((uint)(1));
+			w158.RightAttach = ((uint)(2));
+			w158.XOptions = ((global::Gtk.AttachOptions)(4));
+			w158.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP20 = new global::Gtk.Button();
+			this.btnSymbolJP20.CanFocus = true;
+			this.btnSymbolJP20.Name = "btnSymbolJP20";
+			// Container child btnSymbolJP20.Gtk.Container+ContainerChild
+			this.image118 = new global::Gtk.Image();
+			this.image118.Name = "image118";
+			this.image118.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.19.png");
+			this.btnSymbolJP20.Add(this.image118);
+			this.table2.Add(this.btnSymbolJP20);
+			global::Gtk.Table.TableChild w160 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP20]));
+			w160.TopAttach = ((uint)(1));
+			w160.BottomAttach = ((uint)(2));
+			w160.LeftAttach = ((uint)(6));
+			w160.RightAttach = ((uint)(7));
+			w160.XOptions = ((global::Gtk.AttachOptions)(4));
+			w160.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP21 = new global::Gtk.Button();
+			this.btnSymbolJP21.CanFocus = true;
+			this.btnSymbolJP21.Name = "btnSymbolJP21";
+			// Container child btnSymbolJP21.Gtk.Container+ContainerChild
+			this.image117 = new global::Gtk.Image();
+			this.image117.Name = "image117";
+			this.image117.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.20.png");
+			this.btnSymbolJP21.Add(this.image117);
+			this.table2.Add(this.btnSymbolJP21);
+			global::Gtk.Table.TableChild w162 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP21]));
+			w162.TopAttach = ((uint)(1));
+			w162.BottomAttach = ((uint)(2));
+			w162.LeftAttach = ((uint)(7));
+			w162.RightAttach = ((uint)(8));
+			w162.XOptions = ((global::Gtk.AttachOptions)(4));
+			w162.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP22 = new global::Gtk.Button();
+			this.btnSymbolJP22.CanFocus = true;
+			this.btnSymbolJP22.Name = "btnSymbolJP22";
+			// Container child btnSymbolJP22.Gtk.Container+ContainerChild
+			this.image116 = new global::Gtk.Image();
+			this.image116.Name = "image116";
+			this.image116.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.21.png");
+			this.btnSymbolJP22.Add(this.image116);
+			this.table2.Add(this.btnSymbolJP22);
+			global::Gtk.Table.TableChild w164 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP22]));
+			w164.TopAttach = ((uint)(1));
+			w164.BottomAttach = ((uint)(2));
+			w164.LeftAttach = ((uint)(8));
+			w164.RightAttach = ((uint)(9));
+			w164.XOptions = ((global::Gtk.AttachOptions)(4));
+			w164.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP23 = new global::Gtk.Button();
+			this.btnSymbolJP23.CanFocus = true;
+			this.btnSymbolJP23.Name = "btnSymbolJP23";
+			// Container child btnSymbolJP23.Gtk.Container+ContainerChild
+			this.image115 = new global::Gtk.Image();
+			this.image115.Name = "image115";
+			this.image115.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.22.png");
+			this.btnSymbolJP23.Add(this.image115);
+			this.table2.Add(this.btnSymbolJP23);
+			global::Gtk.Table.TableChild w166 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP23]));
+			w166.TopAttach = ((uint)(1));
+			w166.BottomAttach = ((uint)(2));
+			w166.LeftAttach = ((uint)(9));
+			w166.RightAttach = ((uint)(10));
+			w166.XOptions = ((global::Gtk.AttachOptions)(4));
+			w166.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP24 = new global::Gtk.Button();
+			this.btnSymbolJP24.CanFocus = true;
+			this.btnSymbolJP24.Name = "btnSymbolJP24";
+			// Container child btnSymbolJP24.Gtk.Container+ContainerChild
+			this.image114 = new global::Gtk.Image();
+			this.image114.Name = "image114";
+			this.image114.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.23.png");
+			this.btnSymbolJP24.Add(this.image114);
+			this.table2.Add(this.btnSymbolJP24);
+			global::Gtk.Table.TableChild w168 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP24]));
+			w168.TopAttach = ((uint)(1));
+			w168.BottomAttach = ((uint)(2));
+			w168.LeftAttach = ((uint)(10));
+			w168.RightAttach = ((uint)(11));
+			w168.XOptions = ((global::Gtk.AttachOptions)(4));
+			w168.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP25 = new global::Gtk.Button();
+			this.btnSymbolJP25.CanFocus = true;
+			this.btnSymbolJP25.Name = "btnSymbolJP25";
+			// Container child btnSymbolJP25.Gtk.Container+ContainerChild
+			this.image113 = new global::Gtk.Image();
+			this.image113.Name = "image113";
+			this.image113.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.24.png");
+			this.btnSymbolJP25.Add(this.image113);
+			this.table2.Add(this.btnSymbolJP25);
+			global::Gtk.Table.TableChild w170 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP25]));
+			w170.TopAttach = ((uint)(1));
+			w170.BottomAttach = ((uint)(2));
+			w170.LeftAttach = ((uint)(11));
+			w170.RightAttach = ((uint)(12));
+			w170.XOptions = ((global::Gtk.AttachOptions)(4));
+			w170.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP26 = new global::Gtk.Button();
+			this.btnSymbolJP26.CanFocus = true;
+			this.btnSymbolJP26.Name = "btnSymbolJP26";
+			// Container child btnSymbolJP26.Gtk.Container+ContainerChild
+			this.image112 = new global::Gtk.Image();
+			this.image112.Name = "image112";
+			this.image112.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.25.png");
+			this.btnSymbolJP26.Add(this.image112);
+			this.table2.Add(this.btnSymbolJP26);
+			global::Gtk.Table.TableChild w172 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP26]));
+			w172.TopAttach = ((uint)(1));
+			w172.BottomAttach = ((uint)(2));
+			w172.LeftAttach = ((uint)(12));
+			w172.RightAttach = ((uint)(13));
+			w172.XOptions = ((global::Gtk.AttachOptions)(4));
+			w172.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP27 = new global::Gtk.Button();
+			this.btnSymbolJP27.CanFocus = true;
+			this.btnSymbolJP27.Name = "btnSymbolJP27";
+			// Container child btnSymbolJP27.Gtk.Container+ContainerChild
+			this.image111 = new global::Gtk.Image();
+			this.image111.Name = "image111";
+			this.image111.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.26.png");
+			this.btnSymbolJP27.Add(this.image111);
+			this.table2.Add(this.btnSymbolJP27);
+			global::Gtk.Table.TableChild w174 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP27]));
+			w174.TopAttach = ((uint)(2));
+			w174.BottomAttach = ((uint)(3));
+			w174.XOptions = ((global::Gtk.AttachOptions)(4));
+			w174.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP28 = new global::Gtk.Button();
+			this.btnSymbolJP28.CanFocus = true;
+			this.btnSymbolJP28.Name = "btnSymbolJP28";
+			// Container child btnSymbolJP28.Gtk.Container+ContainerChild
+			this.image110 = new global::Gtk.Image();
+			this.image110.Name = "image110";
+			this.image110.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.27.png");
+			this.btnSymbolJP28.Add(this.image110);
+			this.table2.Add(this.btnSymbolJP28);
+			global::Gtk.Table.TableChild w176 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP28]));
+			w176.TopAttach = ((uint)(2));
+			w176.BottomAttach = ((uint)(3));
+			w176.LeftAttach = ((uint)(1));
+			w176.RightAttach = ((uint)(2));
+			w176.XOptions = ((global::Gtk.AttachOptions)(4));
+			w176.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP29 = new global::Gtk.Button();
+			this.btnSymbolJP29.CanFocus = true;
+			this.btnSymbolJP29.Name = "btnSymbolJP29";
+			// Container child btnSymbolJP29.Gtk.Container+ContainerChild
+			this.image109 = new global::Gtk.Image();
+			this.image109.Name = "image109";
+			this.image109.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.28.png");
+			this.btnSymbolJP29.Add(this.image109);
+			this.table2.Add(this.btnSymbolJP29);
+			global::Gtk.Table.TableChild w178 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP29]));
+			w178.TopAttach = ((uint)(2));
+			w178.BottomAttach = ((uint)(3));
+			w178.LeftAttach = ((uint)(2));
+			w178.RightAttach = ((uint)(3));
+			w178.XOptions = ((global::Gtk.AttachOptions)(4));
+			w178.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP3 = new global::Gtk.Button();
+			this.btnSymbolJP3.CanFocus = true;
+			this.btnSymbolJP3.Name = "btnSymbolJP3";
+			// Container child btnSymbolJP3.Gtk.Container+ContainerChild
+			this.image108 = new global::Gtk.Image();
+			this.image108.Name = "image108";
+			this.image108.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.02.png");
+			this.btnSymbolJP3.Add(this.image108);
+			this.table2.Add(this.btnSymbolJP3);
+			global::Gtk.Table.TableChild w180 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP3]));
+			w180.LeftAttach = ((uint)(2));
+			w180.RightAttach = ((uint)(3));
+			w180.XOptions = ((global::Gtk.AttachOptions)(4));
+			w180.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP30 = new global::Gtk.Button();
+			this.btnSymbolJP30.CanFocus = true;
+			this.btnSymbolJP30.Name = "btnSymbolJP30";
+			// Container child btnSymbolJP30.Gtk.Container+ContainerChild
+			this.image107 = new global::Gtk.Image();
+			this.image107.Name = "image107";
+			this.image107.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.29.png");
+			this.btnSymbolJP30.Add(this.image107);
+			this.table2.Add(this.btnSymbolJP30);
+			global::Gtk.Table.TableChild w182 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP30]));
+			w182.TopAttach = ((uint)(2));
+			w182.BottomAttach = ((uint)(3));
+			w182.LeftAttach = ((uint)(3));
+			w182.RightAttach = ((uint)(4));
+			w182.XOptions = ((global::Gtk.AttachOptions)(4));
+			w182.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP31 = new global::Gtk.Button();
+			this.btnSymbolJP31.CanFocus = true;
+			this.btnSymbolJP31.Name = "btnSymbolJP31";
+			// Container child btnSymbolJP31.Gtk.Container+ContainerChild
+			this.image106 = new global::Gtk.Image();
+			this.image106.Name = "image106";
+			this.image106.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.30.png");
+			this.btnSymbolJP31.Add(this.image106);
+			this.table2.Add(this.btnSymbolJP31);
+			global::Gtk.Table.TableChild w184 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP31]));
+			w184.TopAttach = ((uint)(2));
+			w184.BottomAttach = ((uint)(3));
+			w184.LeftAttach = ((uint)(4));
+			w184.RightAttach = ((uint)(5));
+			w184.XOptions = ((global::Gtk.AttachOptions)(4));
+			w184.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP32 = new global::Gtk.Button();
+			this.btnSymbolJP32.CanFocus = true;
+			this.btnSymbolJP32.Name = "btnSymbolJP32";
+			// Container child btnSymbolJP32.Gtk.Container+ContainerChild
+			this.image105 = new global::Gtk.Image();
+			this.image105.Name = "image105";
+			this.image105.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.31.png");
+			this.btnSymbolJP32.Add(this.image105);
+			this.table2.Add(this.btnSymbolJP32);
+			global::Gtk.Table.TableChild w186 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP32]));
+			w186.TopAttach = ((uint)(2));
+			w186.BottomAttach = ((uint)(3));
+			w186.LeftAttach = ((uint)(5));
+			w186.RightAttach = ((uint)(6));
+			w186.XOptions = ((global::Gtk.AttachOptions)(4));
+			w186.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP33 = new global::Gtk.Button();
+			this.btnSymbolJP33.CanFocus = true;
+			this.btnSymbolJP33.Name = "btnSymbolJP33";
+			// Container child btnSymbolJP33.Gtk.Container+ContainerChild
+			this.image104 = new global::Gtk.Image();
+			this.image104.Name = "image104";
+			this.image104.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.32.png");
+			this.btnSymbolJP33.Add(this.image104);
+			this.table2.Add(this.btnSymbolJP33);
+			global::Gtk.Table.TableChild w188 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP33]));
+			w188.TopAttach = ((uint)(2));
+			w188.BottomAttach = ((uint)(3));
+			w188.LeftAttach = ((uint)(7));
+			w188.RightAttach = ((uint)(8));
+			w188.XOptions = ((global::Gtk.AttachOptions)(4));
+			w188.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP34 = new global::Gtk.Button();
+			this.btnSymbolJP34.CanFocus = true;
+			this.btnSymbolJP34.Name = "btnSymbolJP34";
+			// Container child btnSymbolJP34.Gtk.Container+ContainerChild
+			this.image103 = new global::Gtk.Image();
+			this.image103.Name = "image103";
+			this.image103.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.33.png");
+			this.btnSymbolJP34.Add(this.image103);
+			this.table2.Add(this.btnSymbolJP34);
+			global::Gtk.Table.TableChild w190 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP34]));
+			w190.TopAttach = ((uint)(2));
+			w190.BottomAttach = ((uint)(3));
+			w190.LeftAttach = ((uint)(8));
+			w190.RightAttach = ((uint)(9));
+			w190.XOptions = ((global::Gtk.AttachOptions)(4));
+			w190.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP35 = new global::Gtk.Button();
+			this.btnSymbolJP35.CanFocus = true;
+			this.btnSymbolJP35.Name = "btnSymbolJP35";
+			// Container child btnSymbolJP35.Gtk.Container+ContainerChild
+			this.image102 = new global::Gtk.Image();
+			this.image102.Name = "image102";
+			this.image102.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.34.png");
+			this.btnSymbolJP35.Add(this.image102);
+			this.table2.Add(this.btnSymbolJP35);
+			global::Gtk.Table.TableChild w192 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP35]));
+			w192.TopAttach = ((uint)(2));
+			w192.BottomAttach = ((uint)(3));
+			w192.LeftAttach = ((uint)(9));
+			w192.RightAttach = ((uint)(10));
+			w192.XOptions = ((global::Gtk.AttachOptions)(4));
+			w192.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP36 = new global::Gtk.Button();
+			this.btnSymbolJP36.CanFocus = true;
+			this.btnSymbolJP36.Name = "btnSymbolJP36";
+			// Container child btnSymbolJP36.Gtk.Container+ContainerChild
+			this.image101 = new global::Gtk.Image();
+			this.image101.Name = "image101";
+			this.image101.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.35.png");
+			this.btnSymbolJP36.Add(this.image101);
+			this.table2.Add(this.btnSymbolJP36);
+			global::Gtk.Table.TableChild w194 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP36]));
+			w194.TopAttach = ((uint)(2));
+			w194.BottomAttach = ((uint)(3));
+			w194.LeftAttach = ((uint)(10));
+			w194.RightAttach = ((uint)(11));
+			w194.XOptions = ((global::Gtk.AttachOptions)(4));
+			w194.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP37 = new global::Gtk.Button();
+			this.btnSymbolJP37.CanFocus = true;
+			this.btnSymbolJP37.Name = "btnSymbolJP37";
+			// Container child btnSymbolJP37.Gtk.Container+ContainerChild
+			this.image100 = new global::Gtk.Image();
+			this.image100.Name = "image100";
+			this.image100.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.36.png");
+			this.btnSymbolJP37.Add(this.image100);
+			this.table2.Add(this.btnSymbolJP37);
+			global::Gtk.Table.TableChild w196 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP37]));
+			w196.TopAttach = ((uint)(2));
+			w196.BottomAttach = ((uint)(3));
+			w196.LeftAttach = ((uint)(11));
+			w196.RightAttach = ((uint)(12));
+			w196.XOptions = ((global::Gtk.AttachOptions)(4));
+			w196.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP38 = new global::Gtk.Button();
+			this.btnSymbolJP38.CanFocus = true;
+			this.btnSymbolJP38.Name = "btnSymbolJP38";
+			// Container child btnSymbolJP38.Gtk.Container+ContainerChild
+			this.image99 = new global::Gtk.Image();
+			this.image99.Name = "image99";
+			this.image99.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.37.png");
+			this.btnSymbolJP38.Add(this.image99);
+			this.table2.Add(this.btnSymbolJP38);
+			global::Gtk.Table.TableChild w198 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP38]));
+			w198.TopAttach = ((uint)(2));
+			w198.BottomAttach = ((uint)(3));
+			w198.LeftAttach = ((uint)(12));
+			w198.RightAttach = ((uint)(13));
+			w198.XOptions = ((global::Gtk.AttachOptions)(4));
+			w198.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP39 = new global::Gtk.Button();
+			this.btnSymbolJP39.CanFocus = true;
+			this.btnSymbolJP39.Name = "btnSymbolJP39";
+			// Container child btnSymbolJP39.Gtk.Container+ContainerChild
+			this.image98 = new global::Gtk.Image();
+			this.image98.Name = "image98";
+			this.image98.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.38.png");
+			this.btnSymbolJP39.Add(this.image98);
+			this.table2.Add(this.btnSymbolJP39);
+			global::Gtk.Table.TableChild w200 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP39]));
+			w200.TopAttach = ((uint)(3));
+			w200.BottomAttach = ((uint)(4));
+			w200.XOptions = ((global::Gtk.AttachOptions)(4));
+			w200.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP4 = new global::Gtk.Button();
+			this.btnSymbolJP4.CanFocus = true;
+			this.btnSymbolJP4.Name = "btnSymbolJP4";
+			// Container child btnSymbolJP4.Gtk.Container+ContainerChild
+			this.image97 = new global::Gtk.Image();
+			this.image97.Name = "image97";
+			this.image97.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.03.png");
+			this.btnSymbolJP4.Add(this.image97);
+			this.table2.Add(this.btnSymbolJP4);
+			global::Gtk.Table.TableChild w202 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP4]));
+			w202.LeftAttach = ((uint)(3));
+			w202.RightAttach = ((uint)(4));
+			w202.XOptions = ((global::Gtk.AttachOptions)(4));
+			w202.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP40 = new global::Gtk.Button();
+			this.btnSymbolJP40.CanFocus = true;
+			this.btnSymbolJP40.Name = "btnSymbolJP40";
+			// Container child btnSymbolJP40.Gtk.Container+ContainerChild
+			this.image96 = new global::Gtk.Image();
+			this.image96.Name = "image96";
+			this.image96.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.39.png");
+			this.btnSymbolJP40.Add(this.image96);
+			this.table2.Add(this.btnSymbolJP40);
+			global::Gtk.Table.TableChild w204 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP40]));
+			w204.TopAttach = ((uint)(3));
+			w204.BottomAttach = ((uint)(4));
+			w204.LeftAttach = ((uint)(1));
+			w204.RightAttach = ((uint)(2));
+			w204.XOptions = ((global::Gtk.AttachOptions)(4));
+			w204.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP41 = new global::Gtk.Button();
+			this.btnSymbolJP41.CanFocus = true;
+			this.btnSymbolJP41.Name = "btnSymbolJP41";
+			// Container child btnSymbolJP41.Gtk.Container+ContainerChild
+			this.image95 = new global::Gtk.Image();
+			this.image95.Name = "image95";
+			this.image95.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.40.png");
+			this.btnSymbolJP41.Add(this.image95);
+			this.table2.Add(this.btnSymbolJP41);
+			global::Gtk.Table.TableChild w206 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP41]));
+			w206.TopAttach = ((uint)(3));
+			w206.BottomAttach = ((uint)(4));
+			w206.LeftAttach = ((uint)(2));
+			w206.RightAttach = ((uint)(3));
+			w206.XOptions = ((global::Gtk.AttachOptions)(4));
+			w206.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP42 = new global::Gtk.Button();
+			this.btnSymbolJP42.CanFocus = true;
+			this.btnSymbolJP42.Name = "btnSymbolJP42";
+			// Container child btnSymbolJP42.Gtk.Container+ContainerChild
+			this.image94 = new global::Gtk.Image();
+			this.image94.Name = "image94";
+			this.image94.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.41.png");
+			this.btnSymbolJP42.Add(this.image94);
+			this.table2.Add(this.btnSymbolJP42);
+			global::Gtk.Table.TableChild w208 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP42]));
+			w208.TopAttach = ((uint)(3));
+			w208.BottomAttach = ((uint)(4));
+			w208.LeftAttach = ((uint)(3));
+			w208.RightAttach = ((uint)(4));
+			w208.XOptions = ((global::Gtk.AttachOptions)(4));
+			w208.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP43 = new global::Gtk.Button();
+			this.btnSymbolJP43.CanFocus = true;
+			this.btnSymbolJP43.Name = "btnSymbolJP43";
+			// Container child btnSymbolJP43.Gtk.Container+ContainerChild
+			this.image93 = new global::Gtk.Image();
+			this.image93.Name = "image93";
+			this.image93.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.42.png");
+			this.btnSymbolJP43.Add(this.image93);
+			this.table2.Add(this.btnSymbolJP43);
+			global::Gtk.Table.TableChild w210 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP43]));
+			w210.TopAttach = ((uint)(3));
+			w210.BottomAttach = ((uint)(4));
+			w210.LeftAttach = ((uint)(4));
+			w210.RightAttach = ((uint)(5));
+			w210.XOptions = ((global::Gtk.AttachOptions)(4));
+			w210.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP44 = new global::Gtk.Button();
+			this.btnSymbolJP44.CanFocus = true;
+			this.btnSymbolJP44.Name = "btnSymbolJP44";
+			// Container child btnSymbolJP44.Gtk.Container+ContainerChild
+			this.image92 = new global::Gtk.Image();
+			this.image92.Name = "image92";
+			this.image92.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.43.png");
+			this.btnSymbolJP44.Add(this.image92);
+			this.table2.Add(this.btnSymbolJP44);
+			global::Gtk.Table.TableChild w212 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP44]));
+			w212.TopAttach = ((uint)(3));
+			w212.BottomAttach = ((uint)(4));
+			w212.LeftAttach = ((uint)(5));
+			w212.RightAttach = ((uint)(6));
+			w212.XOptions = ((global::Gtk.AttachOptions)(4));
+			w212.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP45 = new global::Gtk.Button();
+			this.btnSymbolJP45.CanFocus = true;
+			this.btnSymbolJP45.Name = "btnSymbolJP45";
+			// Container child btnSymbolJP45.Gtk.Container+ContainerChild
+			this.image91 = new global::Gtk.Image();
+			this.image91.Name = "image91";
+			this.image91.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.44.png");
+			this.btnSymbolJP45.Add(this.image91);
+			this.table2.Add(this.btnSymbolJP45);
+			global::Gtk.Table.TableChild w214 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP45]));
+			w214.TopAttach = ((uint)(3));
+			w214.BottomAttach = ((uint)(4));
+			w214.LeftAttach = ((uint)(6));
+			w214.RightAttach = ((uint)(7));
+			w214.XOptions = ((global::Gtk.AttachOptions)(4));
+			w214.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP46 = new global::Gtk.Button();
+			this.btnSymbolJP46.CanFocus = true;
+			this.btnSymbolJP46.Name = "btnSymbolJP46";
+			// Container child btnSymbolJP46.Gtk.Container+ContainerChild
+			this.image90 = new global::Gtk.Image();
+			this.image90.Name = "image90";
+			this.image90.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.45.png");
+			this.btnSymbolJP46.Add(this.image90);
+			this.table2.Add(this.btnSymbolJP46);
+			global::Gtk.Table.TableChild w216 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP46]));
+			w216.TopAttach = ((uint)(3));
+			w216.BottomAttach = ((uint)(4));
+			w216.LeftAttach = ((uint)(7));
+			w216.RightAttach = ((uint)(8));
+			w216.XOptions = ((global::Gtk.AttachOptions)(4));
+			w216.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP47 = new global::Gtk.Button();
+			this.btnSymbolJP47.CanFocus = true;
+			this.btnSymbolJP47.Name = "btnSymbolJP47";
+			// Container child btnSymbolJP47.Gtk.Container+ContainerChild
+			this.image89 = new global::Gtk.Image();
+			this.image89.Name = "image89";
+			this.image89.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.46.png");
+			this.btnSymbolJP47.Add(this.image89);
+			this.table2.Add(this.btnSymbolJP47);
+			global::Gtk.Table.TableChild w218 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP47]));
+			w218.TopAttach = ((uint)(3));
+			w218.BottomAttach = ((uint)(4));
+			w218.LeftAttach = ((uint)(8));
+			w218.RightAttach = ((uint)(9));
+			w218.XOptions = ((global::Gtk.AttachOptions)(4));
+			w218.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP48 = new global::Gtk.Button();
+			this.btnSymbolJP48.CanFocus = true;
+			this.btnSymbolJP48.Name = "btnSymbolJP48";
+			// Container child btnSymbolJP48.Gtk.Container+ContainerChild
+			this.image88 = new global::Gtk.Image();
+			this.image88.Name = "image88";
+			this.image88.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.47.png");
+			this.btnSymbolJP48.Add(this.image88);
+			this.table2.Add(this.btnSymbolJP48);
+			global::Gtk.Table.TableChild w220 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP48]));
+			w220.TopAttach = ((uint)(3));
+			w220.BottomAttach = ((uint)(4));
+			w220.LeftAttach = ((uint)(9));
+			w220.RightAttach = ((uint)(10));
+			w220.XOptions = ((global::Gtk.AttachOptions)(4));
+			w220.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP49 = new global::Gtk.Button();
+			this.btnSymbolJP49.CanFocus = true;
+			this.btnSymbolJP49.Name = "btnSymbolJP49";
+			// Container child btnSymbolJP49.Gtk.Container+ContainerChild
+			this.image87 = new global::Gtk.Image();
+			this.image87.Name = "image87";
+			this.image87.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.48.png");
+			this.btnSymbolJP49.Add(this.image87);
+			this.table2.Add(this.btnSymbolJP49);
+			global::Gtk.Table.TableChild w222 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP49]));
+			w222.TopAttach = ((uint)(3));
+			w222.BottomAttach = ((uint)(4));
+			w222.LeftAttach = ((uint)(10));
+			w222.RightAttach = ((uint)(11));
+			w222.XOptions = ((global::Gtk.AttachOptions)(4));
+			w222.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP5 = new global::Gtk.Button();
+			this.btnSymbolJP5.CanFocus = true;
+			this.btnSymbolJP5.Name = "btnSymbolJP5";
+			// Container child btnSymbolJP5.Gtk.Container+ContainerChild
+			this.image86 = new global::Gtk.Image();
+			this.image86.Name = "image86";
+			this.image86.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.04.png");
+			this.btnSymbolJP5.Add(this.image86);
+			this.table2.Add(this.btnSymbolJP5);
+			global::Gtk.Table.TableChild w224 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP5]));
+			w224.LeftAttach = ((uint)(4));
+			w224.RightAttach = ((uint)(5));
+			w224.XOptions = ((global::Gtk.AttachOptions)(4));
+			w224.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP50 = new global::Gtk.Button();
+			this.btnSymbolJP50.CanFocus = true;
+			this.btnSymbolJP50.Name = "btnSymbolJP50";
+			// Container child btnSymbolJP50.Gtk.Container+ContainerChild
+			this.image85 = new global::Gtk.Image();
+			this.image85.Name = "image85";
+			this.image85.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.49.png");
+			this.btnSymbolJP50.Add(this.image85);
+			this.table2.Add(this.btnSymbolJP50);
+			global::Gtk.Table.TableChild w226 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP50]));
+			w226.TopAttach = ((uint)(3));
+			w226.BottomAttach = ((uint)(4));
+			w226.LeftAttach = ((uint)(11));
+			w226.RightAttach = ((uint)(12));
+			w226.XOptions = ((global::Gtk.AttachOptions)(4));
+			w226.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP51 = new global::Gtk.Button();
+			this.btnSymbolJP51.CanFocus = true;
+			this.btnSymbolJP51.Name = "btnSymbolJP51";
+			// Container child btnSymbolJP51.Gtk.Container+ContainerChild
+			this.image84 = new global::Gtk.Image();
+			this.image84.Name = "image84";
+			this.image84.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.50.png");
+			this.btnSymbolJP51.Add(this.image84);
+			this.table2.Add(this.btnSymbolJP51);
+			global::Gtk.Table.TableChild w228 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP51]));
+			w228.TopAttach = ((uint)(3));
+			w228.BottomAttach = ((uint)(4));
+			w228.LeftAttach = ((uint)(12));
+			w228.RightAttach = ((uint)(13));
+			w228.XOptions = ((global::Gtk.AttachOptions)(4));
+			w228.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP52 = new global::Gtk.Button();
+			this.btnSymbolJP52.CanFocus = true;
+			this.btnSymbolJP52.Name = "btnSymbolJP52";
+			// Container child btnSymbolJP52.Gtk.Container+ContainerChild
+			this.image83 = new global::Gtk.Image();
+			this.image83.Name = "image83";
+			this.image83.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.51.png");
+			this.btnSymbolJP52.Add(this.image83);
+			this.table2.Add(this.btnSymbolJP52);
+			global::Gtk.Table.TableChild w230 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP52]));
+			w230.TopAttach = ((uint)(4));
+			w230.BottomAttach = ((uint)(5));
+			w230.XOptions = ((global::Gtk.AttachOptions)(4));
+			w230.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP53 = new global::Gtk.Button();
+			this.btnSymbolJP53.CanFocus = true;
+			this.btnSymbolJP53.Name = "btnSymbolJP53";
+			// Container child btnSymbolJP53.Gtk.Container+ContainerChild
+			this.image82 = new global::Gtk.Image();
+			this.image82.Name = "image82";
+			this.image82.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.52.png");
+			this.btnSymbolJP53.Add(this.image82);
+			this.table2.Add(this.btnSymbolJP53);
+			global::Gtk.Table.TableChild w232 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP53]));
+			w232.TopAttach = ((uint)(4));
+			w232.BottomAttach = ((uint)(5));
+			w232.LeftAttach = ((uint)(1));
+			w232.RightAttach = ((uint)(2));
+			w232.XOptions = ((global::Gtk.AttachOptions)(4));
+			w232.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP54 = new global::Gtk.Button();
+			this.btnSymbolJP54.CanFocus = true;
+			this.btnSymbolJP54.Name = "btnSymbolJP54";
+			// Container child btnSymbolJP54.Gtk.Container+ContainerChild
+			this.image81 = new global::Gtk.Image();
+			this.image81.Name = "image81";
+			this.image81.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.53.png");
+			this.btnSymbolJP54.Add(this.image81);
+			this.table2.Add(this.btnSymbolJP54);
+			global::Gtk.Table.TableChild w234 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP54]));
+			w234.TopAttach = ((uint)(4));
+			w234.BottomAttach = ((uint)(5));
+			w234.LeftAttach = ((uint)(2));
+			w234.RightAttach = ((uint)(3));
+			w234.XOptions = ((global::Gtk.AttachOptions)(4));
+			w234.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP55 = new global::Gtk.Button();
+			this.btnSymbolJP55.CanFocus = true;
+			this.btnSymbolJP55.Name = "btnSymbolJP55";
+			// Container child btnSymbolJP55.Gtk.Container+ContainerChild
+			this.image80 = new global::Gtk.Image();
+			this.image80.Name = "image80";
+			this.image80.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.54.png");
+			this.btnSymbolJP55.Add(this.image80);
+			this.table2.Add(this.btnSymbolJP55);
+			global::Gtk.Table.TableChild w236 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP55]));
+			w236.TopAttach = ((uint)(4));
+			w236.BottomAttach = ((uint)(5));
+			w236.LeftAttach = ((uint)(3));
+			w236.RightAttach = ((uint)(4));
+			w236.XOptions = ((global::Gtk.AttachOptions)(4));
+			w236.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP56 = new global::Gtk.Button();
+			this.btnSymbolJP56.CanFocus = true;
+			this.btnSymbolJP56.Name = "btnSymbolJP56";
+			// Container child btnSymbolJP56.Gtk.Container+ContainerChild
+			this.image79 = new global::Gtk.Image();
+			this.image79.Name = "image79";
+			this.image79.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.55.png");
+			this.btnSymbolJP56.Add(this.image79);
+			this.table2.Add(this.btnSymbolJP56);
+			global::Gtk.Table.TableChild w238 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP56]));
+			w238.TopAttach = ((uint)(4));
+			w238.BottomAttach = ((uint)(5));
+			w238.LeftAttach = ((uint)(4));
+			w238.RightAttach = ((uint)(5));
+			w238.XOptions = ((global::Gtk.AttachOptions)(4));
+			w238.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP57 = new global::Gtk.Button();
+			this.btnSymbolJP57.CanFocus = true;
+			this.btnSymbolJP57.Name = "btnSymbolJP57";
+			// Container child btnSymbolJP57.Gtk.Container+ContainerChild
+			this.image78 = new global::Gtk.Image();
+			this.image78.Name = "image78";
+			this.image78.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.56.png");
+			this.btnSymbolJP57.Add(this.image78);
+			this.table2.Add(this.btnSymbolJP57);
+			global::Gtk.Table.TableChild w240 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP57]));
+			w240.TopAttach = ((uint)(4));
+			w240.BottomAttach = ((uint)(5));
+			w240.LeftAttach = ((uint)(5));
+			w240.RightAttach = ((uint)(6));
+			w240.XOptions = ((global::Gtk.AttachOptions)(4));
+			w240.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP58 = new global::Gtk.Button();
+			this.btnSymbolJP58.CanFocus = true;
+			this.btnSymbolJP58.Name = "btnSymbolJP58";
+			// Container child btnSymbolJP58.Gtk.Container+ContainerChild
+			this.image77 = new global::Gtk.Image();
+			this.image77.Name = "image77";
+			this.image77.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.57.png");
+			this.btnSymbolJP58.Add(this.image77);
+			this.table2.Add(this.btnSymbolJP58);
+			global::Gtk.Table.TableChild w242 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP58]));
+			w242.TopAttach = ((uint)(4));
+			w242.BottomAttach = ((uint)(5));
+			w242.LeftAttach = ((uint)(6));
+			w242.RightAttach = ((uint)(7));
+			w242.XOptions = ((global::Gtk.AttachOptions)(4));
+			w242.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP59 = new global::Gtk.Button();
+			this.btnSymbolJP59.CanFocus = true;
+			this.btnSymbolJP59.Name = "btnSymbolJP59";
+			// Container child btnSymbolJP59.Gtk.Container+ContainerChild
+			this.image76 = new global::Gtk.Image();
+			this.image76.Name = "image76";
+			this.image76.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.58.png");
+			this.btnSymbolJP59.Add(this.image76);
+			this.table2.Add(this.btnSymbolJP59);
+			global::Gtk.Table.TableChild w244 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP59]));
+			w244.TopAttach = ((uint)(4));
+			w244.BottomAttach = ((uint)(5));
+			w244.LeftAttach = ((uint)(7));
+			w244.RightAttach = ((uint)(8));
+			w244.XOptions = ((global::Gtk.AttachOptions)(4));
+			w244.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP6 = new global::Gtk.Button();
+			this.btnSymbolJP6.CanFocus = true;
+			this.btnSymbolJP6.Name = "btnSymbolJP6";
+			// Container child btnSymbolJP6.Gtk.Container+ContainerChild
+			this.image75 = new global::Gtk.Image();
+			this.image75.Name = "image75";
+			this.image75.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.05.png");
+			this.btnSymbolJP6.Add(this.image75);
+			this.table2.Add(this.btnSymbolJP6);
+			global::Gtk.Table.TableChild w246 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP6]));
+			w246.LeftAttach = ((uint)(5));
+			w246.RightAttach = ((uint)(6));
+			w246.XOptions = ((global::Gtk.AttachOptions)(4));
+			w246.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP60 = new global::Gtk.Button();
+			this.btnSymbolJP60.CanFocus = true;
+			this.btnSymbolJP60.Name = "btnSymbolJP60";
+			// Container child btnSymbolJP60.Gtk.Container+ContainerChild
+			this.image74 = new global::Gtk.Image();
+			this.image74.Name = "image74";
+			this.image74.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.59.png");
+			this.btnSymbolJP60.Add(this.image74);
+			this.table2.Add(this.btnSymbolJP60);
+			global::Gtk.Table.TableChild w248 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP60]));
+			w248.TopAttach = ((uint)(4));
+			w248.BottomAttach = ((uint)(5));
+			w248.LeftAttach = ((uint)(8));
+			w248.RightAttach = ((uint)(9));
+			w248.XOptions = ((global::Gtk.AttachOptions)(4));
+			w248.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP61 = new global::Gtk.Button();
+			this.btnSymbolJP61.CanFocus = true;
+			this.btnSymbolJP61.Name = "btnSymbolJP61";
+			// Container child btnSymbolJP61.Gtk.Container+ContainerChild
+			this.image73 = new global::Gtk.Image();
+			this.image73.Name = "image73";
+			this.image73.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.60.png");
+			this.btnSymbolJP61.Add(this.image73);
+			this.table2.Add(this.btnSymbolJP61);
+			global::Gtk.Table.TableChild w250 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP61]));
+			w250.TopAttach = ((uint)(4));
+			w250.BottomAttach = ((uint)(5));
+			w250.LeftAttach = ((uint)(9));
+			w250.RightAttach = ((uint)(10));
+			w250.XOptions = ((global::Gtk.AttachOptions)(4));
+			w250.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP62 = new global::Gtk.Button();
+			this.btnSymbolJP62.CanFocus = true;
+			this.btnSymbolJP62.Name = "btnSymbolJP62";
+			// Container child btnSymbolJP62.Gtk.Container+ContainerChild
+			this.image72 = new global::Gtk.Image();
+			this.image72.Name = "image72";
+			this.image72.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.61.png");
+			this.btnSymbolJP62.Add(this.image72);
+			this.table2.Add(this.btnSymbolJP62);
+			global::Gtk.Table.TableChild w252 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP62]));
+			w252.TopAttach = ((uint)(4));
+			w252.BottomAttach = ((uint)(5));
+			w252.LeftAttach = ((uint)(10));
+			w252.RightAttach = ((uint)(11));
+			w252.XOptions = ((global::Gtk.AttachOptions)(4));
+			w252.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP63 = new global::Gtk.Button();
+			this.btnSymbolJP63.CanFocus = true;
+			this.btnSymbolJP63.Name = "btnSymbolJP63";
+			// Container child btnSymbolJP63.Gtk.Container+ContainerChild
+			this.image71 = new global::Gtk.Image();
+			this.image71.Name = "image71";
+			this.image71.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.62.png");
+			this.btnSymbolJP63.Add(this.image71);
+			this.table2.Add(this.btnSymbolJP63);
+			global::Gtk.Table.TableChild w254 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP63]));
+			w254.TopAttach = ((uint)(4));
+			w254.BottomAttach = ((uint)(5));
+			w254.LeftAttach = ((uint)(11));
+			w254.RightAttach = ((uint)(12));
+			w254.XOptions = ((global::Gtk.AttachOptions)(4));
+			w254.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP64 = new global::Gtk.Button();
+			this.btnSymbolJP64.CanFocus = true;
+			this.btnSymbolJP64.Name = "btnSymbolJP64";
+			// Container child btnSymbolJP64.Gtk.Container+ContainerChild
+			this.image70 = new global::Gtk.Image();
+			this.image70.Name = "image70";
+			this.image70.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.63.png");
+			this.btnSymbolJP64.Add(this.image70);
+			this.table2.Add(this.btnSymbolJP64);
+			global::Gtk.Table.TableChild w256 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP64]));
+			w256.TopAttach = ((uint)(4));
+			w256.BottomAttach = ((uint)(5));
+			w256.LeftAttach = ((uint)(12));
+			w256.RightAttach = ((uint)(13));
+			w256.XOptions = ((global::Gtk.AttachOptions)(4));
+			w256.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP7 = new global::Gtk.Button();
+			this.btnSymbolJP7.CanFocus = true;
+			this.btnSymbolJP7.Name = "btnSymbolJP7";
+			// Container child btnSymbolJP7.Gtk.Container+ContainerChild
+			this.image69 = new global::Gtk.Image();
+			this.image69.Name = "image69";
+			this.image69.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.06.png");
+			this.btnSymbolJP7.Add(this.image69);
+			this.table2.Add(this.btnSymbolJP7);
+			global::Gtk.Table.TableChild w258 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP7]));
+			w258.LeftAttach = ((uint)(6));
+			w258.RightAttach = ((uint)(7));
+			w258.XOptions = ((global::Gtk.AttachOptions)(4));
+			w258.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP8 = new global::Gtk.Button();
+			this.btnSymbolJP8.CanFocus = true;
+			this.btnSymbolJP8.Name = "btnSymbolJP8";
+			// Container child btnSymbolJP8.Gtk.Container+ContainerChild
+			this.image68 = new global::Gtk.Image();
+			this.image68.Name = "image68";
+			this.image68.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.07.png");
+			this.btnSymbolJP8.Add(this.image68);
+			this.table2.Add(this.btnSymbolJP8);
+			global::Gtk.Table.TableChild w260 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP8]));
+			w260.LeftAttach = ((uint)(7));
+			w260.RightAttach = ((uint)(8));
+			w260.XOptions = ((global::Gtk.AttachOptions)(4));
+			w260.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table2.Gtk.Table+TableChild
+			this.btnSymbolJP9 = new global::Gtk.Button();
+			this.btnSymbolJP9.CanFocus = true;
+			this.btnSymbolJP9.Name = "btnSymbolJP9";
+			// Container child btnSymbolJP9.Gtk.Container+ContainerChild
+			this.image36 = new global::Gtk.Image();
+			this.image36.Name = "image36";
+			this.image36.Pixbuf = global::Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Symbols_JP.08.png");
+			this.btnSymbolJP9.Add(this.image36);
+			this.table2.Add(this.btnSymbolJP9);
+			global::Gtk.Table.TableChild w262 = ((global::Gtk.Table.TableChild)(this.table2[this.btnSymbolJP9]));
+			w262.LeftAttach = ((uint)(8));
+			w262.RightAttach = ((uint)(9));
+			w262.XOptions = ((global::Gtk.AttachOptions)(4));
+			w262.YOptions = ((global::Gtk.AttachOptions)(4));
+			this.notebook1.Add(this.table2);
+			global::Gtk.Notebook.NotebookChild w263 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1[this.table2]));
+			w263.Position = 1;
+			// Notebook tab
+			this.label1 = new global::Gtk.Label();
+			this.label1.Name = "label1";
+			this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("Symbol Keyboard");
+			this.notebook1.SetTabLabel(this.table2, this.label1);
+			this.label1.ShowAll();
+			// Container child notebook1.Gtk.Notebook+NotebookChild
 			this.vbox3 = new global::Gtk.VBox();
 			this.vbox3.Name = "vbox3";
 			this.vbox3.Spacing = 6;
@@ -1438,10 +2762,10 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.txtSymbols.IsEditable = true;
 			this.txtSymbols.InvisibleChar = '●';
 			this.vbox3.Add(this.txtSymbols);
-			global::Gtk.Box.BoxChild w135 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.txtSymbols]));
-			w135.Position = 0;
-			w135.Expand = false;
-			w135.Fill = false;
+			global::Gtk.Box.BoxChild w264 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.txtSymbols]));
+			w264.Position = 0;
+			w264.Expand = false;
+			w264.Fill = false;
 			// Container child vbox3.Gtk.Box+BoxChild
 			this.label7 = new global::Gtk.Label();
 			this.label7.Name = "label7";
@@ -1449,10 +2773,10 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.label7.LabelProp = global::Mono.Unix.Catalog.GetString("Secrets can be entered in any mix of following formats:");
 			this.label7.Wrap = true;
 			this.vbox3.Add(this.label7);
-			global::Gtk.Box.BoxChild w136 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.label7]));
-			w136.Position = 1;
-			w136.Expand = false;
-			w136.Fill = false;
+			global::Gtk.Box.BoxChild w265 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.label7]));
+			w265.Position = 1;
+			w265.Expand = false;
+			w265.Fill = false;
 			// Container child vbox3.Gtk.Box+BoxChild
 			this.label8 = new global::Gtk.Label();
 			this.label8.Name = "label8";
@@ -1460,13 +2784,13 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.label8.Xalign = 0F;
 			this.label8.LabelProp = "→N♥Nh\nright N heart N h\n{right}N{heart}Nh\nRigHtN ♥N  h";
 			this.vbox3.Add(this.label8);
-			global::Gtk.Box.BoxChild w137 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.label8]));
-			w137.Position = 2;
-			w137.Expand = false;
-			w137.Fill = false;
+			global::Gtk.Box.BoxChild w266 = ((global::Gtk.Box.BoxChild)(this.vbox3[this.label8]));
+			w266.Position = 2;
+			w266.Expand = false;
+			w266.Fill = false;
 			this.notebook1.Add(this.vbox3);
-			global::Gtk.Notebook.NotebookChild w138 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1[this.vbox3]));
-			w138.Position = 1;
+			global::Gtk.Notebook.NotebookChild w267 = ((global::Gtk.Notebook.NotebookChild)(this.notebook1[this.vbox3]));
+			w267.Position = 2;
 			// Notebook tab
 			this.label6 = new global::Gtk.Label();
 			this.label6.Name = "label6";
@@ -1474,10 +2798,10 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.notebook1.SetTabLabel(this.vbox3, this.label6);
 			this.label6.ShowAll();
 			this.vbox1.Add(this.notebook1);
-			global::Gtk.Box.BoxChild w139 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.notebook1]));
-			w139.Position = 1;
-			w139.Expand = false;
-			w139.Fill = false;
+			global::Gtk.Box.BoxChild w268 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.notebook1]));
+			w268.Position = 1;
+			w268.Expand = false;
+			w268.Fill = false;
 			// Container child vbox1.Gtk.Box+BoxChild
 			this.hbox2 = new global::Gtk.HBox();
 			this.hbox2.Name = "hbox2";
@@ -1490,22 +2814,22 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.chkAppendRings.DrawIndicator = true;
 			this.chkAppendRings.UseUnderline = true;
 			this.hbox2.Add(this.chkAppendRings);
-			global::Gtk.Box.BoxChild w140 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.chkAppendRings]));
-			w140.Position = 0;
+			global::Gtk.Box.BoxChild w269 = ((global::Gtk.Box.BoxChild)(this.hbox2[this.chkAppendRings]));
+			w269.Position = 0;
 			this.vbox1.Add(this.hbox2);
-			global::Gtk.Box.BoxChild w141 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbox2]));
-			w141.Position = 2;
-			w141.Expand = false;
-			w141.Fill = false;
+			global::Gtk.Box.BoxChild w270 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.hbox2]));
+			w270.Position = 2;
+			w270.Expand = false;
+			w270.Fill = false;
 			w1.Add(this.vbox1);
-			global::Gtk.Box.BoxChild w142 = ((global::Gtk.Box.BoxChild)(w1[this.vbox1]));
-			w142.Position = 0;
+			global::Gtk.Box.BoxChild w271 = ((global::Gtk.Box.BoxChild)(w1[this.vbox1]));
+			w271.Position = 0;
 			// Internal child Zyrenth.ZoraGen.GtkUI.DecoderForm.ActionArea
-			global::Gtk.HButtonBox w143 = this.ActionArea;
-			w143.Name = "dialog1_ActionArea";
-			w143.Spacing = 10;
-			w143.BorderWidth = ((uint)(5));
-			w143.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			global::Gtk.HButtonBox w272 = this.ActionArea;
+			w272.Name = "dialog1_ActionArea";
+			w272.Spacing = 10;
+			w272.BorderWidth = ((uint)(5));
+			w272.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonCancel = new global::Gtk.Button();
 			this.buttonCancel.CanDefault = true;
@@ -1515,9 +2839,9 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.buttonCancel.UseUnderline = true;
 			this.buttonCancel.Label = "gtk-cancel";
 			this.AddActionWidget(this.buttonCancel, -6);
-			global::Gtk.ButtonBox.ButtonBoxChild w144 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w143[this.buttonCancel]));
-			w144.Expand = false;
-			w144.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w273 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w272[this.buttonCancel]));
+			w273.Expand = false;
+			w273.Fill = false;
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonOk = new global::Gtk.Button();
 			this.buttonOk.CanDefault = true;
@@ -1527,16 +2851,16 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = "gtk-ok";
 			this.AddActionWidget(this.buttonOk, -5);
-			global::Gtk.ButtonBox.ButtonBoxChild w145 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w143[this.buttonOk]));
-			w145.Position = 1;
-			w145.Expand = false;
-			w145.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w274 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w272[this.buttonOk]));
+			w274.Position = 1;
+			w274.Expand = false;
+			w274.Fill = false;
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
 			}
 			this.DefaultWidth = 348;
-			this.DefaultHeight = 326;
+			this.DefaultHeight = 336;
 			this.Show();
 			this.btnReset.Clicked += new global::System.EventHandler(this.OnBtnResetClicked);
 			this.btnBack.Clicked += new global::System.EventHandler(this.OnBtnBackClicked);
@@ -1605,6 +2929,70 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.btnSymbol11.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
 			this.btnSymbol10.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
 			this.btnSymbol1.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP9.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP8.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP7.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP64.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP63.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP62.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP61.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP60.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP6.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP59.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP58.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP57.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP56.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP55.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP54.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP53.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP52.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP51.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP50.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP5.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP49.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP48.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP47.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP46.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP45.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP44.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP43.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP42.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP41.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP40.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP4.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP39.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP38.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP37.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP36.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP35.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP34.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP33.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP32.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP31.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP30.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP3.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP29.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP28.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP27.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP26.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP25.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP24.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP23.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP22.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP21.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP20.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP2.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP19.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP18.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP17.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP16.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP15.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP14.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP13.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP12.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP11.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP10.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
+			this.btnSymbolJP1.Clicked += new global::System.EventHandler(this.OnSymbolClicked);
 			this.txtSymbols.Changed += new global::System.EventHandler(this.OnTxtSymbolsChanged);
 			this.buttonCancel.Pressed += new global::System.EventHandler(this.OnButtonCancelPressed);
 			this.buttonOk.Pressed += new global::System.EventHandler(this.OnButtonOkPressed);

@@ -71,12 +71,15 @@ namespace Zyrenth.ZoraGen.GtkUI
 			Mode = mode;
 			chkAppendRings.Visible = Mode == SecretType.Ring;
 
-			if (region != GameRegion.US)
+			if (region == GameRegion.US)
 			{
-				notebook1.CurrentPage = 1;
-				notebook1.ShowTabs = false;
-				label7.Text = "Enter a secret (japanese characters).";
-				label8.Text = "";
+				notebook1.RemovePage(1);
+			}
+			else if (region == GameRegion.JP)
+			{
+				notebook1.RemovePage(0);
+				label7.Text = "Secrets can be entered in kana, romaji, or both";
+				label8.Text = "んすなこゆ\nn su na ko yu\nN すな KoYu";
 			}
 		}
 
