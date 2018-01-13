@@ -1,8 +1,8 @@
 ﻿/*
- * Copyright © 2013-2015, Andrew Nagle.
+ * Copyright © 2013-2018, Amy Nagle.
  * All rights reserved.
  * 
- * This file is part of Oracle of Secrets.
+ * This file is part of ZoraGen GTK.
  *
  * ZoraGen GTK is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

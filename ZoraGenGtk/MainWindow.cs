@@ -1,5 +1,5 @@
 /*
- * Copyright © 2013-2015, Andrew Nagle.
+ * Copyright © 2013-2018, Amy Nagle.
  * All rights reserved.
  * 
  * This file is part of ZoraGen GTK.
@@ -160,7 +160,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			dialog.ProgramName = details.Product;
 			dialog.Version = details.ProductVersion;
 			dialog.Comments = details.Description;
-			dialog.Authors = new string[] { "Andrew Nagle" };
+			dialog.Authors = new string[] { "Amy Nagle" };
 			dialog.Website = "https://github.com/kabili207/zoragen-gtk";
 			dialog.Copyright = details.Copyright;
 			dialog.Logo = Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Farore.ico");
