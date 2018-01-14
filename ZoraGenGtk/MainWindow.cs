@@ -64,12 +64,6 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.Build();
 
 			rdoUS.Active = true;
-
-			foreach (var val in Enum.GetNames(typeof(ChildBehavior)))
-			{
-				cmbBehavior.AppendText(val);
-			}
-			cmbBehavior.Active = 0;
 			OnCmbAnimalChanged(this, EventArgs.Empty);
 
 			InitializeRings();
@@ -173,12 +167,12 @@ namespace Zyrenth.ZoraGen.GtkUI
 		{
 			txtHero.Text = _info.Hero;
 			txtChild.Text = _info.Child;
+			spinBehavior.Value = _info.Behavior;
 			spinID.Value = _info.GameID;
 			chkLinked.Active = _info.IsLinkedGame;
 			chkHeros.Active = _info.IsHeroQuest;
 			chkFreeRingGiven.Active = _info.WasGivenFreeRing;
 			cmbAnimal.SetActiveText(_info.Animal.ToString());
-			cmbBehavior.SetActiveText(_info.Behavior.ToString());
 
 			if (_info.Game == Game.Ages)
 				rdoAges.Active = true;
@@ -201,6 +195,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 		{
 			_info.Hero = txtHero.Text;
 			_info.Child = txtChild.Text;
+			_info.Behavior = (byte)spinBehavior.ValueAsInt;
 			_info.GameID = (short)spinID.ValueAsInt;
 			_info.IsLinkedGame = chkLinked.Active;
 			_info.IsHeroQuest = chkHeros.Active;
@@ -209,15 +204,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			_info.Game = rdoAges.Active ? Game.Ages : Game.Seasons;
 			_info.Region = rdoJP.Active ? GameRegion.JP : GameRegion.US;
 
-			ChildBehavior behavior;
-			if (!Enum.TryParse<ChildBehavior>(cmbBehavior.ActiveText, out behavior))
-			{
-				_info.Behavior = ChildBehavior.Infant;
-			}
-			else
-			{
-				_info.Behavior = behavior;
-			}
+			
 
 			Animal animal;
 			if (!Enum.TryParse<Animal>(cmbAnimal.ActiveText, out animal))
@@ -259,15 +246,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		protected void OnCmbBehaviorChanged(object sender, EventArgs e)
 		{
-			ChildBehavior behavior;
-			if (!Enum.TryParse<ChildBehavior>(cmbBehavior.ActiveText, out behavior))
-			{
-				_info.Behavior = ChildBehavior.Infant;
-			}
-			else
-			{
-				_info.Behavior = behavior;
-			}
+			// TODO: Show text values, handle impossible values, etc.
 		}
 
 		protected void OnCmbAnimalChanged(object sender, System.EventArgs e)
@@ -282,7 +261,9 @@ namespace Zyrenth.ZoraGen.GtkUI
 				_info.Animal = animal;
 				switch (animal)
 				{
-					default:
+					case Animal.None:
+						imgAnimal.Pixbuf = null;
+						break;
 					case Animal.Ricky:
 						imgAnimal.Pixbuf = Gdk.Pixbuf.LoadFromResource("Zyrenth.ZoraGen.GtkUI.Images.Characters.Ricky.gif");
 						break;

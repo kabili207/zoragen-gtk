@@ -94,8 +94,6 @@ namespace Zyrenth.ZoraGen.GtkUI
 
 		private global::Gtk.ComboBox cmbAnimal;
 
-		private global::Gtk.ComboBox cmbBehavior;
-
 		private global::Gtk.Image imgAnimal;
 
 		private global::Gtk.Label label2;
@@ -107,6 +105,8 @@ namespace Zyrenth.ZoraGen.GtkUI
 		private global::Gtk.Label label5;
 
 		private global::Gtk.Label label6;
+
+		private global::Gtk.SpinButton spinBehavior;
 
 		private global::Gtk.SpinButton spinID;
 
@@ -401,6 +401,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.table3.ColumnSpacing = ((uint)(6));
 			// Container child table3.Gtk.Table+TableChild
 			this.cmbAnimal = global::Gtk.ComboBox.NewText();
+			this.cmbAnimal.AppendText(global::Mono.Unix.Catalog.GetString("None"));
 			this.cmbAnimal.AppendText(global::Mono.Unix.Catalog.GetString("Ricky"));
 			this.cmbAnimal.AppendText(global::Mono.Unix.Catalog.GetString("Dimitri"));
 			this.cmbAnimal.AppendText(global::Mono.Unix.Catalog.GetString("Moosh"));
@@ -415,80 +416,84 @@ namespace Zyrenth.ZoraGen.GtkUI
 			w22.XOptions = ((global::Gtk.AttachOptions)(4));
 			w22.YOptions = ((global::Gtk.AttachOptions)(0));
 			// Container child table3.Gtk.Table+TableChild
-			this.cmbBehavior = global::Gtk.ComboBox.NewText();
-			this.cmbBehavior.Name = "cmbBehavior";
-			this.table3.Add(this.cmbBehavior);
-			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table3[this.cmbBehavior]));
-			w23.TopAttach = ((uint)(1));
-			w23.BottomAttach = ((uint)(2));
-			w23.LeftAttach = ((uint)(3));
-			w23.RightAttach = ((uint)(4));
-			w23.XOptions = ((global::Gtk.AttachOptions)(4));
-			w23.YOptions = ((global::Gtk.AttachOptions)(4));
-			// Container child table3.Gtk.Table+TableChild
 			this.imgAnimal = new global::Gtk.Image();
 			this.imgAnimal.Name = "imgAnimal";
 			this.table3.Add(this.imgAnimal);
-			global::Gtk.Table.TableChild w24 = ((global::Gtk.Table.TableChild)(this.table3[this.imgAnimal]));
-			w24.TopAttach = ((uint)(2));
-			w24.BottomAttach = ((uint)(3));
-			w24.LeftAttach = ((uint)(2));
-			w24.RightAttach = ((uint)(3));
-			w24.XOptions = ((global::Gtk.AttachOptions)(4));
-			w24.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w23 = ((global::Gtk.Table.TableChild)(this.table3[this.imgAnimal]));
+			w23.TopAttach = ((uint)(2));
+			w23.BottomAttach = ((uint)(3));
+			w23.LeftAttach = ((uint)(2));
+			w23.RightAttach = ((uint)(3));
+			w23.XOptions = ((global::Gtk.AttachOptions)(4));
+			w23.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label2 = new global::Gtk.Label();
 			this.label2.Name = "label2";
 			this.label2.Xalign = 0F;
 			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString("ID");
 			this.table3.Add(this.label2);
-			global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.table3[this.label2]));
-			w25.TopAttach = ((uint)(1));
-			w25.BottomAttach = ((uint)(2));
-			w25.XOptions = ((global::Gtk.AttachOptions)(4));
-			w25.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w24 = ((global::Gtk.Table.TableChild)(this.table3[this.label2]));
+			w24.TopAttach = ((uint)(1));
+			w24.BottomAttach = ((uint)(2));
+			w24.XOptions = ((global::Gtk.AttachOptions)(4));
+			w24.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label3 = new global::Gtk.Label();
 			this.label3.Name = "label3";
 			this.label3.Xalign = 0F;
 			this.label3.LabelProp = global::Mono.Unix.Catalog.GetString("Hero");
 			this.table3.Add(this.label3);
-			global::Gtk.Table.TableChild w26 = ((global::Gtk.Table.TableChild)(this.table3[this.label3]));
-			w26.XOptions = ((global::Gtk.AttachOptions)(4));
-			w26.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w25 = ((global::Gtk.Table.TableChild)(this.table3[this.label3]));
+			w25.XOptions = ((global::Gtk.AttachOptions)(4));
+			w25.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label4 = new global::Gtk.Label();
 			this.label4.Name = "label4";
 			this.label4.Xalign = 0F;
 			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("Child");
 			this.table3.Add(this.label4);
-			global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.table3[this.label4]));
-			w27.LeftAttach = ((uint)(2));
-			w27.RightAttach = ((uint)(3));
-			w27.XOptions = ((global::Gtk.AttachOptions)(4));
-			w27.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w26 = ((global::Gtk.Table.TableChild)(this.table3[this.label4]));
+			w26.LeftAttach = ((uint)(2));
+			w26.RightAttach = ((uint)(3));
+			w26.XOptions = ((global::Gtk.AttachOptions)(4));
+			w26.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label5 = new global::Gtk.Label();
 			this.label5.Name = "label5";
 			this.label5.Xalign = 0F;
 			this.label5.LabelProp = global::Mono.Unix.Catalog.GetString("Behavior");
 			this.table3.Add(this.label5);
-			global::Gtk.Table.TableChild w28 = ((global::Gtk.Table.TableChild)(this.table3[this.label5]));
-			w28.TopAttach = ((uint)(1));
-			w28.BottomAttach = ((uint)(2));
-			w28.LeftAttach = ((uint)(2));
-			w28.RightAttach = ((uint)(3));
-			w28.XOptions = ((global::Gtk.AttachOptions)(4));
-			w28.YOptions = ((global::Gtk.AttachOptions)(4));
+			global::Gtk.Table.TableChild w27 = ((global::Gtk.Table.TableChild)(this.table3[this.label5]));
+			w27.TopAttach = ((uint)(1));
+			w27.BottomAttach = ((uint)(2));
+			w27.LeftAttach = ((uint)(2));
+			w27.RightAttach = ((uint)(3));
+			w27.XOptions = ((global::Gtk.AttachOptions)(4));
+			w27.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
 			this.label6 = new global::Gtk.Label();
 			this.label6.Name = "label6";
 			this.label6.Xalign = 0F;
 			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString("Animal");
 			this.table3.Add(this.label6);
-			global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.table3[this.label6]));
-			w29.TopAttach = ((uint)(2));
-			w29.BottomAttach = ((uint)(3));
+			global::Gtk.Table.TableChild w28 = ((global::Gtk.Table.TableChild)(this.table3[this.label6]));
+			w28.TopAttach = ((uint)(2));
+			w28.BottomAttach = ((uint)(3));
+			w28.XOptions = ((global::Gtk.AttachOptions)(4));
+			w28.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table3.Gtk.Table+TableChild
+			this.spinBehavior = new global::Gtk.SpinButton(0, 63, 1);
+			this.spinBehavior.CanFocus = true;
+			this.spinBehavior.Name = "spinBehavior";
+			this.spinBehavior.Adjustment.PageIncrement = 10;
+			this.spinBehavior.ClimbRate = 1;
+			this.spinBehavior.Numeric = true;
+			this.table3.Add(this.spinBehavior);
+			global::Gtk.Table.TableChild w29 = ((global::Gtk.Table.TableChild)(this.table3[this.spinBehavior]));
+			w29.TopAttach = ((uint)(1));
+			w29.BottomAttach = ((uint)(2));
+			w29.LeftAttach = ((uint)(3));
+			w29.RightAttach = ((uint)(4));
 			w29.XOptions = ((global::Gtk.AttachOptions)(4));
 			w29.YOptions = ((global::Gtk.AttachOptions)(4));
 			// Container child table3.Gtk.Table+TableChild
@@ -645,7 +650,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			this.txtHero.Changed += new global::System.EventHandler(this.OnTxtHeroChanged);
 			this.txtChild.Changed += new global::System.EventHandler(this.OnTxtChildChanged);
 			this.spinID.Changed += new global::System.EventHandler(this.OnSpinIDChanged);
-			this.cmbBehavior.Changed += new global::System.EventHandler(this.OnCmbBehaviorChanged);
+			this.spinBehavior.Changed += new global::System.EventHandler(this.OnCmbBehaviorChanged);
 			this.cmbAnimal.Changed += new global::System.EventHandler(this.OnCmbAnimalChanged);
 			this.btnAllRings.Clicked += new global::System.EventHandler(this.OnBtnAllRingsClicked);
 			this.btnNoRings.Clicked += new global::System.EventHandler(this.OnBtnNoRingsClicked);
