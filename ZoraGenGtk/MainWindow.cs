@@ -381,7 +381,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 			{
 				using (System.IO.FileStream file = System.IO.File.OpenRead(fc.Filename))
 				{
-					var data = BatteryFileLoader.LoadAll(file);
+					var data = BatteryFileLoader.LoadAll(file, _info.Region);
 					OpenGameInfoPicker(data);
 				}
 			}

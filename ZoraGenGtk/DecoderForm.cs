@@ -134,25 +134,25 @@ namespace Zyrenth.ZoraGen.GtkUI
 				switch (Mode)
 				{
 					case SecretType.Game:
-						GameSecret gs = new GameSecret(_region);
-						gs.Load(trimmedData);
+						GameSecret gs = new GameSecret();
+						gs.Load(trimmedData, _region);
 						gs.UpdateGameInfo(GameInfo);
 						break;
 					case SecretType.Ring:
-						RingSecret rs = new RingSecret(_region);
-						rs.Load(trimmedData);
+						RingSecret rs = new RingSecret();
+						rs.Load(trimmedData, _region);
 						rs.UpdateGameInfo(GameInfo, chkAppendRings.Active);
 						break;
 					case SecretType.Memory:
-						MemorySecret ms = new MemorySecret(_region);
-						ms.Load(trimmedData);
+						MemorySecret ms = new MemorySecret();
+						ms.Load(trimmedData, _region);
 						// Now what?
 						break;
 				}
 
 				this.Respond(ResponseType.Ok);
 			}
-			catch (InvalidSecretException ex)
+			catch (SecretException ex)
 			{
 				MessageBox.Show(ex.Message, "Invalid Secret", ButtonsType.Ok, MessageType.Error);
 			}
@@ -187,7 +187,7 @@ namespace Zyrenth.ZoraGen.GtkUI
 				currentPic = (trimmedData.Length).Clamp(0, _secretLength);
 
 			}
-			catch (InvalidSecretException) { }
+			catch (SecretException) { }
 		}
 
 		protected void OnNotebook1SwitchPage(object o, SwitchPageArgs args)
