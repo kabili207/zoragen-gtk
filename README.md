@@ -17,7 +17,7 @@ Built using the [ZoraSharp](https://github.com/kabili207/zora-sharp) library.
  * [LunarCookies](https://github.com/LunarCookies) - Discovered the correct cipher and checksum logic used to generate secrets
 
 ### License
-ZoraGen GTK is licensed under the GNU General Public License version 3.
+ZoraGen GTK is licensed under the GNU General Public License version 3 or later.
 
 ZoraGen GTK makes use of the following libraries:
  * [ZoraSharp](https://github.com/kabili207/ZoraSharp), licensed under the GNU Lesser General Public License version 3
