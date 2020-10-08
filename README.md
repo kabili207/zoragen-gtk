@@ -20,7 +20,7 @@ Built using the [ZoraSharp](https://github.com/kabili207/zora-sharp) library.
 ZoraGen GTK is licensed under the GNU General Public License version 3 or later.
 
 ZoraGen GTK makes use of the following libraries:
- * [ZoraSharp](https://github.com/kabili207/ZoraSharp), licensed under the GNU Lesser General Public License version 3
+ * [ZoraSharp](https://github.com/kabili207/zora-sharp), licensed under the GNU Lesser General Public License version 3
  * [SemVer](https://github.com/maxhauser/semver), licensed under the MIT License
 
 
